@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Server-Side Approaches: Development of a Gameplay
+Analytics Pipeline for Suspicion Scoring}
+\label{chap:three}
+
+\epigraph{\itshape We can't solve today's problems with the mentality that created them.}{-- Albert EINSTEIN}
+
+\stopcontents[chapters]
+\startcontents[chapters]
+
+\printMyMinitoc
+
+\fancyhead[LE]{\textsc{\chaptername~\thechapter}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Pipeline Implementation}
+\label{sec:three:one}
+
+\subsection{Ingestion and Scoring Objectives}
+\label{sec:three:one:one}
+
+\begin{itemize}
+\item Automating telemetry-driven suspicion scoring
+\item Prioritization matrix for human review (Overwatch-style triage)
+\end{itemize}
+
+\subsection{Algorithmic Architecture and Core Concepts}
+\label{sec:three:one:two}
+
+\begin{itemize}
+\item Rule-Based Foundations: Establishing game engine limits, behavioral baselines, and mechanical consistency boundaries
+\item Hybrid Modeling Framework: Combining a classical deterministic heuristic algorithm (live run execution) with sequential Machine Learning concepts (Long Short-Term Memory - LSTM)
+\item Flag Weighting and Temporal Aggregation: Make individual mechanical anomalies accumulate into a player history score
+\end{itemize}
+
+\subsection{Practical System Deployment}
+\label{sec:three:one:three}
+
+\begin{itemize}
+\item Architecture of the analytics pipeline: https://github.com/selligre/thesis-cs2-ac-server (could use https://github.com/pnxenopoulos/awpy to help parsing data from demos)
+\item Event-driven design: Comparison of real-time telemetry parsing vs. asynchronous post-match processing
+\end{itemize}
+
+\section{Dataset and Features}
+\label{sec:three:two}
+
+\subsection{Telemetry Data Model}
+\label{sec:three:two:one}
+
+\begin{itemize}
+\item Aim Vectors: Time-to-Damage (TTD), pre-aim delta, and spray pattern deviation
+\item Spatial and Positional Features: Cross-match positioning consistency, Opening Duels context, and Trading Efficiency windows
+\item Tactical and Utility Metrics: Grenade/HE efficiency (Average HE damage), Clutch performance variance, and overall Kill/Death (KD)
+\item Social/Contextual Context: Premade lobby (Party) dependencies and cross-match behavioral
+\end{itemize}
+
+\subsection{Data Sources and Profiling}
+\label{sec:three:two:two}
+
+\begin{itemize}
+\item Synthetic telemetry generation: Simulating legitimate player profiles (varying from casual to highly-skilled) vs. simulated cheat profiles (aimbots, triggerbots, wallhacks and scripts)
+\end{itemize}
+
+\subsection{Data Constraints and Limitations}
+\label{sec:three:two:three}
+
+\begin{itemize}
+\item Limits of server-side logs
+\item Tick-rate limitations
+\end{itemize}
+
+\section{Benchmark Execution and Raw Outputs}
+\label{sec:three:three}
+
+\subsection{Experimental Protocol}
+\label{sec:three:three:one}
+
+\begin{itemize}
+\item Setup of the controlled benchmarking environment
+\item Execution sequence: Batch processing of simulated profiles through the classical algorithm and the LSTM layer
+\end{itemize}
+
+\subsection{Raw Evaluation Results}
+\label{sec:three:three:two}
+
+\begin{itemize}
+\item Raw statistical outputs, distribution of suspicion scores and first results
+\end{itemize}
+
+\section{Analysis and Performance Discussion}
+\label{sec:three:four}
+
+\subsection{Net Detection Results}
+\label{sec:three:four:one}
+
+\begin{itemize}
+\item Link between extreme data profiles and cheaters
+\item Robustness assessment: Evaluating the accuracy when mixing in high-skill profiles
+\end{itemize}
+
+\subsection{Mitigating the High-Skill Bias}
+\label{sec:three:four:two}
+
+\begin{itemize}
+\item Analyzing the conceptual limits of false positives
+\item Differentiating anomalous expert playstyles (exotic but legitimate behaviors) from software-assisted mechanics
+\item Comparative Analysis: Contrasting our suspicion-scoring pipeline with commercial performance platforms like Leetify.gg (How metrics designed for coaching can be repurposed for anti-cheat signaling)
+\end{itemize}
+
+\subsection{Future Optimizations}
+\label{sec:three:four:three}
+
+\begin{itemize}
+\item Build accurate data profiles faster
+\item Take into account external factors (number of cheaters in their friends list, age of the account, number of hours played related to the skill-level shown… things that experimented players learn to recognize but that the software fails to implement)
+\end{itemize}
+
+\section{Comparison with Kernel-level approach}
+\label{sec:three:five}
+
+\begin{itemize}
+\item Effectiveness
+\item Intrusiveness
+\item Implications for the FPS / e-sport industry
+\item Player perception
+\item Human validation
+\end{itemize}

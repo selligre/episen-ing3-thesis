@@ -1,0 +1,234 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Dorner2024-jm}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=bbd6379e283a4300e0649b91a4d199ba}{%
+           family={Dorner},
+           familyi={D\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e316be4edff1a79ee6dd1ceff590a2c0}{%
+           family={Klausner},
+           familyi={K\bibinitperiod},
+           given={Lukas\bibnamedelima Daniel},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna Austria}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{52dad7f082a9f7caee43e54878f2f7a0}
+      \strng{fullhash}{52dad7f082a9f7caee43e54878f2f7a0}
+      \strng{fullhashraw}{52dad7f082a9f7caee43e54878f2f7a0}
+      \strng{bibnamehash}{52dad7f082a9f7caee43e54878f2f7a0}
+      \strng{authorbibnamehash}{52dad7f082a9f7caee43e54878f2f7a0}
+      \strng{authornamehash}{52dad7f082a9f7caee43e54878f2f7a0}
+      \strng{authorfullhash}{52dad7f082a9f7caee43e54878f2f7a0}
+      \strng{authorfullhashraw}{52dad7f082a9f7caee43e54878f2f7a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 19th International Conference on Availability, Reliability and Security}
+      \field{month}{7}
+      \field{title}{If it looks like a rootkit and deceives like a rootkit: A critical examination of kernel-level anti-cheat systems}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+    \endentry
+    \entry{Loo2025-fo}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=c399dcdaec0d98df2430f0a1e244d17f}{%
+           family={Loo},
+           familyi={L\bibinitperiod},
+           given={Mille\bibnamedelimb Mei\bibnamedelima Zhen},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim Z\bibinitperiod}}}%
+        {{hash=4fe519ad04b96888cba422ec5025445c}{%
+           family={Luẑkov},
+           familyi={L\bibinitperiod},
+           given={Gert},
+           giveni={G\bibinitperiod}}}%
+        {{hash=6fe96f97bbb6b444444d61eb3acc5804}{%
+           family={Burelli},
+           familyi={B\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Lisbon, Portugal}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7c13817b62703a3544c09d55825f4c2c}
+      \strng{fullhash}{7c13817b62703a3544c09d55825f4c2c}
+      \strng{fullhashraw}{7c13817b62703a3544c09d55825f4c2c}
+      \strng{bibnamehash}{7c13817b62703a3544c09d55825f4c2c}
+      \strng{authorbibnamehash}{7c13817b62703a3544c09d55825f4c2c}
+      \strng{authornamehash}{7c13817b62703a3544c09d55825f4c2c}
+      \strng{authorfullhash}{7c13817b62703a3544c09d55825f4c2c}
+      \strng{authorfullhashraw}{7c13817b62703a3544c09d55825f4c2c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2025 {IEEE} Conference on Games ({CoG})}
+      \field{month}{8}
+      \field{title}{{AntiCheatPT}: A transformer-based approach to cheat detection in competitive computer games}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+    \endentry
+    \entry{Collins2024-kb}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=3ec649f0d64c61320b00b1cedf15a30d}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=029ddcd2c0be89b3df72c6f249ed2cd6}{%
+           family={Poulopoulos},
+           familyi={P\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5373bf9d0c557ad40b6c3f446c935b13}{%
+           family={Muench},
+           familyi={M\bibinitperiod},
+           given={Marius},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5881a73f6ac2cff066229fc279fe63d5}{%
+           family={Chothia},
+           familyi={C\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Salt Lake City UT USA}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{f1745fd2368fcd716a03727ef6bc2e5d}
+      \strng{fullhash}{bbb1d79f330bab93b92b2b41829be628}
+      \strng{fullhashraw}{bbb1d79f330bab93b92b2b41829be628}
+      \strng{bibnamehash}{f1745fd2368fcd716a03727ef6bc2e5d}
+      \strng{authorbibnamehash}{f1745fd2368fcd716a03727ef6bc2e5d}
+      \strng{authornamehash}{f1745fd2368fcd716a03727ef6bc2e5d}
+      \strng{authorfullhash}{bbb1d79f330bab93b92b2b41829be628}
+      \strng{authorfullhashraw}{bbb1d79f330bab93b92b2b41829be628}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2024 Workshop on Research on offensive and defensive techniques in the context of Man At The End ({MATE}) attacks}
+      \field{month}{11}
+      \field{title}{Anti-cheat: Attacks and the effectiveness of client-side defences}
+      \field{year}{2024}
+      \field{pages}{30\bibrangedash 43}
+      \range{pages}{14}
+    \endentry
+    \entry{Michal2025-xt}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{hash=8b26dd6245462e47f3183dab2012a924}{%
+           family={Micha{ł}},
+           familyi={M\bibinitperiod},
+           given={Jakubowski},
+           giveni={J\bibinitperiod}}}%
+        {{hash=dc0357568324af7e1214e46fb0637377}{%
+           family={Ćwil},
+           familyi={Ć\bibinitperiod},
+           given={Ma{ł}gorzata},
+           giveni={M\bibinitperiod}}}%
+        {{hash=27aacd45f22b2b36cc1bb4e77f5e8835}{%
+           family={Weronika},
+           familyi={W\bibinitperiod},
+           given={Szatkowska},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Switzerland}%
+      }
+      \strng{namehash}{563bddf17626c9df1777543e7920966d}
+      \strng{fullhash}{563bddf17626c9df1777543e7920966d}
+      \strng{fullhashraw}{563bddf17626c9df1777543e7920966d}
+      \strng{bibnamehash}{563bddf17626c9df1777543e7920966d}
+      \strng{authorbibnamehash}{563bddf17626c9df1777543e7920966d}
+      \strng{authornamehash}{563bddf17626c9df1777543e7920966d}
+      \strng{authorfullhash}{563bddf17626c9df1777543e7920966d}
+      \strng{authorfullhashraw}{563bddf17626c9df1777543e7920966d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Lecture Notes in Computer Science}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Enhancing Fair Play in online gaming: The development and implementation of the no more cheats anti-cheat system}
+      \field{year}{2025}
+      \field{pages}{69\bibrangedash 80}
+      \range{pages}{12}
+    \endentry
+    \entry{Kuzhii2024-lq}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=89ede8dccf6f2974081594359274ef6c}{%
+           family={Kuzhii},
+           familyi={K\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=5de7b5da727db791fd14812c53743e2d}{%
+           family={Furgala},
+           familyi={F\bibinitperiod},
+           given={Y},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ivan Franko National University of Lviv}%
+      }
+      \strng{namehash}{10f536dab7b205ada053501f879438b0}
+      \strng{fullhash}{10f536dab7b205ada053501f879438b0}
+      \strng{fullhashraw}{10f536dab7b205ada053501f879438b0}
+      \strng{bibnamehash}{10f536dab7b205ada053501f879438b0}
+      \strng{authorbibnamehash}{10f536dab7b205ada053501f879438b0}
+      \strng{authornamehash}{10f536dab7b205ada053501f879438b0}
+      \strng{authorfullhash}{10f536dab7b205ada053501f879438b0}
+      \strng{authorfullhashraw}{10f536dab7b205ada053501f879438b0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Electron. Inf. Technol.}
+      \field{number}{760}
+      \field{title}{The anticheat development in the counter-strike main series}
+      \field{volume}{26}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{State of the Art - Cheats and Anti-Cheats}
+\label{chap:one}
+
+\epigraph{\itshape Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important.}{-- Bill GATES}
+
+\startcontents[chapters]
+
+\printMyMinitoc
+
+
+\fancyhead[LE]{\textsc{\chaptername~\thechapter}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SECTION 1 --------------------------------------------------------------
+\section{Cheat-Based Exploration of System Architecture}
+\label{sec:one:one}
+
+\subsection{Automation Cheats}
+\label{sec:one:one:one}
+
+Automation cheats represent a critical class of malicious software engineered to augment or entirely substitute a player's mechanical execution within the competitive environment. This category primarily encompasses automated aiming tools (aimbots), automatic firing utilities (triggerbots), and execution macros or scripts. By targeting the core pillars of first-person shooter (FPS) gameplay—specifically mechanical precision, muscle memory, and cognitive reaction time, these tools disrupt competitive balance by replacing human motor control with software-driven operations.
+
+
+To achieve this automation, the software must interface directly with either the operating system's input layer or manipulate the inner variables governing the game engine logic. The depth of this interaction generally defines the cheat's sophistication and detection difficulty:
+
+\begin{itemize}
+\item Input Layer Manipulation: Client-side automation tools often operate by injecting synthetic mouse and keyboard events directly into the operating system's input stream. A typical triggerbot, for example, continuously polls the game client's state or memory addresses to determine when an enemy entity's hitbox intersects with the exact coordinates of the player's crosshair. The moment this condition is validated, the cheat programmatically fires a click event into the input queue, completely bypassing human visual processing and nervous system latency. The latency between the detection of the event and the actual input can be configured to try and pass as a human reaction, though the main point of this process is still to be way faster than the average player.
+\item Subversion of Game Engine Logic: More advanced automation mechanisms bypass peripheral input emulation altogether, executing modifications directly within the local game engine client memory space. An aimbot reads the real-time spatial positions (three-dimensional coordinates) of all active opponents from the engine's local entity list. It then calculates the precise angular vector offsets required to bridge the gap between the current viewpoint and the target's head hitbox. By overwriting the client's view-angle variables within the engine memory before the next frame rendering or tick packet serialization, the cheat forces perfect accuracy.
+\end{itemize}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=9cm]{../images/chap01/fig1.png}
+    \end{center}
+    \caption{Comparison of the recoil from the AK-47 in-game with its theoretical model}
+    \label{fig:fig1}
+\end{figure}
+\footnote{\url{https://cs2pulse.com/spray-patterns/ak-47/}}
+
+This enables frame-perfect recoil compensation and automated target tracking that completely overrides the physical constraints designed by the game developers.
+
+\subsection{Information Cheats}
+\label{sec:one:one:two}
+
+Unlike automation tools that directly override a player's physical inputs, information cheats focus on subverting the tactical integrity of tactical shooter ecosystems by breaking down spatial boundaries. Tactical first-person shooters heavily rely on a conceptual "fog of war"—a structural design where information regarding enemy positions, utility placement, and movement is deliberately occluded by spatial geometry to reward map control and sensory awareness. Information cheats, primarily manifested as wallhacks and radarhacks, systematically dismantle this baseline restriction. They do not execute actions for the user but instead grant an absolute cognitive advantage by exposing hidden game data and altering the rendering pipeline. 
+
+
+To achieve this asymmetric visualization, these tools typically exploit two distinct technical vectors within the local client system:
+
+\begin{itemize}
+\item Rendering Pipeline Exploitation: Wallhacks operate by intercepting or altering the graphics rendering pipeline responsible for drawing the game world onto the player's screen. In a legitimate game loop, the engine utilizes occlusion to ensure that player models hidden behind opaque geometry (such as walls or solid terrain) are not drawn on the screen. Wallhacks circumvent this by hooking into the graphic APIs used by the engine. By injecting code that forces the graphics card to ignore occlusion parameters when processing enemy entity models, the cheat renders these entities on top of intervening geometry. This is frequently accompanied by ESP (Extra Sensory Perception) boxes, which overlay real-time lines, health bars, and item descriptions directly onto the player's view canvas.
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=9cm]{../images/chap01/fig2.png}
+    \end{center}
+    \caption{Demonstration of wallhack using built-in command "r\_aoproxy\_show 1"}
+    \label{fig:fig2}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=9cm]{../images/chap01/fig3.png}
+    \end{center}
+    \caption{Ad from a cheating software provider showing wallhack in action}
+    \label{fig:fig3}
+\end{figure}
+\footnote{\url{https://anyx.gg/}}
+
+\item Game Data Exposure: Radarhacks bypass the visual canvas entirely, targeting the underlying spatial data structures residing within the client’s volatile memory or network socket streams. Every online game client maintains a local "Entity List" containing the precise three-dimensional coordinate vectors of all active participants, transmitted by the server to ensure local interpolation and hit registration. A radarhack continuously scans the process memory space to extract these spatial vectors or sniffs incoming network packets before they are parsed by the client. This data is then projected onto a secondary web-based interface, an external execution window, or a simulated 2D mini-map overlay. Because this methodology leaves the primary visual interface completely clean and does not alter rendering hooks, it provides the cheater with absolute situational awareness while significantly minimizing visibility to automated anti-cheat screen capture mechanisms or human review systems. This type of cheating is one of the hardest to detect as, except for the direct scanning of the process memory space, the behaviour of such cheaters can often be associated with a good game-sense or instincts, hence being harder to prove as blatant cheating.
+\end{itemize}
+
+\subsection{Advanced Cheats}
+\label{sec:one:one:three}
+As client-side anti-cheat mechanisms evolved to actively monitor user-mode operations, the cheating ecosystem shifted toward highly sophisticated execution paradigms categorized as advanced cheats. These advanced threats deliberately bypass the operating system's standard application boundaries by executing within highly privileged environments or utilizing standalone external hardware vectors. By exploiting low-level OS/Kernel interactions and dedicated hardware interfaces, these tools minimize or entirely eliminate their local software footprint, rendering conventional user-mode memory scanners and API hooks ineffective.
+
+\begin{itemize}
+\item Kernel-Level Cheats and Kernel interaction: Kernel-level cheats operate inside the most privileged layer of the computer's processor architecture, known as Kernel Mode (Ring 0). While regular video games and applications are restricted to User Mode (Ring 3) where they have limited permissions, software running in Ring 0 has absolute control over the entire system's memory and hardware. Because modern client-side anti-cheat systems also run at this kernel level to monitor the game, cheat developers must find ways to gain equal authority to hide their presence and subvert security controls.
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=9cm]{../images/chap01/fig4.png}
+    \end{center}
+    \caption{Privilege rings in an OS' structure}
+    \label{fig:fig4}
+\end{figure}
+\footnote{\url{https://www.tutorialspoint.com/article/protection-ring}}
+
+This advanced interaction with the operating system occurs through three primary mechanisms:
+
+\begin{itemize}
+\item System Penetration via BYOVD: Modern operating systems like Windows require all kernel-level software to be digitally signed and approved by Microsoft. To bypass this security check, cheat developers use a technique called Bring Your Own Vulnerable Driver (BYOVD). They take an old, legitimately signed utility driver (from a trusted company) that contains a known security flaw. The cheat loads this trusted driver into the system and exploits its vulnerability to inject unsigned, malicious cheat code directly into the secure kernel memory space.
+\item Direct System Manipulation (DKOM): Once established inside Ring 0, the cheat can modify the operating system's internal tracking structures. Using a method known as Direct Kernel Object Manipulation (DKOM), the cheat can erase its own program from the active process list or alter the system’s memory maps (page tables). This disguises the cheat's memory footprint, making it look like a harmless, native operating system component.
+\end{itemize}
+
+\item External Cheats and Hardware Interfaces: The most modern escalation in this technical conflict involves external and hardware-assisted cheats, which decouple the cheat execution environment from the host operating system running the game client. This paradigm relies on physical hardware interfaces, most notably Direct Memory Access (DMA) via specialized hardware expansion cards installed directly into the host machine's PCI Express (PCIe) slots. The DMA card physically reads and writes to the system's volatile memory (RAM) directly through the hardware controller, completely bypassing the CPU and any software-level security controls enforced by the operating system kernel. This raw memory stream is transmitted via a physical interface to a secondary, completely isolated computer. This external machine parses the game state asynchronously,calculates visual overlays or aim vectors, and can send synthetic peripheral inputs back to the host via specialized hardware input spoofers or modified mouse firmware. Because no malicious code executes, modifies memory, or hooks processes on the primary gaming machine, hardware-assisted vectors leave zero software footprint for traditional detection engines to scan.
+\end{itemize}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=9cm]{../images/chap01/fig5.png}
+    \end{center}
+    \caption{Infrastructure of a DMA cheat setup}
+    \label{fig:fig5}
+\end{figure}
+\footnote{\url{https://steams360.com/blogs/news/what-are-dma-cheats-and-how-does-it-work}}
+
+% SECTION 2 --------------------------------------------------------------
+\section{Anti-Cheat Mechanisms}
+\label{sec:one:two}
+
+\subsection{Client-Side Anti-Cheats}
+\label{sec:one:two:one}
+
+\begin{itemize}
+\item Code injection detection
+\item Memory scanning
+\end{itemize}
+
+\subsection{Kernel-Level Anti-Cheats}
+\label{sec:one:two:two}
+
+\begin{itemize}
+\item Privileged monitoring
+\item Detection of low-level cheats
+\end{itemize}
+
+\subsection{Data-Driven Detection Methods}
+\label{sec:one:two:three}
+
+\subsubsection{Shifting the trust anchor to the server}
+\label{sec:one:two:three:one}
+
+\begin{itemize}
+\item Reduced dependence on the client
+\item Global view of game statistics
+\end{itemize}
+
+\subsubsection{Player behavior modeling}
+\label{sec:one:two:three:two}
+
+\begin{itemize}
+\item Performance patterns
+\item Cross-match consistency
+\item Statistical anomalies
+\end{itemize}
+
+\subsubsection{Conceptual limitations}
+\label{sec:one:two:three:three}
+
+\begin{itemize}
+\item False positives
+\item Skilled player vs cheater bias
+\item Exotic but legitimate behaviors
+\end{itemize}
