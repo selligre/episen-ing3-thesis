@@ -6,7 +6,7 @@
 \addcontentsline{toc}{chapter}{Introduction}  
 \fancyhead[LE,RO]{Introduction}
 
-
+\section{Context}
 Online competitive video games, particularly first-person shooters (FPS), now occupy a central place in both the video game industry and the esports ecosystem. Their model relies on technical fairness between players: each participant must be subject to the same rules, mechanical constraints, and informational limitations. However, cheating represents a growing threat to this balance. The emergence of automated tools such as aimbots and wallhacks alters match integrity, undermines competitive credibility, and directly affects player trust as well as the economic viability of affected titles.
 
 
@@ -15,7 +15,7 @@ To address this issue, many publishers have progressively adopted kernel-level a
 
 Beyond pure cybersecurity vulnerabilities, kernel-level solutions introduce profound privacy and regulatory dilemmas. Operating at the highest privilege layer (Ring 0) theoretically grants these software components unhindered visibility over the user's entire system, including personal files, background applications, and non-game-related data. This continuous monitoring mechanism challenges traditional notions of informed user consent and clashes directly with modern data protection frameworks, such as the GDPR, which mandate strict principles of data minimization and proportionality. Consequently, this technological choice has sparked a sharp divide within the gaming community: while competitive players often tolerate intrusive measures in the name of competitive integrity, casual users increasingly reject what they perceive as a form of digital surveillance, ultimately threatening game adoption and brand reputation.
 
-
+\section{Problematic}
 In this context, the following question arises: can cheating be effectively detected without compromising system security through kernel-level access? This thesis explores an alternative approach primarily based on server-side behavioral analysis and machine learning techniques. Instead of directly inspecting the player’s machine, the idea is to leverage gameplay data itself—match statistics, action sequences, and temporal and mechanical consistency—to identify anomalies characteristic of assisted behavior.
 
 
@@ -23,3 +23,9 @@ Recent research suggests that analyzing replays and gameplay data in games such 
 
 
 Finally, the thesis will propose an architectural positioning of these approaches within a multi-layer anti-cheat system, combining server-side detection, lightweight client mechanisms, and human validation, with the aim of reconciling effectiveness, security, and player acceptability.
+
+\section{Outline}
+In the first chapter, we will present the state of the art in anti-cheat technologies, with a particular focus on kernel-level solutions and their implications. We will analyze their technical functioning, their effectiveness against various types of cheating, and the associated cybersecurity and privacy risks.
+In the second chapter, we will explore alternative approaches based on server-side behavioral analysis. We will review existing research on machine learning techniques applied to gameplay data and discuss their potential and limitations in the context of competitive FPS games.
+In the third chapter, we will present the design and implementation of a proof of concept for a behavioral detection system. We will describe the data collection process, the features extracted from gameplay metrics, and the machine learning models used to generate suspicion scores. We will also evaluate the system's performance and discuss the challenges of false positives and adaptive cheating.
+Finally, in the conclusion, we will synthesize our findings, discuss the implications for the future of anti-cheat technologies, and propose a multi-layered approach that combines server-side detection, lightweight client mechanisms, and human validation to effectively combat cheating while preserving system security and player trust.

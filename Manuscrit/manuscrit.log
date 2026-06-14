@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  10 JUN 2026 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  10 JUN 2026 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2049,13 +2049,13 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../images/logos/en-tete_EPISEN-SI.png, id=202, 565.51276pt x 139.11975pt>
+<../images/logos/en-tete_EPISEN-SI.png, id=214, 565.51276pt x 139.11975pt>
 File: ../images/logos/en-tete_EPISEN-SI.png Graphic file (type png)
 <use ../images/logos/en-tete_EPISEN-SI.png>
 Package pdftex.def Info: ../images/logos/en-tete_EPISEN-SI.png  used on input l
 ine 24.
 (pdftex.def)             Requested size: 256.0748pt x 62.99602pt.
-<../images/logos/Saint-Gobain-Logo.png, id=204, 501.875pt x 282.05376pt>
+<../images/logos/Saint-Gobain-Logo.png, id=216, 501.875pt x 282.05376pt>
 File: ../images/logos/Saint-Gobain-Logo.png Graphic file (type png)
 <use ../images/logos/Saint-Gobain-Logo.png>
 Package pdftex.def Info: ../images/logos/Saint-Gobain-Logo.png  used on input l
@@ -2091,7 +2091,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 74.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 74.
-<../images/gaben.png, id=216, 539.76656pt x 359.84438pt>
+<../images/gaben.png, id=228, 539.76656pt x 359.84438pt>
 File: ../images/gaben.png Graphic file (type png)
 <use ../images/gaben.png>
 Package pdftex.def Info: ../images/gaben.png  used on input line 80.
@@ -2117,18 +2117,15 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 2.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 6.
+(Font)              scaled to size 10.95pt on input line 5.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 7.
-
-Underfull \vbox (badness 2293) has occurred while \output is active []
-
+(Font)              scaled to size 10.0pt on input line 10.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...e and Core Concepts}{13}{subsection.3.1.2}
+l.32 ...e and Core Concepts}{13}{subsection.3.1.2}
                                                   % [1
 
 
@@ -2171,24 +2168,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 4.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 4.
-LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 10.
 
-(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxliber
-tinet-tlf.fd
-File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
-LinuxLibertineT-TLF.
-)
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 10.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 10.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1
 
 
 {C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7g
-rukw.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertin
-e/lbtn_naooyc.enc}]) (Chapters/chapter01.tex [2]
+rukw.enc}]) (Chapters/chapter01.tex [2]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 20.74pt on input line 3.
@@ -2208,13 +2195,23 @@ Package mdframed Info: mdframed detected package amsthm
 (manuscrit.ptc)
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 10.
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
+ on input line 31.
+
+(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxliber
+tinet-tlf.fd
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
+LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 31.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3
 
 ]
-<../images/chap01/fig1.png, id=400, 1151.80313pt x 719.68875pt>
+<../images/chap01/fig1.png, id=417, 1151.80313pt x 719.68875pt>
 File: ../images/chap01/fig1.png Graphic file (type png)
 <use ../images/chap01/fig1.png>
 Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 37.
@@ -2228,13 +2225,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 42.
 
-[4 <../images/chap01/fig1.png>]
-<../images/chap01/fig2.png, id=410, 1601.985pt x 900.36375pt>
+[4{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_
+naooyc.enc} <../images/chap01/fig1.png>]
+<../images/chap01/fig2.png, id=428, 1601.985pt x 900.36375pt>
 File: ../images/chap01/fig2.png Graphic file (type png)
 <use ../images/chap01/fig2.png>
 Package pdftex.def Info: ../images/chap01/fig2.png  used on input line 59.
 (pdftex.def)             Requested size: 455.61714pt x 256.0748pt.
-<../images/chap01/fig3.png, id=411, 1601.2322pt x 900.36375pt>
+<../images/chap01/fig3.png, id=429, 1601.2322pt x 900.36375pt>
 File: ../images/chap01/fig3.png Graphic file (type png)
 <use ../images/chap01/fig3.png>
 Package pdftex.def Info: ../images/chap01/fig3.png  used on input line 67.
@@ -2243,13 +2241,13 @@ Package pdftex.def Info: ../images/chap01/fig3.png  used on input line 67.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5 <../images/chap01/fig2.png>] [6 <../images/chap01/fig3.png>]
-<../images/chap01/fig4.png, id=427, 738.50906pt x 470.50781pt>
+<../images/chap01/fig4.png, id=445, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
 Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 86.
 (pdftex.def)             Requested size: 401.93294pt x 256.0748pt.
  [7 <../images/chap01/fig4.png>]
-<../images/chap01/fig5.png, id=438, 947.03813pt x 472.01344pt>
+<../images/chap01/fig5.png, id=456, 947.03813pt x 472.01344pt>
 File: ../images/chap01/fig5.png Graphic file (type png)
 <use ../images/chap01/fig5.png>
 Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 105.
@@ -2319,7 +2317,10 @@ es (ex-otic but le-git-i-mate be-hav-iors) from software-assisted|
 
 [14]) (Chapters/conclu.tex [15]) [16
 
-] (manuscrit.gls [17
+]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 89.
+ (manuscrit.gls [17
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
@@ -2347,7 +2348,7 @@ Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
 [22
 
 ]
-<../images/annex01/fig6.png, id=651, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=669, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
@@ -2357,7 +2358,7 @@ Underfull \vbox (badness 1975) has occurred while \output is active []
 
  [23 <../images/annex01/fig6.png>]) (Annexes/annex02.tex [24]
 Appendix B.
-<../images/annex02/cheaters.png, id=663, 533.74406pt x 797.22844pt>
+<../images/annex02/cheaters.png, id=681, 533.74406pt x 797.22844pt>
 File: ../images/annex02/cheaters.png Graphic file (type png)
 <use ../images/annex02/cheaters.png>
 Package pdftex.def Info: ../images/annex02/cheaters.png  used on input line 10.
@@ -2369,7 +2370,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [25
 
 ]
-<../images/annex02/csst.png, id=671, 866.48718pt x 639.13782pt>
+<../images/annex02/csst.png, id=689, 866.48718pt x 639.13782pt>
 File: ../images/annex02/csst.png Graphic file (type png)
 <use ../images/annex02/csst.png>
 Package pdftex.def Info: ../images/annex02/csst.png  used on input line 21.
@@ -2388,16 +2389,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `manuscrit.out' has not changed.
-(rerunfilecheck)             Checksum: FDF0B37011F735DE1D2372C62DFF6D88;10429.
+(rerunfilecheck)             Checksum: 9F5DA479B94675B6DBA62959182FDBD3;10722.
 Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 \openout1 = `manuscrit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62107 strings out of 467866
- 1385356 string characters out of 5418326
+ 62113 strings out of 467866
+ 1385428 string characters out of 5418326
  2511310 words of memory out of 5000000
- 89817 multiletter control sequences out of 15000+600000
+ 89820 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,120p,2548b,2611s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2410,9 +2411,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb>
-Output written on manuscrit.pdf (34 pages, 11793695 bytes).
+Output written on manuscrit.pdf (34 pages, 11795563 bytes).
 PDF statistics:
- 807 PDF objects out of 1000 (max. 8388607)
- 146 named destinations out of 1000 (max. 500000)
- 460 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 825 PDF objects out of 1000 (max. 8388607)
+ 149 named destinations out of 1000 (max. 500000)
+ 484 words of extra memory for PDF output out of 10000 (max. 10000000)
 
