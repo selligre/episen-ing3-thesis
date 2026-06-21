@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  21 JUN 2026 23:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  21 JUN 2026 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./manuscrit.tex
-(manuscrit.tex
+**./manuscritfull.tex
+(manuscritfull.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -1839,21 +1839,25 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
  (glossaire.tex
 
 Package glossaries Warning: Ignoring attempt to run command `makeindex -s manus
-crit.ist -t manuscrit.glg -o manuscrit.gls manuscrit.glo' on input line 2.
+critfull.ist -t manuscritfull.glg -o manuscritfull.gls manuscritfull.glo' on in
+put line 2.
 
 
 Package glossaries Warning: Ignoring attempt to run command `makeindex -s manus
-crit.ist -t manuscrit.alg -o manuscrit.acr manuscrit.acn' on input line 2.
+critfull.ist -t manuscritfull.alg -o manuscritfull.acr manuscritfull.acn' on in
+put line 2.
 
 \glswrite=\write5
 \glo@main@file=\write6
-\openout6 = `manuscrit.glo'.
+\openout6 = `manuscritfull.glo'.
 
-Package glossaries Info: Writing glossary file manuscrit.glo on input line 2.
+Package glossaries Info: Writing glossary file manuscritfull.glo on input line 
+2.
 \glo@acronym@file=\write7
-\openout7 = `manuscrit.acn'.
+\openout7 = `manuscritfull.acn'.
 
-Package glossaries Info: Writing glossary file manuscrit.acn on input line 2.
+Package glossaries Info: Writing glossary file manuscritfull.acn on input line 
+2.
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1869,8 +1873,8 @@ nuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 15.
- (manuscrit.aux)
-\openout1 = `manuscrit.aux'.
+ (manuscritfull.aux)
+\openout1 = `manuscritfull.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -1900,14 +1904,14 @@ File: english.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `manuscrit.bcf'.
+\openout3 = `manuscritfull.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'manuscrit.bbl' found.
- (manuscrit.bbl)
+Package biblatex Info: ... file 'manuscritfull.bbl' not found.
+
+No file manuscritfull.bbl.
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1987,9 +1991,9 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.9).
 
 Package hyperref Info: Link coloring ON on input line 15.
-(manuscrit.out) (manuscrit.out)
+(manuscritfull.out) (manuscritfull.out)
 \@outlinefile=\write8
-\openout8 = `manuscrit.out'.
+\openout8 = `manuscritfull.out'.
 
 
 
@@ -2049,13 +2053,13 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../images/logos/en-tete_EPISEN-SI.png, id=262, 565.51276pt x 139.11975pt>
+<../images/logos/en-tete_EPISEN-SI.png, id=201, 565.51276pt x 139.11975pt>
 File: ../images/logos/en-tete_EPISEN-SI.png Graphic file (type png)
 <use ../images/logos/en-tete_EPISEN-SI.png>
 Package pdftex.def Info: ../images/logos/en-tete_EPISEN-SI.png  used on input l
 ine 24.
 (pdftex.def)             Requested size: 256.0748pt x 62.99602pt.
-<../images/logos/Saint-Gobain-Logo.png, id=264, 501.875pt x 282.05376pt>
+<../images/logos/Saint-Gobain-Logo.png, id=203, 501.875pt x 282.05376pt>
 File: ../images/logos/Saint-Gobain-Logo.png Graphic file (type png)
 <use ../images/logos/Saint-Gobain-Logo.png>
 Package pdftex.def Info: ../images/logos/Saint-Gobain-Logo.png  used on input l
@@ -2078,7 +2082,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
 [1
 
-\openout5 = `manuscrit.ist'.
+\openout5 = `manuscritfull.ist'.
 
 
 {C:/Users/selli/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/sell
@@ -2096,7 +2100,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 24.88pt on input line 33.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 24.88pt on input line 33.
- (manuscrit.toc
+ (manuscritfull.toc
 LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF o
 n input line 2.
 
@@ -2126,32 +2130,32 @@ l.32 ...e and Core Concepts}{14}{subsection.3.1.2}
 
 
 {C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25
-tcsq.enc}]
+tcsq.enc}])
+\tf@toc=\write9
+\openout9 = `manuscritfull.toc'.
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.59 ...nk to Information Cheats}{29}{section.C.2}
-                                                  % [2])
-\tf@toc=\write9
-\openout9 = `manuscrit.toc'.
-
- [3] (manuscrit.lof)
+l.38 \clearpage
+                [2] (manuscritfull.lof)
 \tf@lof=\write10
-\openout10 = `manuscrit.lof'.
+\openout10 = `manuscritfull.lof'.
+
+ [3
 
 
-[4
-
-
-] (manuscrit.lot)
+] (manuscritfull.lot)
 \tf@lot=\write11
-\openout11 = `manuscrit.lot'.
+\openout11 = `manuscritfull.lot'.
 
- [5
+ [4
 
 
-] (Chapters/intro.tex
+]
+(Chapters/intro.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 4.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
@@ -2171,32 +2175,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 {C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_7g
-rukw.enc}]
+rukw.enc}])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2])
+ [2]
 (Chapters/chapter01.tex [3]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 1.
+(Font)              scaled to size 20.74pt on input line 3.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 20.74pt on input line 1.
+(Font)              scaled to size 20.74pt on input line 3.
 
-Overfull \hbox (14.83609pt too wide) in paragraph at lines 1--1
+Overfull \hbox (14.83609pt too wide) in paragraph at lines 3--3
 |\T1/LinuxLibertineT-TLF/m/sc/24.88 State of the Art - Cheats and Anti-Cheats| 
 |
  []
 
 \c@ttl@toc@chapters=\count578
-Package mdframed Info: mdframed works in twoside mode on input line 9.
+Package mdframed Info: mdframed works in twoside mode on input line 10.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 9.
-(manuscrit.ptc)
+(mdframed)              on input line 10.
+(manuscritfull.ptc)
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 9.
+ mdframed uses option nobreak mdframed on input line 10.
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 25.
+ on input line 31.
 
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxliber
 tinet-tlf.fd
@@ -2204,56 +2208,56 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 31.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4
 
 ]
-<../images/chap01/fig1.png, id=494, 1151.80313pt x 719.68875pt>
+<../images/chap01/fig1.png, id=392, 1151.80313pt x 719.68875pt>
 File: ../images/chap01/fig1.png Graphic file (type png)
 <use ../images/chap01/fig1.png>
-Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 31.
+Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 37.
 (pdftex.def)             Requested size: 409.83324pt x 256.0748pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 36.
+(Font)              scaled to size 8.0pt on input line 42.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 36.
+(Font)              scaled to size 9.0pt on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 36.
+(Font)              <9> on input line 42.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 36.
+(Font)              scaled to size 6.0pt on input line 42.
 
 [5{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_
 naooyc.enc} <../images/chap01/fig1.png>]
-<../images/chap01/fig2.png, id=505, 1601.985pt x 900.36375pt>
+<../images/chap01/fig2.png, id=403, 1601.985pt x 900.36375pt>
 File: ../images/chap01/fig2.png Graphic file (type png)
 <use ../images/chap01/fig2.png>
-Package pdftex.def Info: ../images/chap01/fig2.png  used on input line 53.
+Package pdftex.def Info: ../images/chap01/fig2.png  used on input line 59.
 (pdftex.def)             Requested size: 455.61714pt x 256.0748pt.
-<../images/chap01/fig3.png, id=506, 1601.2322pt x 900.36375pt>
+<../images/chap01/fig3.png, id=404, 1601.2322pt x 900.36375pt>
 File: ../images/chap01/fig3.png Graphic file (type png)
 <use ../images/chap01/fig3.png>
-Package pdftex.def Info: ../images/chap01/fig3.png  used on input line 61.
+Package pdftex.def Info: ../images/chap01/fig3.png  used on input line 67.
 (pdftex.def)             Requested size: 455.40305pt x 256.0748pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <../images/chap01/fig2.png>] [7 <../images/chap01/fig3.png>]
-<../images/chap01/fig4.png, id=523, 738.50906pt x 470.50781pt>
+<../images/chap01/fig4.png, id=421, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
-Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 80.
+Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 86.
 (pdftex.def)             Requested size: 401.93294pt x 256.0748pt.
  [8 <../images/chap01/fig4.png>]
-<../images/chap01/fig5.png, id=533, 947.03813pt x 472.01344pt>
+<../images/chap01/fig5.png, id=431, 947.03813pt x 472.01344pt>
 File: ../images/chap01/fig5.png Graphic file (type png)
 <use ../images/chap01/fig5.png>
-Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 99.
+Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 105.
 (pdftex.def)             Requested size: 513.79178pt x 256.0748pt.
 
-Overfull \hbox (58.54767pt too wide) in paragraph at lines 99--100
+Overfull \hbox (58.54767pt too wide) in paragraph at lines 105--106
  [] |
  []
 
@@ -2277,7 +2281,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 12.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
-(manuscrit.ptc)
+(manuscritfull.ptc)
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 12.
 
@@ -2292,7 +2296,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 12.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
-(manuscrit.ptc)
+(manuscritfull.ptc)
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 12.
 
@@ -2307,27 +2311,49 @@ Overfull \hbox (10.9545pt too wide) in paragraph at lines 109--110
 es (ex-otic but le-git-i-mate be-hav-iors) from software-assisted|
  []
 
-[15]) (Chapters/conclu.tex [16]) [17
+[15]) (Chapters/conclu.tex [16])
+
+LaTeX Warning: Empty bibliography on input line 87.
+
+No file manuscritfull.gls.
+
+Package glossaries-extra Warning: Glossary `main' is missing on input line 99.
+
+[17
 
 ]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 89.
- (manuscrit.gls [18
+LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-
+TLF on input line 99.
 
-]
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 24.88pt on input line 3.
- [19
+(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibert
+inemonot-tlf.fd
+File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
+1/LinuxLibertineMonoT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <10.95>
+ not available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
+tead on input line 99.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 99.
 
-
-]
-Overfull \hbox (1.54904pt too wide) in paragraph at lines 29--30
-[]\T1/LinuxLibertineT-TLF/m/n/10.95 Leetify.gg, an ex-ter-nal third-party data 
-an-a-lyt-ics plat-form that parses match-demo data streams|
+Overfull \hbox (86.70744pt too wide) in paragraph at lines 99--99
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 If you don't want this glos-sary, add \T1/L
+inuxLibertineMonoT-TLF/regular/n/10.95 nomain \T1/LinuxLibertineT-TLF/m/n/10.95
+ to your pack-age op-tion list when you load \T1/LinuxLibertineMonoT-TLF/regula
+r/n/10.95 glossaries-extra.sty\T1/LinuxLibertineT-TLF/m/n/10.95 .|
  []
 
-[20{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.e
-nc}]) (manuscrit.acr [21]) (Annexes/annex01.tex [22
+No file manuscritfull.acr.
+
+Package glossaries-extra Warning: Glossary `acronym' is missing on input line 1
+01.
+
+[18
+
+
+{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_dh
+i6qf.enc}] (Annexes/annex01.tex [19
 
 
 ]
@@ -2337,10 +2363,10 @@ Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
 \T1/LinuxLibertineT-TLF/m/sc/24.88 nam-ics of Kernel-Level Anti-Cheat Im-ple-|
  []
 
-[23
+[20
 
 ]
-<../images/annex01/fig6.png, id=747, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=547, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
@@ -2348,31 +2374,26 @@ Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
 
 Underfull \vbox (badness 1975) has occurred while \output is active []
 
- [24 <../images/annex01/fig6.png>]) (Annexes/annex02.tex [25]
+ [21 <../images/annex01/fig6.png>]) (Annexes/annex02.tex [22]
 Appendix B.
-[26
+[23
 
-]) (Annexes/annex03.tex [27]
+]) (Annexes/annex03.tex [24]
 Appendix C.
-[28
-
-]) (Annexes/annex04.tex [29]
-Appendix D.
-
-Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
-|\T1/LinuxLibertineT-TLF/m/sc/24.88 Client/Server Ar-chi-tec-ture and Net-work|
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30
+[25
 
 ])
-(Annexes/annex05.tex [31]
-Appendix E.
-<../images/annex05/cheaters.png, id=796, 533.74406pt x 797.22844pt>
+
+! LaTeX Error: File `Annexes/annex04.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/tools\.tex
+File ignored) (Annexes/annex05.tex [26]
+Appendix D.
+<../images/annex05/cheaters.png, id=593, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
 <use ../images/annex05/cheaters.png>
 Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 10.
@@ -2381,10 +2402,10 @@ Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 10.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32
+ [27
 
 ]
-<../images/annex05/csst.png, id=803, 866.48718pt x 639.13782pt>
+<../images/annex05/csst.png, id=601, 866.48718pt x 639.13782pt>
 File: ../images/annex05/csst.png Graphic file (type png)
 <use ../images/annex05/csst.png>
 Package pdftex.def Info: ../images/annex05/csst.png  used on input line 21.
@@ -2392,42 +2413,233 @@ Package pdftex.def Info: ../images/annex05/csst.png  used on input line 21.
 
 Underfull \vbox (badness 4217) has occurred while \output is active []
 
- [33 <../images/annex05/cheaters.png>]) (quatriemeDeCouverture.tex [34 <../imag
-es/annex05/csst.png>])
-\tf@ptc=\write12
-\openout12 = `manuscrit.ptc'.
+ [28 <../images/annex05/cheaters.png>]) (quatriemeDeCouverture.tex [29 <../imag
+es/annex05/csst.png>]
 
- [35] (manuscrit.aux)
+LaTeX Warning: Citation 'Dorner2024-jm' on page 30 undefined on input line 22.
+
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 22.
+
+LaTeX Warning: Citation 'Loo2025-fo' on page 30 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'Collins2024-kb' on page 30 undefined on input line 22.
+
+
+
+LaTeX Warning: Citation 'Michal2025-xt' on page 30 undefined on input line 22.
+
+
+LaTeX Warning: Citation 'Kuzhii2024-lq' on page 30 undefined on input line 22.
+
+
+Overfull \hbox (17.61348pt too wide) in paragraph at lines 21--59
+[] [][]\T1/LinuxLibertineT-TLF/b/n/10.95 Ab-stract:[][] \T1/LinuxLibertineT-TLF
+/m/n/10 Awe-some ab-stract. [[], [], [], [], []]|
+ []
+
+)
+\tf@ptc=\write12
+\openout12 = `manuscritfull.ptc'.
+
+ [30] (manuscritfull.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `manuscrit.out' has not changed.
-(rerunfilecheck)             Checksum: 2287107EB0757C67C455E5D00DA95079;13325.
-Package logreq Info: Writing requests to 'manuscrit.run.xml'.
-\openout1 = `manuscrit.run.xml'.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `manuscritfull.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `manuscritfull.out':
+(rerunfilecheck)             Before: 80030583404CDA5C99E8B183460E90E5;10242
+(rerunfilecheck)             After:  CB2096C60EA3630753F69E538B70F2DA;12062.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                manuscritfull
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'manuscritfull.run.xml'.
+\openout1 = `manuscritfull.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62171 strings out of 467866
- 1386412 string characters out of 5418326
- 2513438 words of memory out of 5000000
- 89845 multiletter control sequences out of 15000+600000
- 787986 words of font info for 141 fonts, out of 8000000 for 9000
+ 62063 strings out of 467866
+ 1384583 string characters out of 5418326
+ 2508411 words of memory out of 5000000
+ 89760 multiletter control sequences out of 15000+600000
+ 782775 words of font info for 140 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,15n,120p,2548b,2611s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/Li
-nBiolinumT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/libertine/LinBiolinumTB.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/font
-s/type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
-ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
-ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb>
-Output written on manuscrit.pdf (42 pages, 11002117 bytes).
+ 89i,15n,120p,2552b,2611s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:he} has been referenced but does not exist, rep
+laced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ttd} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:lstm} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:cpu} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ram} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:pcie} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:dkom} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:byovd} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:esp} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:api} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:grpd} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:dma} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:os} has been referenced but does not exist, rep
+laced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:csgo} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:cs2} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:cs} has been referenced but does not exist, rep
+laced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:leetify} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:tick} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:overwatch} has been referenced but does not exi
+st, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:driver} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:microsoft} has been referenced but does not exi
+st, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:rings} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:cybersecurity} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:esport} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:counter-strike} has been referenced but does no
+t exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:fps} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:script} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:triggerbot} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:aimbot} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:radarhack} has been referenced but does not exi
+st, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:wallhack} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:valve} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:kernel} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:server} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:client} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:cheat} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{paragraph*.20} has been referenced but does not exi
+st, replaced by a fixed one
+
+<C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinB
+iolinumT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+ibertine/LinBiolinumTB.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/libertine/LinLibertineMT.pfb><C:/Users/selli/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/User
+s/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertine
+TI.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/symbols/msam10.pfb>
+Output written on manuscritfull.pdf (36 pages, 10969728 bytes).
 PDF statistics:
- 945 PDF objects out of 1000 (max. 8388607)
- 173 named destinations out of 1000 (max. 500000)
- 575 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 776 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 455 words of extra memory for PDF output out of 10000 (max. 10000000)
 
