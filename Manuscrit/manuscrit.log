@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  21 JUN 2026 23:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  22 JUN 2026 19:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2196,7 +2196,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 9.
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 25.
+ on input line 24.
 
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxliber
 tinet-tlf.fd
@@ -2204,7 +2204,7 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 24.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2214,28 +2214,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../images/chap01/fig1.png, id=494, 1151.80313pt x 719.68875pt>
 File: ../images/chap01/fig1.png Graphic file (type png)
 <use ../images/chap01/fig1.png>
-Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 31.
+Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 30.
 (pdftex.def)             Requested size: 409.83324pt x 256.0748pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 36.
+(Font)              scaled to size 8.0pt on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 36.
+(Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 36.
+(Font)              <9> on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 36.
+(Font)              scaled to size 6.0pt on input line 35.
 
 [5{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_
 naooyc.enc} <../images/chap01/fig1.png>]
 <../images/chap01/fig2.png, id=505, 1601.985pt x 900.36375pt>
 File: ../images/chap01/fig2.png Graphic file (type png)
 <use ../images/chap01/fig2.png>
-Package pdftex.def Info: ../images/chap01/fig2.png  used on input line 53.
+Package pdftex.def Info: ../images/chap01/fig2.png  used on input line 51.
 (pdftex.def)             Requested size: 455.61714pt x 256.0748pt.
 <../images/chap01/fig3.png, id=506, 1601.2322pt x 900.36375pt>
 File: ../images/chap01/fig3.png Graphic file (type png)
 <use ../images/chap01/fig3.png>
-Package pdftex.def Info: ../images/chap01/fig3.png  used on input line 61.
+Package pdftex.def Info: ../images/chap01/fig3.png  used on input line 59.
 (pdftex.def)             Requested size: 455.40305pt x 256.0748pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2244,16 +2244,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <../images/chap01/fig4.png, id=523, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
-Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 80.
+Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 79.
 (pdftex.def)             Requested size: 401.93294pt x 256.0748pt.
  [8 <../images/chap01/fig4.png>]
 <../images/chap01/fig5.png, id=533, 947.03813pt x 472.01344pt>
 File: ../images/chap01/fig5.png Graphic file (type png)
 <use ../images/chap01/fig5.png>
-Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 99.
+Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 98.
 (pdftex.def)             Requested size: 513.79178pt x 256.0748pt.
 
-Overfull \hbox (58.54767pt too wide) in paragraph at lines 99--100
+Overfull \hbox (58.54767pt too wide) in paragraph at lines 98--99
  [] |
  []
 
