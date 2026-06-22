@@ -1,0 +1,34 @@
+\chapter{Why Cheating Breaks Game Balance: The Bullet Penetration Case}
+\label{annexe:three}
+
+\fancyhead[LE]{\textsc{\chaptername~\thechapter}}
+
+\section{The Penetration Power Mechanic}
+
+In CS2, every weapon has a statistic generally referred to as "Penetration Power" (sometimes informally called "obstacle penetration"), which is distinct from "Armor Penetration" (the percentage of damage retained against a Kevlar vest, discussed separately in commercial weapon guides). Penetration Power governs how much damage a bullet retains after passing through an environmental surface — a wall, door, crate, or similar obstacle.
+
+Crucially, this statistic is not expressed as a simple percentage and is not uniform across weapon categories. As a general rule:
+
+\begin{itemize}
+    \item Pistols and submachine guns have the lowest penetration values and lose most of their damage when fired through cover, often dealing negligible or zero damage to a target behind a moderately thick wall.
+    \item Assault rifles (AK-47, M4A4/M4A1-S, etc.) have a markedly higher penetration value, allowing them to retain a meaningful fraction of their damage through thin-to-medium obstacles such as wood, drywall, or thin metal.
+    \item Sniper rifles (AWP, SSG 08, SCAR-20, G3SG1) have the highest penetration values in the game, making them the most effective weapons for shooting through cover.
+\end{itemize}
+
+
+The actual damage delivered after penetration depends on three combined factors: the weapon's Penetration Power, the material and thickness of the obstacle (thin drywall absorbs little damage; concrete or steel absorbs much more or blocks the shot entirely with the total number of surfaces a single bullet can penetrate capped at four), and the distance the bullet has already travelled before and after penetration with thin metal and drywall retaining 40–70\% of damage while concrete or multi-layered walls can reduce damage by 70–90\%, often rendering low-penetration weapons such as SMGs or pistols nearly useless.
+
+\footnote{\url{https://counterstrike.fandom.com/wiki/Bullet_Penetration}}
+\footnote{\url{https://cs2pulse.com/wallbangs/}}
+
+\section{Link to Information Cheats}
+
+This mechanic is the missing piece that explains why wallhacks (Section 1.1.2) represent such a disproportionate advantage, beyond simply "seeing through walls":
+
+\begin{enumerate}
+    \item Legitimate uncertainty: an honest player knows, in principle, that bullets can pass through certain surfaces, and experienced players memorize a limited number of well-known "wallbang" spots on each map. However, they cannot know, in real time, the exact position of an unseen enemy behind that surface, nor precisely how much damage their shot will deal once combined factors (material, thickness, distance, weapon) are taken into account. Firing through a wall "blind" is therefore a probabilistic, high-risk action — a guess informed by sound cues, game sense, and map knowledge, not a guaranteed kill.
+\item What a wallhack removes: a wallhack (Figure 3) eliminates this uncertainty entirely. The cheater sees the enemy's exact silhouette, position, and hit zone (head, chest, etc.) through the wall in real time. Combined with the penetration mechanic above, this transforms a probabilistic "blind" shot into a deterministic one: the cheater can wait until the visible target's head is aligned with a high-penetration weapon (e.g. an AWP or rifle) and a sufficiently thin surface, then fire with full confidence of landing a lethal headshot — something a legitimate player could never reliably replicate without the visual information.
+\item Compounding effect with aim assistance: when combined with an aimbot, the penetration mechanic becomes almost irrelevant as a defensive layer for legitimate players, since the cheat can both locate the target through any surface and snap the crosshair to the highest-damage hit zone the instant a penetrable line of sight exists.
+\end{enumerate}
+
+This illustrates concretely why the "fog of war" described in Section 1.1.2 is not a cosmetic feature but a core balancing mechanism: the penetration system was designed by Valve under the assumption that players cannot see what they are shooting at, and that the resulting uncertainty offsets the raw power of high-penetration weapons. Information cheats break this assumption without requiring any change to the weapon's underlying damage values, which is also why such cheats are extremely difficult to detect from server-side damage logs alone — the shot itself is mechanically "legal."

@@ -1,0 +1,26 @@
+\chapter{Client/Server Architecture and Network Communication}
+\label{annexe:four}
+
+\fancyhead[LE]{\textsc{\chaptername~\thechapter}}
+
+\section{The Authoritative Server Model}
+
+CS2 follows a client-server architecture in which the server is authoritative over the game state. At a fixed frequency (the "tick rate"), the server receives input commands from each connected client (movement, view angles, button presses), simulates the resulting game state (player positions, weapon fire, damage, bomb state, etc.), and serializes a snapshot of the world state back to each client.
+
+\section{Snapshot Scope and Client Memory}
+
+Each client receives a snapshot covering all entities in the game world — including the positions, health values, and state of every player, regardless of their visibility to the receiving client. The client-side engine is responsible for rendering only what the local player should legitimately see; the underlying data for all entities is present in the client process's memory regardless.
+
+After reception, the snapshot is decrypted and parsed into the Entity List — a data structure held in RAM containing plaintext 3D coordinates, health values, velocity vectors, and other attributes for every entity in the game. This in-memory representation is what the local engine uses to run prediction and rendering logic.
+
+\section{Network Channel Encryption}
+
+CS2 traffic is relayed through Valve's Steam Datagram Relay (SDR) infrastructure. The underlying networking library performs a Diffie-Hellman key exchange to establish an encrypted channel between client and server. Traffic is additionally relayed so that neither players' nor servers' IP addresses are exposed to each other. As a result, the snapshot payload is encrypted end-to-end at the transport layer.
+
+\section{Memory-Based Exploit Surface}
+
+Because the full world state is present in plaintext in the client process's RAM after decryption, it can be read by any component with access to that memory space. Radarhacks and wallhacks operate on this basis: a separate process reads the Entity List and uses the extracted coordinates to render enemy positions on a minimap or through geometry — data the client holds locally but would not normally display.
+
+\section{DMA Cheats}
+
+Direct Memory Access (DMA) cheats exploit the same condition via a hardware peripheral, typically connected via PCIe, that reads host memory from outside the operating system's process model. Because the access occurs at the hardware level, it does not appear as a software memory operation within the OS, making it transparent to both userland and kernel-level monitoring.
