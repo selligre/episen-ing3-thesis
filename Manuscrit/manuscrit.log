@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  22 JUN 2026 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  22 JUN 2026 20:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2251,15 +2251,7 @@ Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 79.
 File: ../images/chap01/fig5.png Graphic file (type png)
 <use ../images/chap01/fig5.png>
 Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 98.
-(pdftex.def)             Requested size: 513.79178pt x 256.0748pt.
-
-Overfull \hbox (58.54767pt too wide) in paragraph at lines 98--99
- [] |
- []
-
-
-Underfull \vbox (badness 4001) has occurred while \output is active []
-
+(pdftex.def)             Requested size: 399.61743pt x 199.16928pt.
  [9 <../images/chap01/fig5.png>]) (Chapters/chapter02.tex [10]
 Chapter 2.
 
@@ -2411,7 +2403,7 @@ Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 Here is how much of TeX's memory you used:
  62171 strings out of 467866
  1386412 string characters out of 5418326
- 2513438 words of memory out of 5000000
+ 2513436 words of memory out of 5000000
  89845 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2425,7 +2417,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
 m10.pfb>
-Output written on manuscrit.pdf (42 pages, 11002117 bytes).
+Output written on manuscrit.pdf (42 pages, 11002418 bytes).
 PDF statistics:
  945 PDF objects out of 1000 (max. 8388607)
  173 named destinations out of 1000 (max. 500000)

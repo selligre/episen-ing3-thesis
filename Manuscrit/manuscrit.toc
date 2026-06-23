@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {1.1.1}Automation Cheats}{4}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Information Cheats}{6}{subsection.1.1.2}%
 \contentsline {subsection}{\numberline {1.1.3}Advanced Cheats}{7}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Anti-Cheat Mechanisms}{10}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Client-Side Anti-Cheats}{10}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.2}Anti-Cheat Mechanisms}{9}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Client-Side Anti-Cheats}{9}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Kernel-Level Anti-Cheats}{10}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Data-Driven Detection Methods}{10}{subsection.1.2.3}%
 \contentsline {subsubsection}{Shifting the trust anchor to the server}{10}{section*.10}%
