@@ -29,7 +29,7 @@ To achieve this automation, the software must interface directly with either the
     \begin{center}
         \includegraphics[height=9cm]{../images/chap01/fig1.png}
     \end{center}
-    \caption{Comparison of the recoil from the AK-47 in-game with its theoretical model}
+    \caption{Comparison of the recoil from the AK-47 in-game with its theoretical model, implying that the recoil is deterministic and can be compensated for with a script.}
     \label{fig:fig1}
 \end{figure}
 \footnote{\url{https://cs2pulse.com/spray-patterns/ak-47/}}
@@ -46,25 +46,45 @@ To achieve this asymmetric visualization, these tools typically exploit two dist
 \begin{itemize}
     \item Rendering Pipeline Exploitation: Wallhacks operate by intercepting or altering the graphics rendering pipeline responsible for drawing the game world onto the player's screen. In a legitimate game loop, the engine utilizes occlusion to ensure that player models hidden behind opaque geometry (such as walls or solid terrain) are not drawn on the screen. Wallhacks circumvent this by hooking into the graphic APIs used by the engine. By injecting code that forces the graphics card to ignore occlusion parameters when processing enemy entity models, the cheat renders these entities on top of intervening geometry. This is frequently accompanied by ESP (Extra Sensory Perception) boxes, which overlay real-time lines, health bars, and item descriptions directly onto the player's view canvas.
 
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[height=9cm]{../images/chap01/fig2.png}
-    \end{center}
-    \caption{Demonstration of wallhack using built-in command "r\_aoproxy\_show 1"}
-    \label{fig:fig2}
-\end{figure}
+    % \begin{figure}[H]
+    %     \begin{center}
+    %         \includegraphics[height=9cm]{../images/chap01/fig2.png}
+    %     \end{center}
+    %     \caption{Demonstration of wallhack using built-in command "r\_aoproxy\_show 1" in CS2, which forces the engine to render all player models regardless of occlusion}
+    %     \label{fig:fig2}
+    % \end{figure}
 
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[height=9cm]{../images/chap01/fig3.png}
-    \end{center}
-    \caption{Ad from a cheating software provider showing wallhack in action}
-    \label{fig:fig3}
-\end{figure}
-\footnote{\url{https://anyx.gg/}}
+    % \begin{figure}[H]
+    %     \begin{center}
+    %         \includegraphics[height=9cm]{../images/chap01/fig3.png}
+    %     \end{center}
+    %     \caption{Ad from a cheating software provider showing wallhack in action}
+    %     \label{fig:fig3}
+    % \end{figure}
+    % \footnote{\url{https://anyx.gg/}}
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[height=9cm]{../images/chap01/ingamewallhack.png}
+        \end{center}
+        \begin{center}
+            \includegraphics[height=9cm]{../images/chap01/paidwallhack.png}
+        \end{center}
+        \caption{Comparison of wallhack demonstration using built-in command "r\_aoproxy\_show 1" in CS2, which forces the engine to render near entity models regardless of occlusion (top) and an ad from a cheating software provider showing wallhack in action (bottom)}
+        \label{fig:comparisonwallhack}
+    \end{figure}
 
     \item Game Data Exposure: Radarhacks bypass the visual canvas entirely, targeting the underlying spatial data structures residing within the client’s volatile memory or network socket streams. Every online game client maintains a local "Entity List" containing the precise three-dimensional coordinate vectors of all active participants, transmitted by the server to ensure local interpolation and hit registration. A radarhack continuously scans the process memory space to extract these spatial vectors or sniffs incoming network packets before they are parsed by the client. This data is then projected onto a secondary web-based interface, an external execution window, or a simulated 2D mini-map overlay. Because this methodology leaves the primary visual interface completely clean and does not alter rendering hooks, it provides the cheater with absolute situational awareness while significantly minimizing visibility to automated anti-cheat screen capture mechanisms or human review systems. This type of cheating is one of the hardest to detect as, except for the direct scanning of the process memory space, the behaviour of such cheaters can often be associated with a good game-sense or instincts, hence being harder to prove as blatant cheating.
 \end{itemize}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=7cm]{../images/chap01/radarhack.png}
+    \end{center}
+    \caption{Radarhack demonstration showing the extraction of enemy positions from the game's entity list and their projection onto a secondary interface}
+    \label{fig:figradarhack}
+\end{figure}
+\footnote{\url{https://github.com/bordeanu05/cs2cheat}}
 
 \subsection{Advanced Cheats}
 \label{sec:one:one:three}
@@ -74,14 +94,14 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
 \begin{itemize}
     \item Kernel-Level Cheats and Kernel interaction: Kernel-level cheats operate inside the most privileged layer of the computer's processor architecture, known as Kernel Mode (Ring 0). While regular video games and applications are restricted to User Mode (Ring 3) where they have limited permissions, software running in Ring 0 has absolute control over the entire system's memory and hardware. Because modern client-side anti-cheat systems also run at this kernel level to monitor the game, cheat developers must find ways to gain equal authority to hide their presence and subvert security controls.
 
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[height=9cm]{../images/chap01/fig4.png}
-    \end{center}
-    \caption{Privilege rings in an OS' structure}
-    \label{fig:fig4}
-\end{figure}
-\footnote{\url{https://www.tutorialspoint.com/article/protection-ring}}
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[height=9cm]{../images/chap01/fig4.png}
+        \end{center}
+        \caption{Privilege rings in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3}
+        \label{fig:fig4}
+    \end{figure}
+    \footnote{\url{https://www.tutorialspoint.com/article/protection-ring}}
 
     This advanced interaction with the operating system occurs through three primary mechanisms:
 
@@ -97,7 +117,7 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
     \begin{center}
         \includegraphics[height=7cm]{../images/chap01/fig5.png}
     \end{center}
-    \caption{Infrastructure of a DMA cheat setup}
+    \caption{Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing}
     \label{fig:fig5}
 \end{figure}
 \footnote{\url{https://steams360.com/blogs/news/what-are-dma-cheats-and-how-does-it-work}}
