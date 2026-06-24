@@ -7,15 +7,12 @@ using Windows-Kernel-Explorer}
 \epigraph{\itshape The programmers of tomorrow are the wizards of the future. You're going to look like you have magic powers compared to everybody else.}{-- Gabe NEWELL}
 
 \stopcontents[chapters]
+
 \startcontents[chapters]
 
 \printMyMinitoc
 
 \fancyhead[LE]{\textsc{\chaptername~\thechapter}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \section{Structural Limitations of Kernel-Level Anti-Cheats}
 \label{sec:two:one}
@@ -23,28 +20,43 @@ using Windows-Kernel-Explorer}
 \subsection{Technological Arms Race}
 \label{sec:two:one:one}
 
-\begin{itemize}
-\item Constant adaptation of cheaters
-\item Increasing development costs
-\item Dependency on continuous updates
-\end{itemize}
+The deployment of kernel-level anti-cheat systems did not resolve the cheating problem — it escalated it. By elevating the detection layer to Ring 0, publishers effectively forced cheat developers to match that privilege level, triggering a continuous cycle of technical escalation in which each defensive advancement is systematically studied, reverse-engineered, and circumvented.
+
+This dynamic is structurally inherent to the kernel-level paradigm. When an anti-cheat driver is deployed, it establishes a set of monitored invariants: a list of known cheat signatures, a set of protected memory regions, a collection of hooked system calls, and a series of integrity checks targeting the game process. Each of these controls is static at the moment of deployment. Cheat developers, operating in a well-funded and highly motivated ecosystem, treat each new anti-cheat version as a reverse-engineering target. By analyzing the driver's behavior in controlled environments — often through the same kernel-level tooling described in Section 1.1.3 — they systematically map the detection surface and identify evasion vectors before the anti-cheat can update its signatures.
+
+The BYOVD technique described in Section 1.1.3 is a direct product of this arms race: it emerged precisely because kernel-level anti-cheats began enforcing driver signature validation as a first-line defense, which cheat developers countered by exploiting the pre-existing trust chain of legitimately signed third-party drivers. Anti-cheat vendors responded by maintaining and enforcing blocklists of known-vulnerable drivers — a measure that Microsoft has since integrated at the OS level through its Vulnerable Driver Blocklist. Cheat developers, in turn, shifted toward newer or less-documented vulnerable drivers that had not yet been catalogued. Each iteration of this cycle demands a new detection update, a new blocklist entry, and a new engineering investment from the anti-cheat team, while the cheat ecosystem distributes the cost of evasion research across a community of actors sharing tools and findings openly.
+
+This asymmetry in update cadence represents one of the core structural weaknesses of the kernel-level approach. An anti-cheat update is a significant engineering and validation effort: kernel drivers must pass rigorous stability testing before deployment, as a defective kernel component can trigger system-wide crashes (Blue Screens of Death), corrupt system state, or introduce new exploitable vulnerabilities. The cheat ecosystem operates under no such constraint. A new evasion technique can be packaged and distributed within days of an anti-cheat update, while the corresponding detection patch may take weeks or months to safely develop, test, and deploy. The defender is therefore structurally slower than the attacker, regardless of the engineering resources invested.
+
+The consequence is a perpetual dependency on continuous updates that carries compounding costs. Each new game release, operating system update, or hardware generation requires the anti-cheat driver to be adapted and re-validated. A kernel component that is not actively maintained rapidly becomes a liability rather than a protection: its signatures grow stale, its hooks are bypassed by updated cheat loaders, and its continued Ring 0 presence introduces security risk without providing a corresponding detection benefit.
 
 \subsection{Limits Against New Forms of Cheating}
 \label{sec:two:one:two}
 
-\begin{itemize}
-\item Cheat externalization outside the machine
-\item Hardware-assisted cheating
-\end{itemize}
+Beyond the arms race dynamic, kernel-level anti-cheats are architecturally incapable of addressing an entire class of modern cheating vectors: those that externalize cheat execution outside the host operating system entirely. This limitation is not a matter of implementation quality or update frequency — it is a fundamental consequence of the threat model kernel-level systems were designed to address.
+
+Kernel-level anti-cheats operate on a core assumption: that the cheat software leaves a detectable footprint within the host OS, whether in the form of unauthorized memory modifications, suspicious process activity, unsigned driver loading, or anomalous system call patterns. This assumption held when the dominant cheat paradigm consisted of injected DLLs and user-mode memory scanners. It breaks down entirely against hardware-assisted cheating and, specifically, against Direct Memory Access (DMA) cheats as described in Section 1.1.3. and in Figure 5.
+
+Recall that a DMA cheat operates by connecting a specialized PCIe card directly to the host machine's memory bus. This card reads the game's process memory — including the decrypted Entity List containing all player positions — at the hardware level, bypassing the CPU and the operating system's process model entirely. The extracted game state is transmitted to a physically separate machine, which handles overlay rendering and aim vector computation, and synthetic inputs are fed back to the host via hardware input spoofers. Because no cheat software executes on the host OS, no unsigned driver is loaded, no process is injected, and no memory region on the primary machine is modified by the cheat, the kernel-level anti-cheat has no local artifact to detect. Its monitoring perimeter — however deep into Ring 0 it extends — simply does not reach the hardware interface through which the DMA card operates.
+
+This represents a categorical defeat for the kernel-level paradigm against a class of cheats that is both commercially available and increasingly prevalent in high-stakes matchmaking environments. The hardware required for a functional DMA setup — a PCIe card, a secondary machine, and a compatible input spoofer — is available for purchase at a few hundred dollars, a price point well within reach of motivated cheaters in games where ranked progression carries economic or reputational value.
+
+Efforts to detect DMA cheats at the software level have explored indirect approaches: monitoring PCIe device enumeration for unexpected hardware, measuring anomalous memory access latency patterns, or detecting the firmware signatures of known DMA cards. Each of these mitigations, however, suffers from the same fundamental constraint as the broader arms race: they are signature-based, enumerable, and bypassable. DMA card firmware can be reprogrammed to spoof legitimate device identifiers. Latency patterns can be masked. The attacker controls the hardware and can modify it to defeat any software-level heuristic the anti-cheat deploys.
+
+The architectural conclusion is significant: the kernel-level approach, by design, can only monitor what occurs within the software stack of the host OS. Any cheat vector that operates below that boundary — whether through hardware memory access, external machine processing, or firmware-level input injection — falls entirely outside the detection perimeter of even the most privileged kernel driver.
 
 \subsection{Economic and Operational Costs}
 \label{sec:two:one:three}
 
-\begin{itemize}
-\item Driver maintenance and technical support
-\item Security incident management
-\item Reputational impact in case of issues
-\end{itemize}
+The structural limitations described above do not manifest in a vacuum — they translate into concrete and ongoing economic costs for publishers who choose to deploy kernel-level anti-cheat systems. These costs operate across three distinct dimensions that collectively challenge the long-term viability of the approach.
+
+The first is driver maintenance. A kernel driver is not a product that can be shipped and forgotten: it must be continuously adapted to new OS versions, new hardware generations, and new security policies enforced by Microsoft's evolving Secure Boot and driver signing infrastructure. Each Windows update cycle introduces potential compatibility breaks that must be diagnosed and patched before they manifest as crashes or silent detection failures in the player base. This maintenance burden requires a dedicated engineering team with specialized kernel-level expertise — a skillset that is both scarce and expensive in the current software labor market.
+
+The second is security incident management. As discussed in Appendix A.3, the mandatory installation of a Ring 0 component exposes the publisher to significant liability in the event of a security flaw. The historical record is unambiguous: the Capcom anti-cheat driver exploit allowed arbitrary unsigned code execution at kernel level on every machine where it was installed; the Genshin Impact anti-cheat driver was weaponized by a third party to deploy ransomware by exploiting its legitimate Ring 0 access. Each such incident triggers a crisis response cycle — emergency patching, public disclosure management, potential regulatory scrutiny, and, in severe cases, class-action litigation. The cost of a single major incident can exceed the cumulative engineering investment in the anti-cheat system itself.
+
+The third is reputational and commercial impact. As detailed in Appendix A.2, a growing segment of the player base actively rejects kernel-level solutions, translating publisher anti-cheat decisions into measurable adoption losses. The exclusion of Linux and Steam Deck users — a platform whose market share has grown substantially with the mainstream success of Valve's handheld — from titles enforcing kernel drivers represents a quantifiable reduction in the addressable player pool. For free-to-play titles where player count directly drives monetization through network effects and cosmetic economies, this trade-off carries direct financial consequences that compound over time.
+
+Taken together, these three cost vectors — maintenance, incident response, and adoption friction — establish that kernel-level anti-cheat is not simply a technical solution with technical limitations, but a strategic commitment with sustained organizational costs. The central question for publishers is therefore whether the detection effectiveness gained justifies this investment, particularly given the categorical limitations against hardware-assisted cheating vectors identified in Section 2.1.2. It is precisely this question that motivates the server-side behavioral approach explored in Chapter 3.
 
 \section{Experimental Section: Illustrating Potential Intrusiveness}
 \label{sec:two:two}
