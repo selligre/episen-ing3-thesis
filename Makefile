@@ -31,10 +31,3 @@ fast:
 	cd Manuscrit; $(RM) -f *.pdf; make manuscrit;
 	cd PDF; $(RM) -f manuscrit.pdf
 	$(CP) Manuscrit/manuscrit.pdf PDF
-
-full:
-	echo "Make sure to use gitbash"
-	cd Manuscrit; $(RM) -f *.pdf; make full;
-	cd PDF; $(RM) -f manuscritfull.pdf
-	$(CP) Manuscrit/manuscritfull.pdf PDF
-

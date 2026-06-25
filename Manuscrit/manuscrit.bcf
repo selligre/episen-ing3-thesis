@@ -2373,9 +2373,9 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">../bibliographie.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Dorner2024-jm</bcf:citekey>
-    <bcf:citekey order="1" intorder="2">Loo2025-fo</bcf:citekey>
-    <bcf:citekey order="1" intorder="3">Collins2024-kb</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">collins2024anticheat</bcf:citekey>
+    <bcf:citekey order="1" intorder="2">Dorner2024-jm</bcf:citekey>
+    <bcf:citekey order="1" intorder="3">Loo2025-fo</bcf:citekey>
     <bcf:citekey order="1" intorder="4">Michal2025-xt</bcf:citekey>
     <bcf:citekey order="1" intorder="5">Kuzhii2024-lq</bcf:citekey>
   </bcf:section>
