@@ -5,7 +5,7 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Comparison of the recoil from the AK-47 in-game with its theoretical model, implying that the recoil is deterministic and can be compensated for with a script.}}{5}{figure.caption.5}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Comparison of wallhack demonstration using built-in command "r\_aoproxy\_show 1" in CS2, which forces the engine to render near entity models regardless of occlusion (top) and an ad from a cheating software provider showing wallhack in action (bottom)}}{7}{figure.caption.6}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Radarhack demonstration showing the extraction of enemy positions from the game's entity list and their projection onto a secondary interface}}{8}{figure.caption.7}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Privilege rings in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3}}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Privilege \gls {rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3}}{9}{figure.caption.8}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing}}{10}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

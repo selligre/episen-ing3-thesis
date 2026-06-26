@@ -16,13 +16,13 @@
 \subsection{Automation Cheats}
 \label{sec:one:one:one}
 
-Automation cheats represent a critical class of malicious software engineered to augment or entirely substitute a player's mechanical execution within the competitive environment. This category primarily encompasses automated aiming tools (aimbots), automatic firing utilities (triggerbots), and execution macros or scripts. By targeting the core pillars of first-person shooter (FPS) gameplay—specifically mechanical precision, muscle memory, and cognitive reaction time, these tools disrupt competitive balance by replacing human motor control with software-driven operations.
+Automation cheats represent a critical class of malicious software engineered to augment or entirely substitute a player's mechanical execution within the competitive environment. This category primarily encompasses automated aiming tools (aimbots), automatic firing utilities (\glsps{triggerbot}), and execution macros or \glspl{script}. By targeting the core pillars of first-person shooter (FPS) gameplay—specifically mechanical precision, muscle memory, and cognitive reaction time, these tools disrupt competitive balance by replacing human motor control with software-driven operations.
 
 To achieve this automation, the software must interface directly with either the operating system's input layer or manipulate the inner variables governing the game engine logic. The depth of this interaction generally defines the cheat's sophistication and detection difficulty:
 
 \begin{itemize}
     \item Input Layer Manipulation: Client-side automation tools often operate by injecting synthetic mouse and keyboard events directly into the operating system's input stream. A typical triggerbot, for example, continuously polls the game client's state or memory addresses to determine when an enemy entity's hitbox intersects with the exact coordinates of the player's crosshair. The moment this condition is validated, the cheat programmatically fires a click event into the input queue, completely bypassing human visual processing and nervous system latency. The latency between the detection of the event and the actual input can be configured to try and pass as a human reaction, though the main point of this process is still to be way faster than the average player.
-    \item Subversion of Game Engine Logic: More advanced automation mechanisms bypass peripheral input emulation altogether, executing modifications directly within the local game engine client memory space. An aimbot reads the real-time spatial positions (three-dimensional coordinates) of all active opponents from the engine's local entity list. It then calculates the precise angular vector offsets required to bridge the gap between the current viewpoint and the target's head hitbox. By overwriting the client's view-angle variables within the engine memory before the next frame rendering or tick packet serialization, the cheat forces perfect accuracy.
+    \item Subversion of Game Engine Logic: More advanced automation mechanisms bypass peripheral input emulation altogether, executing modifications directly within the local game engine client memory space. An aimbot reads the real-time spatial positions (three-dimensional coordinates) of all active opponents from the engine's local entity list. It then calculates the precise angular vector offsets required to bridge the gap between the current viewpoint and the target's head hitbox. By overwriting the client's view-angle variables within the engine memory before the next frame rendering or \gls{tick} packet serialization, the cheat forces perfect accuracy.
 \end{itemize}
 
 \begin{figure}[H]
@@ -39,7 +39,7 @@ This enables frame-perfect recoil compensation and automated target tracking tha
 \subsection{Information Cheats}
 \label{sec:one:one:two}
 
-Unlike automation tools that directly override a player's physical inputs, information cheats focus on subverting the tactical integrity of tactical shooter ecosystems by breaking down spatial boundaries. Tactical first-person shooters heavily rely on a conceptual "fog of war"—a structural design where information regarding enemy positions, utility placement, and movement is deliberately occluded by spatial geometry to reward map control and sensory awareness. Information cheats, primarily manifested as wallhacks and radarhacks, systematically dismantle this baseline restriction. They do not execute actions for the user but instead grant an absolute cognitive advantage by exposing hidden game data and altering the rendering pipeline. 
+Unlike automation tools that directly override a player's physical inputs, information cheats focus on subverting the tactical integrity of tactical shooter ecosystems by breaking down spatial boundaries. Tactical first-person shooters heavily rely on a conceptual "fog of war"—a structural design where information regarding enemy positions, utility placement, and movement is deliberately occluded by spatial geometry to reward map control and sensory awareness. Information cheats, primarily manifested as wallhacks and \glspl{radarhack}, systematically dismantle this baseline restriction. They do not execute actions for the user but instead grant an absolute cognitive advantage by exposing hidden game data and altering the rendering pipeline. 
 
 To achieve this asymmetric visualization, these tools typically exploit two distinct technical vectors within the local client system:
 
@@ -99,7 +99,7 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
         \begin{center}
             \includegraphics[height=9cm]{../images/chap01/fig4.png}
         \end{center}
-        \caption{Privilege rings in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3}
+        \caption{Privilege \gls{rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3}
         \label{fig:fig4}
     \end{figure}
     \footnote{\url{https://www.tutorialspoint.com/article/protection-ring}}
@@ -107,7 +107,7 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
     This advanced interaction with the operating system occurs through three primary mechanisms:
 
     \begin{itemize}
-        \item System Penetration via BYOVD: Modern operating systems like Windows require all kernel-level software to be digitally signed and approved by Microsoft. To bypass this security check, cheat developers use a technique called Bring Your Own Vulnerable Driver (BYOVD). They take an old, legitimately signed utility driver (from a trusted company) that contains a known security flaw. The cheat loads this trusted driver into the system and exploits its vulnerability to inject unsigned, malicious cheat code directly into the secure kernel memory space.
+        \item System Penetration via BYOVD: Modern operating systems like Windows require all kernel-level software to be digitally signed and approved by \gls{Microsoft}. To bypass this security check, cheat developers use a technique called Bring Your Own Vulnerable Driver (BYOVD). They take an old, legitimately signed utility driver (from a trusted company) that contains a known security flaw. The cheat loads this trusted driver into the system and exploits its vulnerability to inject unsigned, malicious cheat code directly into the secure kernel memory space.
         \item Direct System Manipulation (DKOM): Once established inside Ring 0, the cheat can modify the operating system's internal tracking structures. Using a method known as Direct Kernel Object Manipulation (DKOM), the cheat can erase its own program from the active process list or alter the system’s memory maps (page tables). This disguises the cheat's memory footprint, making it look like a harmless, native operating system component.
     \end{itemize}
 
