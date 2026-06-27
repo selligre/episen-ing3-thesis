@@ -1,5 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Server-Side Approaches: Development of a Gameplay
 Analytics Pipeline for Suspicion Scoring}
 \label{chap:three}
@@ -13,11 +11,10 @@ Analytics Pipeline for Suspicion Scoring}
 
 \fancyhead[LE]{\textsc{\chaptername~\thechapter}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \section{Pipeline Implementation}
 \label{sec:three:one}
+
+CURRENT STATE: The idea is to produce a data pipeline (in Python) that scans a player's game data to establish a statistical profile in order to separate casual / expert / cheater players to highlight suspicious profiles to direct them towards a manual review. I have currently started to develop the pipeline but I am still making modifications to the data model and implementing the notion of LSTM and their consideration in the scoring algorithm.
 
 \subsection{Ingestion and Scoring Objectives}
 \label{sec:three:one:one}
