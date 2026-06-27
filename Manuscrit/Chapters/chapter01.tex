@@ -134,6 +134,8 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
     \item Memory scanning
 \end{itemize}
 
+Empirical benchmarking of eleven competitive multiplayer titles confirms that the most technically robust client-side systems enforce a layered combination of file integrity checks, code injection countermeasures, and process scanning, and that the price of commercially available cheats correlates strongly with the measured sturdiness of the anti-cheat software they must bypass \cite{Collins2024}.
+
 \subsection{Kernel-Level Anti-Cheats}
 \label{sec:one:two:two}
 
@@ -141,6 +143,8 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
     \item Privileged monitoring
     \item Detection of low-level cheats
 \end{itemize}
+
+Yet formal analysis of these systems against rootkit classification criteria reveals that at least two of the four most widely deployed kernel-level solutions — FACEIT Anti-Cheat and Vanguard — satisfy a majority of the behavioral metrics used to characterize rootkits, including boot-time execution, binary virtualisation, and continuous system data exfiltration \cite{Dorner2024}.
 
 \subsection{Data-Driven Detection Methods}
 \label{sec:one:two:three}
@@ -161,6 +165,8 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
     \item Cross-match consistency
     \item Statistical anomalies
 \end{itemize}
+
+Recent work demonstrates the concrete feasibility of this shift: a transformer-based model trained on kill-event context windows extracted from 795 labelled CS2 matches achieves an accuracy of 89\% and an AUC of 0.93 on an unaugmented test set, while maintaining a low false-positive rate — a requirement particularly critical in competitive contexts where erroneous bans carry direct reputational costs \cite{Loo2025}.
 
 \subsubsection{Conceptual limitations}
 \label{sec:one:two:three:three}

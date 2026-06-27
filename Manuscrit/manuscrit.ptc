@@ -17,63 +17,63 @@
 \contentsline {subsection}{\numberline {1.2.3}Data-Driven Detection Methods}{11}{subsection.1.2.3}%
 \contentsline {subsubsection}{Shifting the trust anchor to the server}{11}{section*.10}%
 \contentsline {subsubsection}{Player behavior modeling}{11}{section*.11}%
-\contentsline {subsubsection}{Conceptual limitations}{11}{section*.12}%
-\contentsline {chapter}{\numberline {2}Assessing Risks and Limitations of Kernel-Level Anti-Cheats using Windows-Kernel-Explorer}{12}{chapter.2}%
+\contentsline {subsubsection}{Conceptual limitations}{12}{section*.12}%
+\contentsline {chapter}{\numberline {2}Assessing Risks and Limitations of Kernel-Level Anti-Cheats using Windows-Kernel-Explorer}{13}{chapter.2}%
 \ttl@stoptoc {chapters@1}
 \ttl@stoptoc {chapters@1}
 \ttl@starttoc {chapters@2}
-\contentsline {section}{\numberline {2.1}Structural Limitations of Kernel-Level Anti-Cheats}{12}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Technological Arms Race}{12}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Limits Against New Forms of Cheating}{13}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Economic and Operational Costs}{14}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Experimental Section: Illustrating Potential Intrusiveness}{15}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Experimental Objective}{15}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Experimental Observations}{16}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Critical Analysis}{16}{subsection.2.2.3}%
-\contentsline {chapter}{\numberline {3}Server-Side Approaches: Development of a Gameplay Analytics Pipeline for Suspicion Scoring}{17}{chapter.3}%
+\contentsline {section}{\numberline {2.1}Structural Limitations of Kernel-Level Anti-Cheats}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Technological Arms Race}{13}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Limits Against New Forms of Cheating}{14}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Economic and Operational Costs}{15}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Experimental Section: Illustrating Potential Intrusiveness}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Experimental Objective}{16}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Experimental Observations}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Critical Analysis}{17}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}Server-Side Approaches: Development of a Gameplay Analytics Pipeline for Suspicion Scoring}{18}{chapter.3}%
 \ttl@stoptoc {chapters@2}
 \ttl@stoptoc {chapters@2}
 \ttl@starttoc {chapters@3}
-\contentsline {section}{\numberline {3.1}Pipeline Implementation}{18}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Ingestion and Scoring Objectives}{18}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Algorithmic Architecture and Core Concepts}{18}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Practical System Deployment}{18}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Dataset and Features}{18}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Telemetry Data Model}{18}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Data Sources and Profiling}{18}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Data Constraints and Limitations}{19}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Benchmark Execution and Raw Outputs}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Experimental Protocol}{19}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Raw Evaluation Results}{19}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Analysis and Performance Discussion}{19}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Net Detection Results}{19}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Mitigating the High-Skill Bias}{19}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Future Optimizations}{19}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Comparison with Kernel-level approach}{20}{section.3.5}%
+\contentsline {section}{\numberline {3.1}Pipeline Implementation}{19}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Ingestion and Scoring Objectives}{19}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Algorithmic Architecture and Core Concepts}{19}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Practical System Deployment}{19}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Dataset and Features}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Telemetry Data Model}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Data Sources and Profiling}{19}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Data Constraints and Limitations}{20}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Benchmark Execution and Raw Outputs}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Experimental Protocol}{20}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Raw Evaluation Results}{20}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Analysis and Performance Discussion}{20}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Net Detection Results}{20}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Mitigating the High-Skill Bias}{20}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Future Optimizations}{20}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Comparison with Kernel-level approach}{21}{section.3.5}%
 \ttl@stoptoc {chapters@3}
-\contentsline {chapter}{Conclusion}{21}{chapter*.13}%
-\contentsline {chapter}{Bibliography}{22}{chapter*.14}%
-\contentsline {chapter}{Glossary}{23}{section*.15}%
-\contentsline {chapter}{Acronyms}{26}{section*.17}%
-\contentsline {chapter}{\numberline {A}Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{27}{appendix.A}%
-\contentsline {section}{\numberline {A.1}System Visibility Level and Perceived Intrusion}{27}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Social Perception and Community Acceptance}{28}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Legal and Regulatory Questions}{29}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Game Context and Rules}{30}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Competitive Format}{30}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Core Mechanics Relevant to Cheating}{30}{section.B.2}%
-\contentsline {chapter}{\numberline {C}Why Cheating Breaks Game Balance: The Bullet Penetration Case}{32}{appendix.C}%
-\contentsline {section}{\numberline {C.1}The Penetration Power Mechanic}{32}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Link to Information Cheats}{33}{section.C.2}%
-\contentsline {chapter}{\numberline {D}Client/Server Architecture and Network Communication}{34}{appendix.D}%
-\contentsline {section}{\numberline {D.1}The Authoritative Server Model}{34}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Snapshot Scope and Client Memory}{34}{section.D.2}%
-\contentsline {section}{\numberline {D.3}Network Channel Encryption}{34}{section.D.3}%
-\contentsline {section}{\numberline {D.4}Memory-Based Exploit Surface}{35}{section.D.4}%
-\contentsline {section}{\numberline {D.5}DMA Cheats}{35}{section.D.5}%
-\contentsline {chapter}{\numberline {E}Other appendixes}{36}{appendix.E}%
-\contentsline {section}{\numberline {E.1}Cheaters in CS2}{36}{section.E.1}%
-\contentsline {section}{\numberline {E.2}Existing data aggregation tool}{38}{section.E.2}%
-\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Abstract:}{39}{paragraph*.22}%
-\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Keywords:}{39}{paragraph*.23}%
+\contentsline {chapter}{Conclusion}{22}{chapter*.13}%
+\contentsline {chapter}{Bibliography}{23}{chapter*.14}%
+\contentsline {chapter}{Glossary}{24}{section*.15}%
+\contentsline {chapter}{Acronyms}{27}{section*.17}%
+\contentsline {chapter}{\numberline {A}Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{28}{appendix.A}%
+\contentsline {section}{\numberline {A.1}System Visibility Level and Perceived Intrusion}{28}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Social Perception and Community Acceptance}{29}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Legal and Regulatory Questions}{30}{section.A.3}%
+\contentsline {chapter}{\numberline {B}Game Context and Rules}{31}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Competitive Format}{31}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Core Mechanics Relevant to Cheating}{31}{section.B.2}%
+\contentsline {chapter}{\numberline {C}Why Cheating Breaks Game Balance: The Bullet Penetration Case}{33}{appendix.C}%
+\contentsline {section}{\numberline {C.1}The Penetration Power Mechanic}{33}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Link to Information Cheats}{34}{section.C.2}%
+\contentsline {chapter}{\numberline {D}Client/Server Architecture and Network Communication}{35}{appendix.D}%
+\contentsline {section}{\numberline {D.1}The Authoritative Server Model}{35}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Snapshot Scope and Client Memory}{35}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Network Channel Encryption}{35}{section.D.3}%
+\contentsline {section}{\numberline {D.4}Memory-Based Exploit Surface}{36}{section.D.4}%
+\contentsline {section}{\numberline {D.5}DMA Cheats}{36}{section.D.5}%
+\contentsline {chapter}{\numberline {E}Other appendixes}{37}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Cheaters in CS2}{37}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Existing data aggregation tool}{39}{section.E.2}%
+\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Abstract:}{40}{paragraph*.22}%
+\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Keywords:}{40}{paragraph*.23}%
 \contentsfinish 

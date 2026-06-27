@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  26 JUN 2026 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  27 JUN 2026 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2120,7 +2120,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ...e and Core Concepts}{18}{subsection.3.1.2}
+l.32 ...e and Core Concepts}{19}{subsection.3.1.2}
                                                   % [1
 
 
@@ -2131,7 +2131,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.59 ...nk to Information Cheats}{33}{section.C.2}
+l.59 ...nk to Information Cheats}{34}{section.C.2}
                                                   % [2])
 \tf@toc=\write9
 \openout9 = `manuscrit.toc'.
@@ -2211,7 +2211,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [4
 
 ]
-<../images/chap01/fig1.png, id=538, 1151.80313pt x 719.68875pt>
+<../images/chap01/fig1.png, id=540, 1151.80313pt x 719.68875pt>
 File: ../images/chap01/fig1.png Graphic file (type png)
 <use ../images/chap01/fig1.png>
 Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 30.
@@ -2227,13 +2227,13 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 
 [5{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_
 naooyc.enc} <../images/chap01/fig1.png>]
-<../images/chap01/ingamewallhack.png, id=553, 1926.44719pt x 1083.29718pt>
+<../images/chap01/ingamewallhack.png, id=555, 1926.44719pt x 1083.29718pt>
 File: ../images/chap01/ingamewallhack.png Graphic file (type png)
 <use ../images/chap01/ingamewallhack.png>
 Package pdftex.def Info: ../images/chap01/ingamewallhack.png  used on input lin
 e 68.
 (pdftex.def)             Requested size: 455.36072pt x 256.0748pt.
-<../images/chap01/paidwallhack.png, id=554, 1926.44719pt x 1083.29718pt>
+<../images/chap01/paidwallhack.png, id=556, 1926.44719pt x 1083.29718pt>
 File: ../images/chap01/paidwallhack.png Graphic file (type png)
 <use ../images/chap01/paidwallhack.png>
 Package pdftex.def Info: ../images/chap01/paidwallhack.png  used on input line 
@@ -2244,7 +2244,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 [7 <../images/chap01/ingamewallhack.png> <../images/chap01/paidwallhack.png>]
-<../images/chap01/radarhack.png, id=574, 1926.44719pt x 802.49812pt>
+<../images/chap01/radarhack.png, id=576, 1926.44719pt x 802.49812pt>
 File: ../images/chap01/radarhack.png Graphic file (type png)
 <use ../images/chap01/radarhack.png>
 Package pdftex.def Info: ../images/chap01/radarhack.png  used on input line 83.
@@ -2256,18 +2256,18 @@ Overfull \hbox (22.86848pt too wide) in paragraph at lines 83--84
  []
 
 [8 <../images/chap01/radarhack.png>]
-<../images/chap01/fig4.png, id=584, 738.50906pt x 470.50781pt>
+<../images/chap01/fig4.png, id=586, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
 Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 100.
 (pdftex.def)             Requested size: 401.93294pt x 256.0748pt.
  [9 <../images/chap01/fig4.png>]
-<../images/chap01/fig5.png, id=604, 947.03813pt x 472.01344pt>
+<../images/chap01/fig5.png, id=606, 947.03813pt x 472.01344pt>
 File: ../images/chap01/fig5.png Graphic file (type png)
 <use ../images/chap01/fig5.png>
 Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 119.
 (pdftex.def)             Requested size: 399.61743pt x 199.16928pt.
- [10 <../images/chap01/fig5.png>]) (Chapters/chapter02.tex [11]
+ [10 <../images/chap01/fig5.png>] [11]) (Chapters/chapter02.tex [12]
 Chapter 2.
 
 Overfull \hbox (12.4873pt too wide) in paragraph at lines 4--4
@@ -2290,9 +2290,12 @@ Package mdframed Info: mdframed inside a box
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12
+ [13
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2303,19 +2306,17 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
 
-[13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
+[15]
 Overfull \hbox (13.70195pt too wide) in paragraph at lines 70--71
 []\T1/LinuxLibertineT-TLF/m/n/10.95 Headstart thanks to https://github.com/AxtM
 ueller/Windows-Kernel-Explorer --> PROB-LEM: ONLY
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5681) has occurred while \output is active []
 
-
+ [16])
+(Chapters/chapter03.tex
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 24.71541pt, for example:
@@ -2323,7 +2324,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
 
-[15]) (Chapters/chapter03.tex [16]
+[17]
 Chapter 3.
 Package mdframed Info: mdframed works in twoside mode on input line 12.
 Package mdframed Info: mdframed detected package amsthm 
@@ -2335,369 +2336,37 @@ Package mdframed Info: mdframed inside a box
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17
+ [18
 
 ]
-[18]
+[19]
 Overfull \hbox (10.9545pt too wide) in paragraph at lines 109--110
 []\T1/LinuxLibertineT-TLF/m/n/10.95 Differentiating anoma-lous ex-pert playstyl
 es (ex-otic but le-git-i-mate be-hav-iors) from software-assisted
  []
 
-[19]) (Chapters/conclu.tex [20]) [21
+
+Overfull \hbox (1.27951pt too wide) in paragraph at lines 124--125
+\T1/LinuxLibertineT-TLF/m/n/10.95 This ca-pa-bil-ity gap is di-rectly ac-knowl-
+edged in the lit-er-a-ture: open-source be-havioural de-tec-tion trained
+ []
+
+[20]) (Chapters/conclu.tex [21]) [22
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 89.
- (manuscrit.gls [22
+ (manuscrit.gls [23
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 3.
+ [24
 
 
-Package glossaries Warning: Glossary entry `counter-strike' has not been define
-d on input line 12.
-
-
-Package glossaries Warning: Glossary entry `counter-strike' has not been define
-d on input line 12.
-
-
-Package glossaries Warning: Glossary entry `counter-strike' has not been define
-d on input line 12.
-
-
-Package glossaries Warning: Glossary entry `counter-strike' has not been define
-d on input line 12.
-
-
-Package glossaries Warning: Glossary entry `fps' has not been defined on input 
-line 23.
-
-
-Package glossaries Warning: Glossary entry `fps' has not been defined on input 
-line 23.
-
-
-Package glossaries Warning: Glossary entry `fps' has not been defined on input 
-line 23.
-
-
-Package glossaries Warning: Glossary entry `fps' has not been defined on input 
-line 23.
-
-[23
-
-
-]
-
-Package glossaries Warning: Glossary entry `leetify' has not been defined on in
-put line 29.
-
-
-Package glossaries Warning: Glossary entry `leetify' has not been defined on in
-put line 29.
-
-
-Package glossaries Warning: Glossary entry `leetify' has not been defined on in
-put line 29.
-
-
-Package glossaries Warning: Glossary entry `leetify' has not been defined on in
-put line 29.
-
-
-Package glossaries Warning: Glossary entry `microsoft' has not been defined on 
-input line 32.
-
-
-Package glossaries Warning: Glossary entry `microsoft' has not been defined on 
-input line 32.
-
-
-Package glossaries Warning: Glossary entry `microsoft' has not been defined on 
-input line 32.
-
-
-Package glossaries Warning: Glossary entry `microsoft' has not been defined on 
-input line 32.
-
-
-Package glossaries Warning: Glossary entry `overwatch' has not been defined on 
-input line 35.
-
-
-Package glossaries Warning: Glossary entry `overwatch' has not been defined on 
-input line 35.
-
-
-Package glossaries Warning: Glossary entry `overwatch' has not been defined on 
-input line 35.
-
-
-Package glossaries Warning: Glossary entry `overwatch' has not been defined on 
-input line 35.
-
-[24{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.e
-nc}]) (manuscrit.acr [25]
-
-Package glossaries Warning: Glossary entry `api' has not been defined on input 
-line 5.
-
-
-Package glossaries Warning: Glossary entry `api' has not been defined on input 
-line 5.
-
-
-Package glossaries Warning: Glossary entry `api' has not been defined on input 
-line 5.
-
-
-Package glossaries Warning: Glossary entry `api' has not been defined on input 
-line 5.
-
-
-Package glossaries Warning: Glossary entry `byovd' has not been defined on inpu
-t line 8.
-
-
-Package glossaries Warning: Glossary entry `byovd' has not been defined on inpu
-t line 8.
-
-
-Package glossaries Warning: Glossary entry `byovd' has not been defined on inpu
-t line 8.
-
-
-Package glossaries Warning: Glossary entry `byovd' has not been defined on inpu
-t line 8.
-
-
-Package glossaries Warning: Glossary entry `cpu' has not been defined on input 
-line 11.
-
-
-Package glossaries Warning: Glossary entry `cpu' has not been defined on input 
-line 11.
-
-
-Package glossaries Warning: Glossary entry `cpu' has not been defined on input 
-line 11.
-
-
-Package glossaries Warning: Glossary entry `cpu' has not been defined on input 
-line 11.
-
-
-Package glossaries Warning: Glossary entry `cs' has not been defined on input l
-ine 13.
-
-
-Package glossaries Warning: Glossary entry `cs' has not been defined on input l
-ine 13.
-
-
-Package glossaries Warning: Glossary entry `cs' has not been defined on input l
-ine 13.
-
-
-Package glossaries Warning: Glossary entry `cs' has not been defined on input l
-ine 13.
-
-
-Package glossaries Warning: Glossary entry `cs2' has not been defined on input 
-line 15.
-
-
-Package glossaries Warning: Glossary entry `cs2' has not been defined on input 
-line 15.
-
-
-Package glossaries Warning: Glossary entry `cs2' has not been defined on input 
-line 15.
-
-
-Package glossaries Warning: Glossary entry `cs2' has not been defined on input 
-line 15.
-
-
-Package glossaries Warning: Glossary entry `csgo' has not been defined on input
- line 17.
-
-
-Package glossaries Warning: Glossary entry `csgo' has not been defined on input
- line 17.
-
-
-Package glossaries Warning: Glossary entry `csgo' has not been defined on input
- line 17.
-
-
-Package glossaries Warning: Glossary entry `csgo' has not been defined on input
- line 17.
-
-
-Package glossaries Warning: Glossary entry `dkom' has not been defined on input
- line 20.
-
-
-Package glossaries Warning: Glossary entry `dkom' has not been defined on input
- line 20.
-
-
-Package glossaries Warning: Glossary entry `dkom' has not been defined on input
- line 20.
-
-
-Package glossaries Warning: Glossary entry `dkom' has not been defined on input
- line 20.
-
-
-Package glossaries Warning: Glossary entry `dma' has not been defined on input 
-line 22.
-
-
-Package glossaries Warning: Glossary entry `dma' has not been defined on input 
-line 22.
-
-
-Package glossaries Warning: Glossary entry `dma' has not been defined on input 
-line 22.
-
-
-Package glossaries Warning: Glossary entry `dma' has not been defined on input 
-line 22.
-
-
-Package glossaries Warning: Glossary entry `esp' has not been defined on input 
-line 25.
-
-
-Package glossaries Warning: Glossary entry `esp' has not been defined on input 
-line 25.
-
-
-Package glossaries Warning: Glossary entry `esp' has not been defined on input 
-line 25.
-
-
-Package glossaries Warning: Glossary entry `esp' has not been defined on input 
-line 25.
-
-
-Package glossaries Warning: Glossary entry `grpd' has not been defined on input
- line 28.
-
-
-Package glossaries Warning: Glossary entry `grpd' has not been defined on input
- line 28.
-
-
-Package glossaries Warning: Glossary entry `grpd' has not been defined on input
- line 28.
-
-
-Package glossaries Warning: Glossary entry `grpd' has not been defined on input
- line 28.
-
-
-Package glossaries Warning: Glossary entry `he' has not been defined on input l
-ine 31.
-
-
-Package glossaries Warning: Glossary entry `he' has not been defined on input l
-ine 31.
-
-
-Package glossaries Warning: Glossary entry `he' has not been defined on input l
-ine 31.
-
-
-Package glossaries Warning: Glossary entry `he' has not been defined on input l
-ine 31.
-
-
-Package glossaries Warning: Glossary entry `lstm' has not been defined on input
- line 34.
-
-
-Package glossaries Warning: Glossary entry `lstm' has not been defined on input
- line 34.
-
-
-Package glossaries Warning: Glossary entry `lstm' has not been defined on input
- line 34.
-
-
-Package glossaries Warning: Glossary entry `lstm' has not been defined on input
- line 34.
-
-
-Package glossaries Warning: Glossary entry `os' has not been defined on input l
-ine 37.
-
-
-Package glossaries Warning: Glossary entry `os' has not been defined on input l
-ine 37.
-
-
-Package glossaries Warning: Glossary entry `os' has not been defined on input l
-ine 37.
-
-
-Package glossaries Warning: Glossary entry `os' has not been defined on input l
-ine 37.
-
-
-Package glossaries Warning: Glossary entry `pcie' has not been defined on input
- line 40.
-
-
-Package glossaries Warning: Glossary entry `pcie' has not been defined on input
- line 40.
-
-
-Package glossaries Warning: Glossary entry `pcie' has not been defined on input
- line 40.
-
-
-Package glossaries Warning: Glossary entry `pcie' has not been defined on input
- line 40.
-
-
-Package glossaries Warning: Glossary entry `ram' has not been defined on input 
-line 43.
-
-
-Package glossaries Warning: Glossary entry `ram' has not been defined on input 
-line 43.
-
-
-Package glossaries Warning: Glossary entry `ram' has not been defined on input 
-line 43.
-
-
-Package glossaries Warning: Glossary entry `ram' has not been defined on input 
-line 43.
-
-
-Package glossaries Warning: Glossary entry `ttd' has not been defined on input 
-line 46.
-
-
-Package glossaries Warning: Glossary entry `ttd' has not been defined on input 
-line 46.
-
-
-Package glossaries Warning: Glossary entry `ttd' has not been defined on input 
-line 46.
-
-
-Package glossaries Warning: Glossary entry `ttd' has not been defined on input 
-line 46.
-
-) (Annexes/annex01.tex [26
+] [25{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
+.enc}])
+(manuscrit.acr [26]) (Annexes/annex01.tex [27
 
 
 ]
@@ -2707,23 +2376,23 @@ Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
 \T1/LinuxLibertineT-TLF/m/sc/24.88 nam-ics of Kernel-Level Anti-Cheat Im-ple-
  []
 
-[27
+[28
 
 ]
-<../images/annex01/fig6.png, id=815, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=834, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
 (pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
- [28 <../images/annex01/fig6.png>]) (Annexes/annex02.tex [29]
+ [29 <../images/annex01/fig6.png>]) (Annexes/annex02.tex [30]
 Appendix B.
-[30
+[31
 
-]) (Annexes/annex03.tex [31]
+]) (Annexes/annex03.tex [32]
 Appendix C.
-[32
+[33
 
-]) (Annexes/annex04.tex [33]
+]) (Annexes/annex04.tex [34]
 Appendix D.
 
 Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
@@ -2733,12 +2402,12 @@ Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34
+ [35
 
 ])
-(Annexes/annex05.tex [35]
+(Annexes/annex05.tex [36]
 Appendix E.
-<../images/annex05/cheaters.png, id=864, 533.74406pt x 797.22844pt>
+<../images/annex05/cheaters.png, id=884, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
 <use ../images/annex05/cheaters.png>
 Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
@@ -2747,22 +2416,22 @@ Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36
+ [37
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37 <../images/annex05/cheaters.png>]
-<../images/annex05/csst.png, id=879, 866.48718pt x 639.13782pt>
+ [38 <../images/annex05/cheaters.png>]
+<../images/annex05/csst.png, id=898, 866.48718pt x 639.13782pt>
 File: ../images/annex05/csst.png Graphic file (type png)
 <use ../images/annex05/csst.png>
 Package pdftex.def Info: ../images/annex05/csst.png  used on input line 25.
 (pdftex.def)             Requested size: 424.31801pt x 312.9803pt.
-) (quatriemeDeCouverture.tex [38 <../images/annex05/csst.png>])
+) (quatriemeDeCouverture.tex [39 <../images/annex05/csst.png>])
 \tf@ptc=\write12
 \openout12 = `manuscrit.ptc'.
 
- [39] (manuscrit.aux)
+ [40] (manuscrit.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -2774,97 +2443,25 @@ Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62073 strings out of 467866
- 1385168 string characters out of 5418326
- 2512385 words of memory out of 5000000
- 89724 multiletter control sequences out of 15000+600000
+ 62062 strings out of 467866
+ 1385530 string characters out of 5418325
+ 2512926 words of memory out of 5000000
+ 89735 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,120p,2548b,2612s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{glo:Leetify.gg} has been referenced but does not ex
-ist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:HE} has been referenced but does not exist, rep
-laced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:TTD} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:Overwatch} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:OS} has been referenced but does not exist, rep
-laced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:CPU} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:RAM} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:PCIe} has been referenced but does not exist, r
-eplaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:DKOM} has been referenced but does not exist, r
-eplaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:Microsoft} has been referenced but does not exi
-st, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:BYOVD} has been referenced but does not exist, 
-replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:ESP} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:API} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:LSTM} has been referenced but does not exist, r
-eplaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:DMA} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:CS2} has been referenced but does not exist, re
-placed by a fixed one
-
-
-pdfTeX warning (dest): name{glo:Counter-Strike\0402} has been referenced but do
-es not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:FPS} has been referenced but does not exist, re
-placed by a fixed one
-
-<C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinB
-iolinumT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
-ibertine/LinBiolinumTB.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/User
-s/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/User
-s/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam1
-0.pfb>
-Output written on manuscrit.pdf (46 pages, 16754461 bytes).
+<C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/Li
+nBiolinumT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/libertine/LinBiolinumTB.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/font
+s/type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
+ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
+ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb>
+Output written on manuscrit.pdf (47 pages, 16770051 bytes).
 PDF statistics:
- 983 PDF objects out of 1000 (max. 8388607)
- 196 named destinations out of 1000 (max. 500000)
+ 993 PDF objects out of 1000 (max. 8388607)
+ 174 named destinations out of 1000 (max. 500000)
  580 words of extra memory for PDF output out of 10000 (max. 10000000)
 
