@@ -14,7 +14,42 @@ Analytics Pipeline for Suspicion Scoring}
 \section{Pipeline Implementation}
 \label{sec:three:one}
 
-CURRENT STATE: The idea is to produce a data pipeline (in Python) that scans a player's game data to establish a statistical profile in order to separate casual / expert / cheater players to highlight suspicious profiles to direct them towards a manual review. I have currently started to develop the pipeline but I am still making modifications to the data model and implementing the notion of LSTM and their consideration in the scoring algorithm.
+PROGRESSION :
+
+La pipeline est fonctionnelle, mon problème se situe pour le moment du côté de rendre la simulation des profils aussi réaliste que possible, puisqu'il n'est pas envisageable de parser les démos du jeu pour obtenir des données réelles (ça demanderait quelques années et une équipe de développeurs payés).
+
+Pour le moment, les profils sont encore trop "parfaits" et ne reflètent pas la réalité des joueurs humains. Il faut que je trouve un moyen de générer des profils plus diverses, qui permettront de mettre en avant l'intérêt de la notion des LSTM pour détecter les comportements anormaux sur le long terme (et donc séparer les experts des cheaters).
+
+Les modifications que je suis en train d'apporter se situent dans la création des profils de joueurs et dans la manière dont ils sont évalués par la pipeline pour mettre en avant des résultats plus proches de ce que l'on peut observer dans la réalité et de ce qu'on peut trouver dans les sources de données externes (voir annexe 5).
+
+L'objectif final est de séparer les casuals des experts et des cheaters, et de pouvoir détecter les comportements anormaux sur le long terme pour amener ces profils à une revue manuelle de joueurs expérimentés qui sauront faire la distinction grâce à leur expérience.
+Les résultats graphiques que j'obtiens pour le moment sont les suivants :
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=9cm]{../images/chap03/confusion_matrix.png}
+    \end{center}
+    \caption{Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}
+    \label{fig:confusion_matrix}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=7cm]{../images/chap03/flag_frequency.png}
+    \end{center}
+    \caption{Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}
+    \label{fig:flag_frequency}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=9cm]{../images/chap03/score_distribution.png}
+    \end{center}
+    \caption{Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}
+    \label{fig:score_distribution}
+\end{figure}
+
+La repo est publique sur GitHub : \url{https://github.com/selligre/episen-ing3-thesis-ac-server}
 
 \subsection{Ingestion and Scoring Objectives}
 \label{sec:three:one:one}

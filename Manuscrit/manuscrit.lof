@@ -9,12 +9,15 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing}}{10}{figure.caption.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6}{\ignorespaces Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{20}{figure.caption.14}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{20}{figure.caption.15}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures}}{29}{figure.caption.19}%
+\contentsline {figure}{\numberline {9}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures}}{31}{figure.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game}}{38}{figure.caption.20}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics}}{39}{figure.caption.21}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game}}{40}{figure.caption.23}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics}}{41}{figure.caption.24}%
 \contentsfinish 
