@@ -2,9 +2,6 @@
 \contentsline {chapter}{List of Figures}{iv}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{v}{chapter*.3}%
 \contentsline {chapter}{Introduction}{1}{chapter*.4}%
-\contentsline {section}{\numberline {0.1}Context}{1}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Problematic}{2}{section.0.2}%
-\contentsline {section}{\numberline {0.3}Outline}{3}{section.0.3}%
 \contentsline {chapter}{\numberline {1}State of the Art - Cheats and Anti-Cheats}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Cheat-Based Exploration of System Architecture}{4}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Automation Cheats}{4}{subsection.1.1.1}%
