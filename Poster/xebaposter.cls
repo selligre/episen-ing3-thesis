@@ -869,7 +869,7 @@
     %% Measure the content of the box%
     \setbox\xebaposter@box@content=\hbox\bgroup%
       \begin{pgfinterruptpicture}%
-        \begin{minipage}[t]{\boxwidth-\xebaposter@box@@boxpadding*2}%
+        \begin{minipage}[h]{\boxwidth-\xebaposter@box@@boxpadding*2}%
 \if@xebaposter@persian%
         \persian%
 \fi

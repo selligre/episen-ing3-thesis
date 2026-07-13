@@ -886,7 +886,7 @@
     %% Measure the content of the box%
     \setbox\baposter@box@content=\hbox\bgroup%
       \begin{pgfinterruptpicture}%
-        \begin{minipage}[t]{\boxwidth-\baposter@box@@boxpadding*2}%
+        \begin{minipage}[h]{\boxwidth-\baposter@box@@boxpadding*2}%
           \baposter@box@textfont\bgroup%
   }% End of posterbox preamble
   %%% HERE COME THE ACTUAL CONTENTS OF THE HEADERBOX ENVIRONMENT
