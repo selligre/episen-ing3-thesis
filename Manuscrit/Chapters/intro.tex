@@ -3,7 +3,7 @@
 
 \epigraph{\itshape If you look at a multi-player game, it's the people who are playing the game who are often more valuable than all of the animations and models and game logic that's associated with it.}{-- Gabe NEWELL}
 
-\addcontentsline{toc}{chapter}{Introduction}  
+\addcontentsline{toc}{chapter}{Introduction}
 \fancyhead[LE,RO]{Introduction}
 
 \section*{Context}
@@ -17,6 +17,8 @@ However, cheating represents a growing threat to this balance. The emergence of 
 To address this issue, many publishers have progressively adopted kernel-level anti-\gls{cheat} systems. These solutions operate with very high privileges, allowing them to monitor memory, processes, and certain hardware interactions within the operating system in order to detect manipulation of the game \gls{client}. While often effective against certain forms of software cheating, they also raise significant concerns regarding \gls{cybersecurity}, privacy protection, and user acceptability. The permanent presence of a third-party privileged component increases the system’s attack surface, introduces a critical point of failure and fuels public debate about the proportionality between technical intrusion and its intended objective.
 
 Beyond pure cybersecurity vulnerabilities, \gls{kernel}-level solutions introduce profound privacy and regulatory dilemmas. Operating at the highest privilege layer (Ring 0) theoretically grants these software components unhindered visibility over the user's entire system, including personal files, background applications, and non-game-related data. This continuous monitoring mechanism challenges traditional notions of informed user consent and clashes directly with modern data protection frameworks, such as the GDPR, which mandate strict principles of data minimization and proportionality. Consequently, this technological choice has sparked a sharp divide within the gaming community: while competitive players often tolerate intrusive measures in the name of competitive integrity, casual users increasingly reject what they perceive as a form of digital surveillance, ultimately threatening game adoption and brand reputation.
+
+While cheating in a video game may appear as a low-stakes issue compared to critical infrastructure or enterprise security breaches, the underlying mechanisms (unauthorized memory access, process injection, behavioral detection, and privilege escalation) are directly transferable to higher-stakes contexts. Studying anti-cheat systems therefore offers a low-risk environment in which to examine broader questions of privileged software design and intrusion detection. This relevance is further amplified by the evolving nature of modern cyberattacks: as AI-driven techniques increasingly automate and diversify attack methods, the specific vectors used to compromise a system change rapidly, yet the resulting behavioral footprint (unauthorized access, data exfiltration, persistence) remains comparatively stable. Understanding how a privileged component can access or conceal sensitive data, even in the constrained context of anti-cheat software, thus provides insight applicable to a much broader class of security challenges.
 
 \section*{Problematic}
 
