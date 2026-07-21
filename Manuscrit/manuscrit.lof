@@ -13,10 +13,10 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{20}{figure.caption.13}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{21}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{28}{figure.caption.20}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {9}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{34}{figure.caption.20}%
 \addvspace {10\p@ }
 \contentsfinish 
 \contentsline {figure}{\numberline {10}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{38}{figure.caption.21}%

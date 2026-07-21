@@ -43,22 +43,22 @@
 \contentsline {chapter}{Bibliography}{24}{chapter*.15}%
 \contentsline {chapter}{Glossary}{25}{section*.16}%
 \contentsline {chapter}{Acronyms}{26}{section*.18}%
-\contentsline {chapter}{\numberline {A}Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{27}{appendix.A}%
-\contentsline {section}{\numberline {A.1}System Visibility Level and Perceived Intrusion}{27}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Social Perception and Community Acceptance}{28}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Legal and Regulatory Questions}{29}{section.A.3}%
-\contentsline {chapter}{\numberline {B}Game Context and Rules}{30}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Competitive Format}{30}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Core Mechanics Relevant to Cheating}{30}{section.B.2}%
-\contentsline {chapter}{\numberline {C}Why Cheating Breaks Game Balance: The Bullet Penetration Case}{32}{appendix.C}%
-\contentsline {section}{\numberline {C.1}The Penetration Power Mechanic}{32}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Link to Information Cheats}{33}{section.C.2}%
-\contentsline {chapter}{\numberline {D}Client/Server Architecture and Network Communication}{34}{appendix.D}%
-\contentsline {section}{\numberline {D.1}The Authoritative Server Model}{34}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Snapshot Scope and Client Memory}{34}{section.D.2}%
-\contentsline {section}{\numberline {D.3}Network Channel Encryption}{34}{section.D.3}%
-\contentsline {section}{\numberline {D.4}Memory-Based Exploit Surface}{35}{section.D.4}%
-\contentsline {section}{\numberline {D.5}DMA Cheats}{35}{section.D.5}%
+\contentsline {chapter}{\numberline {A}Game Context and Rules}{27}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Competitive Format}{27}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Core Mechanics Relevant to Cheating}{27}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Why Cheating Breaks Game Balance: The Bullet Penetration Case}{29}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The Penetration Power Mechanic}{29}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Link to Information Cheats}{30}{section.B.2}%
+\contentsline {chapter}{\numberline {C}Client/Server Architecture and Network Communication}{31}{appendix.C}%
+\contentsline {section}{\numberline {C.1}The Authoritative Server Model}{31}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Snapshot Scope and Client Memory}{31}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Network Channel Encryption}{31}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Memory-Based Exploit Surface}{32}{section.C.4}%
+\contentsline {section}{\numberline {C.5}DMA Cheats}{32}{section.C.5}%
+\contentsline {chapter}{\numberline {D}Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{33}{appendix.D}%
+\contentsline {section}{\numberline {D.1}System Visibility Level and Perceived Intrusion}{33}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Social Perception and Community Acceptance}{34}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Legal and Regulatory Questions}{35}{section.D.3}%
 \contentsline {chapter}{\numberline {E}Other appendixes}{36}{appendix.E}%
 \contentsline {section}{\numberline {E.1}Cheaters in CS2}{36}{section.E.1}%
 \contentsline {section}{\numberline {E.2}Existing data aggregation tool}{36}{section.E.2}%

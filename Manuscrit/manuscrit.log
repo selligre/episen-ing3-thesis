@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  13 JUL 2026 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  21 JUL 2026 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2131,7 +2131,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 ... Scope and Client Memory}{34}{section.D.2}
+l.58 ...nti-Cheat Implementations}{33}{appendix.D}
                                                   % [2])
 \tf@toc=\write9
 \openout9 = `manuscrit.toc'.
@@ -2252,7 +2252,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../images/chap01/fig4.png, id=549, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
-Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 80.
+Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 77.
 (pdftex.def)             Requested size: 401.93294pt x 256.0748pt.
 
 
@@ -2449,43 +2449,25 @@ Package glossaries-extra Warning: Glossary `acronym' is missing on input line 1
 
 
 {C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_dh
-i6qf.enc}] (Annexes/annex01.tex [26
+i6qf.enc}] (Annexes/annex02.tex [26
 
 
 ]
 Appendix A.
-
-Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
-\T1/LinuxLibertineT-TLF/m/sc/24.88 nam-ics of Kernel-Level Anti-Cheat Im-ple-
- []
-
-
-LaTeX Warning: Citation 'Dorner2024' on page 27 undefined on input line 11.
-
 [27
 
-]
-<../images/annex01/fig6.png, id=743, 1307.63531pt x 505.89pt>
-File: ../images/annex01/fig6.png Graphic file (type png)
-<use ../images/annex01/fig6.png>
-Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
-(pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
- [28 <../images/annex01/fig6.png>]) (Annexes/annex02.tex [29]
+]) (Annexes/annex03.tex [28]
 Appendix B.
-[30
-
-]) (Annexes/annex03.tex [31]
-Appendix C.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 21.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 21.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 21.
-[32
+[29
 
-]) (Annexes/annex04.tex [33]
-Appendix D.
+]) (Annexes/annex04.tex [30]
+Appendix C.
 
 Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
 |\T1/LinuxLibertineT-TLF/m/sc/24.88 Client/Server Ar-chi-tec-ture and Net-work
@@ -2494,10 +2476,28 @@ Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34
+ [31
 
 ])
-(Annexes/annex05.tex [35]
+(Annexes/annex01.tex [32]
+Appendix D.
+
+Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
+\T1/LinuxLibertineT-TLF/m/sc/24.88 nam-ics of Kernel-Level Anti-Cheat Im-ple-
+ []
+
+
+LaTeX Warning: Citation 'Dorner2024' on page 33 undefined on input line 11.
+
+[33
+
+]
+<../images/annex01/fig6.png, id=780, 1307.63531pt x 505.89pt>
+File: ../images/annex01/fig6.png Graphic file (type png)
+<use ../images/annex01/fig6.png>
+Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
+(pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
+ [34 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [35]
 Appendix E.
 <../images/annex05/cheaters.png, id=792, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
@@ -2533,7 +2533,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `manuscrit.out' has not changed.
-(rerunfilecheck)             Checksum: CB65309D6EB524A733E56D74FBE68BC7;12911.
+(rerunfilecheck)             Checksum: 8C5C5DA857A22426952043DE68219240;12911.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                manuscrit
@@ -2545,8 +2545,8 @@ Package logreq Info: Writing requests to 'manuscrit.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  62000 strings out of 467866
- 1384954 string characters out of 5418326
- 2512555 words of memory out of 5000000
+ 1384954 string characters out of 5418325
+ 2511555 words of memory out of 5000000
  89697 multiletter control sequences out of 15000+600000
  777520 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2688,7 +2688,7 @@ s/MiKTeX/fonts/type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData
 s/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertine
 TI.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/symbols/msam10.pfb>
-Output written on manuscrit.pdf (45 pages, 16888193 bytes).
+Output written on manuscrit.pdf (45 pages, 16888237 bytes).
 PDF statistics:
  892 PDF objects out of 1000 (max. 8388607)
  159 named destinations out of 1000 (max. 500000)
