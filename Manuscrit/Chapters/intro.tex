@@ -20,7 +20,7 @@ Beyond pure cybersecurity vulnerabilities, \gls{kernel}-level solutions introduc
 
 While cheating in a video game may appear as a low-stakes issue compared to critical infrastructure or enterprise security breaches, the underlying mechanisms (unauthorized memory access, process injection, behavioral detection, and privilege escalation) are directly transferable to higher-stakes contexts. Studying anti-cheat systems therefore offers a low-risk environment in which to examine broader questions of privileged software design and intrusion detection. This relevance is further amplified by the evolving nature of modern cyberattacks: as AI-driven techniques increasingly automate and diversify attack methods, the specific vectors used to compromise a system change rapidly, yet the resulting behavioral footprint (unauthorized access, data exfiltration, persistence) remains comparatively stable. Understanding how a privileged component can access or conceal sensitive data, even in the constrained context of anti-cheat software, thus provides insight applicable to a much broader class of security challenges.
 
-\section*{Problematic}
+\section*{Problem}
 
 In this context, the following question arises: can cheating be effectively detected without compromising system security through kernel-level access? This thesis explores an alternative approach primarily based on \gls{server}-side behavioral analysis and machine learning techniques. Instead of directly inspecting the player’s machine, the idea is to leverage gameplay data itself-match statistics, action sequences, and temporal and mechanical consistency-to identify anomalies characteristic of assisted behavior.
 
