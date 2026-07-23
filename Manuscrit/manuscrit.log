@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  22 JUL 2026 21:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  23 JUL 2026 18:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2120,7 +2120,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...l System Deployment}{19}{subsection.3.1.3}
+l.26 ...l System Deployment}{20}{subsection.3.1.3}
                                                   % [1
 
 
@@ -2131,7 +2131,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 ...nti-Cheat Implementations}{34}{appendix.D}
+l.55 ...nti-Cheat Implementations}{35}{appendix.D}
                                                   % [2])
 \tf@toc=\write9
 \openout9 = `manuscrit.toc'.
@@ -2266,21 +2266,21 @@ Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 98.
 (pdftex.def)             Requested size: 399.61743pt x 199.16928pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation 'Collins2024' on page 8 undefined on input line 115.
-
-
-LaTeX Warning: Citation 'Dorner2024' on page 8 undefined on input line 125.
+LaTeX Warning: Citation 'Collins2024' on page 8 undefined on input line 119.
 
 [8]
 
-LaTeX Warning: Citation 'Loo2025' on page 9 undefined on input line 147.
+LaTeX Warning: Citation 'Dorner2024' on page 9 undefined on input line 133.
 
-) (Chapters/chapter02.tex [9] [10 <../images/chap01/ingamewallhack.png> <../ima
-ges/chap01/paidwallhack.png>] [11 <../images/chap01/radarhack.png> <../images/c
-hap01/fig4.png>] [12 <../images/chap01/fig5.png>]
+
+LaTeX Warning: Citation 'Loo2025' on page 9 undefined on input line 145.
+
+[9]) (Chapters/chapter02.tex [10] [11 <../images/chap01/ingamewallhack.png> <..
+/images/chap01/paidwallhack.png>] [12 <../images/chap01/radarhack.png> <../imag
+es/chap01/fig4.png>] [13 <../images/chap01/fig5.png>]
 Chapter 2.
 
 Overfull \hbox (12.4873pt too wide) in paragraph at lines 2--2
@@ -2302,23 +2302,16 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 11.
 
 
-LaTeX Warning: Citation 'Collins2024' on page 13 undefined on input line 21.
+LaTeX Warning: Citation 'Collins2024' on page 14 undefined on input line 21.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13
+ [14
 
 ]
 
-LaTeX Warning: Citation 'Collins2024' on page 14 undefined on input line 25.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
-
-LaTeX Warning: Citation 'Dorner2024' on page 15 undefined on input line 49.
+LaTeX Warning: Citation 'Collins2024' on page 15 undefined on input line 25.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2332,12 +2325,27 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
 
 [15]
+
+LaTeX Warning: Citation 'Dorner2024' on page 16 undefined on input line 49.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
 Overfull \hbox (13.70195pt too wide) in paragraph at lines 62--63
 []\T1/LinuxLibertineT-TLF/m/n/10.95 Headstart thanks to https://github.com/AxtM
 ueller/Windows-Kernel-Explorer --> PROB-LEM: ONLY
  []
 
-) (Chapters/chapter03.tex [16]
+) (Chapters/chapter03.tex
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 24.71541pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.71541pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
+
+[17]
 Chapter 3.
 Package mdframed Info: mdframed works in twoside mode on input line 10.
 Package mdframed Info: mdframed detected package amsthm 
@@ -2349,16 +2357,16 @@ Package mdframed Info: mdframed inside a box
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17
+ [18
 
 ]
-<../images/chap03/confusion_matrix.png, id=675, 486.618pt x 389.7762pt>
+<../images/chap03/confusion_matrix.png, id=676, 486.618pt x 389.7762pt>
 File: ../images/chap03/confusion_matrix.png Graphic file (type png)
 <use ../images/chap03/confusion_matrix.png>
 Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
 ine 30.
 (pdftex.def)             Requested size: 319.71353pt x 256.0748pt.
-<../images/chap03/flag_frequency.png, id=676, 931.3194pt x 426.393pt>
+<../images/chap03/flag_frequency.png, id=677, 931.3194pt x 426.393pt>
 File: ../images/chap03/flag_frequency.png Graphic file (type png)
 <use ../images/chap03/flag_frequency.png>
 Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
@@ -2368,7 +2376,7 @@ e 38.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../images/chap03/score_distribution.png, id=677, 642.2394pt x 425.9112pt>
+<../images/chap03/score_distribution.png, id=678, 642.2394pt x 425.9112pt>
 File: ../images/chap03/score_distribution.png Graphic file (type png)
 <use ../images/chap03/score_distribution.png>
 Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
@@ -2377,15 +2385,15 @@ Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <../images/chap03/confusion_matrix.png>] [19 <../images/chap03/flag_frequen
-cy.png>] [20 <../images/chap03/score_distribution.png>]
+[19 <../images/chap03/confusion_matrix.png>] [20 <../images/chap03/flag_frequen
+cy.png>] [21 <../images/chap03/score_distribution.png>]
 Overfull \hbox (10.9545pt too wide) in paragraph at lines 141--142
 []\T1/LinuxLibertineT-TLF/m/n/10.95 Differentiating anoma-lous ex-pert playstyl
 es (ex-otic but le-git-i-mate be-hav-iors) from software-assisted
  []
 
 
-LaTeX Warning: Citation 'Loo2025' on page 21 undefined on input line 156.
+LaTeX Warning: Citation 'Loo2025' on page 22 undefined on input line 156.
 
 
 Overfull \hbox (1.27951pt too wide) in paragraph at lines 156--157
@@ -2393,28 +2401,28 @@ Overfull \hbox (1.27951pt too wide) in paragraph at lines 156--157
 edged in the lit-er-a-ture: open-source be-havioural de-tec-tion trained
  []
 
-[21]) (Chapters/conclu.tex [22])
+[22]) (Chapters/conclu.tex [23])
 
 LaTeX Warning: Empty bibliography on input line 89.
 
-(manuscrit.gls [23
+(manuscrit.gls [24
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 3.
- [24
+ [25
 
 
-] [25{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
-.enc}]) (manuscrit.acr [26]) (Annexes/annex02.tex
-[27
+] [26{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
+.enc}]) (manuscrit.acr [27]) (Annexes/annex02.tex
+[28
 
 
 ]
 Appendix A.
-[28
+[29
 
-]) (Annexes/annex03.tex [29]
+]) (Annexes/annex03.tex [30]
 Appendix B.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 21.
@@ -2424,9 +2432,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 21.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 21.
-[30
+[31
 
-]) (Annexes/annex04.tex [31]
+]) (Annexes/annex04.tex [32]
 Appendix C.
 
 Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
@@ -2436,10 +2444,10 @@ Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32
+ [33
 
 ])
-(Annexes/annex01.tex [33]
+(Annexes/annex01.tex [34]
 Appendix D.
 
 Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
@@ -2447,19 +2455,19 @@ Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
  []
 
 
-LaTeX Warning: Citation 'Dorner2024' on page 34 undefined on input line 11.
+LaTeX Warning: Citation 'Dorner2024' on page 35 undefined on input line 11.
 
-[34
+[35
 
 ]
-<../images/annex01/fig6.png, id=814, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=815, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
 (pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
- [35 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [36]
+ [36 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [37]
 Appendix E.
-<../images/annex05/cheaters.png, id=826, 533.74406pt x 797.22844pt>
+<../images/annex05/cheaters.png, id=828, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
 <use ../images/annex05/cheaters.png>
 Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
@@ -2468,7 +2476,7 @@ Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../images/annex05/csst.png, id=827, 866.48718pt x 639.13782pt>
+<../images/annex05/csst.png, id=829, 866.48718pt x 639.13782pt>
 File: ../images/annex05/csst.png Graphic file (type png)
 <use ../images/annex05/csst.png>
 Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
@@ -2476,14 +2484,14 @@ Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (quatriemeDeCouverture.tex [37
+) (quatriemeDeCouverture.tex [38
 
 ])
 \tf@ptc=\write11
 \openout11 = `manuscrit.ptc'.
 
- [38] [39 <../images/annex05/cheaters.png>]
-[40 <../images/annex05/csst.png>] (manuscrit.aux)
+ [39] [40 <../images/annex05/cheaters.png>]
+[41 <../images/annex05/csst.png>] (manuscrit.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -2493,7 +2501,7 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `manuscrit.out' has not changed.
-(rerunfilecheck)             Checksum: 8C5C5DA857A22426952043DE68219240;12911.
+(rerunfilecheck)             Checksum: 4A9F698532817589D9963E155DC443B3;12911.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                manuscrit
@@ -2504,10 +2512,10 @@ Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62007 strings out of 467866
- 1384701 string characters out of 5418325
- 2512702 words of memory out of 5000000
- 89701 multiletter control sequences out of 15000+600000
+ 62002 strings out of 467866
+ 1384604 string characters out of 5418325
+ 2512530 words of memory out of 5000000
+ 89698 multiletter control sequences out of 15000+600000
  782571 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,120p,2548b,2612s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2517,12 +2525,10 @@ nBiolinumT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public
 s/type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
-ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
-ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb>
-Output written on manuscrit.pdf (46 pages, 16879551 bytes).
+ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb>
+Output written on manuscrit.pdf (47 pages, 16878669 bytes).
 PDF statistics:
- 926 PDF objects out of 1000 (max. 8388607)
- 159 named destinations out of 1000 (max. 500000)
+ 923 PDF objects out of 1000 (max. 8388607)
+ 157 named destinations out of 1000 (max. 500000)
  563 words of extra memory for PDF output out of 10000 (max. 10000000)
 
