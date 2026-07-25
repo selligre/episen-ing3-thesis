@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  23 JUL 2026 18:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  25 JUL 2026 09:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1903,11 +1903,11 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `manuscrit.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'manuscrit.bbl' not found.
-
-No file manuscrit.bbl.
+Package biblatex Info: ... file 'manuscrit.bbl' found.
+ (manuscrit.bbl)
 Package biblatex Info: Reference section=0 on input line 15.
 Package biblatex Info: Reference segment=0 on input line 15.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2049,13 +2049,13 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<../images/logos/en-tete_EPISEN-SI.png, id=245, 565.51276pt x 139.11975pt>
+<../images/logos/en-tete_EPISEN-SI.png, id=246, 565.51276pt x 139.11975pt>
 File: ../images/logos/en-tete_EPISEN-SI.png Graphic file (type png)
 <use ../images/logos/en-tete_EPISEN-SI.png>
 Package pdftex.def Info: ../images/logos/en-tete_EPISEN-SI.png  used on input l
 ine 24.
 (pdftex.def)             Requested size: 256.0748pt x 62.99602pt.
-<../images/logos/Saint-Gobain-Logo.png, id=247, 501.875pt x 282.05376pt>
+<../images/logos/Saint-Gobain-Logo.png, id=248, 501.875pt x 282.05376pt>
 File: ../images/logos/Saint-Gobain-Logo.png Graphic file (type png)
 <use ../images/logos/Saint-Gobain-Logo.png>
 Package pdftex.def Info: ../images/logos/Saint-Gobain-Logo.png  used on input l
@@ -2120,7 +2120,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 ...l System Deployment}{20}{subsection.3.1.3}
+l.26 ...l System Deployment}{19}{subsection.3.1.3}
                                                   % [1
 
 
@@ -2157,10 +2157,6 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 4.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 4.
-
-
-LaTeX Warning: Citation 'Kuzhii2024' on page 1 undefined on input line 13.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2208,7 +2204,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [4
 
 ]
-<../images/chap01/fig1.png, id=524, 1151.80313pt x 719.68875pt>
+<../images/chap01/fig1.png, id=531, 1151.80313pt x 719.68875pt>
 File: ../images/chap01/fig1.png Graphic file (type png)
 <use ../images/chap01/fig1.png>
 Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 30.
@@ -2218,13 +2214,13 @@ Underfull \vbox (badness 4181) has occurred while \output is active []
 
  [5{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn
 _naooyc.enc} <../images/chap01/fig1.png>]
-<../images/chap01/ingamewallhack.png, id=534, 1926.44719pt x 1083.29718pt>
+<../images/chap01/ingamewallhack.png, id=541, 1926.44719pt x 1083.29718pt>
 File: ../images/chap01/ingamewallhack.png Graphic file (type png)
 <use ../images/chap01/ingamewallhack.png>
 Package pdftex.def Info: ../images/chap01/ingamewallhack.png  used on input lin
 e 47.
 (pdftex.def)             Requested size: 455.36072pt x 256.0748pt.
-<../images/chap01/paidwallhack.png, id=535, 1926.44719pt x 1083.29718pt>
+<../images/chap01/paidwallhack.png, id=542, 1926.44719pt x 1083.29718pt>
 File: ../images/chap01/paidwallhack.png Graphic file (type png)
 <use ../images/chap01/paidwallhack.png>
 Package pdftex.def Info: ../images/chap01/paidwallhack.png  used on input line 
@@ -2232,9 +2228,9 @@ Package pdftex.def Info: ../images/chap01/paidwallhack.png  used on input line
 (pdftex.def)             Requested size: 455.36072pt x 256.0748pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../images/chap01/radarhack.png, id=538, 1926.44719pt x 802.49812pt>
+<../images/chap01/radarhack.png, id=545, 1926.44719pt x 802.49812pt>
 File: ../images/chap01/radarhack.png Graphic file (type png)
 <use ../images/chap01/radarhack.png>
 Package pdftex.def Info: ../images/chap01/radarhack.png  used on input line 64.
@@ -2246,20 +2242,17 @@ Overfull \hbox (22.86848pt too wide) in paragraph at lines 64--65
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6]
-<../images/chap01/fig4.png, id=547, 738.50906pt x 470.50781pt>
+[6] [7 <../images/chap01/ingamewallhack.png> <../images/chap01/paidwallhack.png
+>]
+<../images/chap01/fig4.png, id=562, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
 Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 77.
 (pdftex.def)             Requested size: 401.93294pt x 256.0748pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7]
-<../images/chap01/fig5.png, id=566, 947.03813pt x 472.01344pt>
+ [8 <../images/chap01/radarhack.png> <../images/chap01/fig4.png>]
+<../images/chap01/fig5.png, id=576, 947.03813pt x 472.01344pt>
 File: ../images/chap01/fig5.png Graphic file (type png)
 <use ../images/chap01/fig5.png>
 Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 98.
@@ -2268,19 +2261,7 @@ Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 98.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Citation 'Collins2024' on page 8 undefined on input line 119.
-
-[8]
-
-LaTeX Warning: Citation 'Dorner2024' on page 9 undefined on input line 133.
-
-
-LaTeX Warning: Citation 'Loo2025' on page 9 undefined on input line 145.
-
-[9]) (Chapters/chapter02.tex [10] [11 <../images/chap01/ingamewallhack.png> <..
-/images/chap01/paidwallhack.png>] [12 <../images/chap01/radarhack.png> <../imag
-es/chap01/fig4.png>] [13 <../images/chap01/fig5.png>]
+[9] [10 <../images/chap01/fig5.png>] [11]) (Chapters/chapter02.tex [12]
 Chapter 2.
 
 Overfull \hbox (12.4873pt too wide) in paragraph at lines 2--2
@@ -2301,19 +2282,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 11.
 
-
-LaTeX Warning: Citation 'Collins2024' on page 14 undefined on input line 21.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14
+ [13
 
 ]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation 'Collins2024' on page 15 undefined on input line 25.
-
-
+ [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2325,27 +2301,12 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
 
 [15]
-
-LaTeX Warning: Citation 'Dorner2024' on page 16 undefined on input line 49.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
 Overfull \hbox (13.70195pt too wide) in paragraph at lines 62--63
 []\T1/LinuxLibertineT-TLF/m/n/10.95 Headstart thanks to https://github.com/AxtM
 ueller/Windows-Kernel-Explorer --> PROB-LEM: ONLY
  []
 
-) (Chapters/chapter03.tex
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 24.71541pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.71541pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
-
-[17]
+) (Chapters/chapter03.tex [16]
 Chapter 3.
 Package mdframed Info: mdframed works in twoside mode on input line 10.
 Package mdframed Info: mdframed detected package amsthm 
@@ -2357,16 +2318,16 @@ Package mdframed Info: mdframed inside a box
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18
+ [17
 
 ]
-<../images/chap03/confusion_matrix.png, id=676, 486.618pt x 389.7762pt>
+<../images/chap03/confusion_matrix.png, id=687, 486.618pt x 389.7762pt>
 File: ../images/chap03/confusion_matrix.png Graphic file (type png)
 <use ../images/chap03/confusion_matrix.png>
 Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
 ine 30.
 (pdftex.def)             Requested size: 319.71353pt x 256.0748pt.
-<../images/chap03/flag_frequency.png, id=677, 931.3194pt x 426.393pt>
+<../images/chap03/flag_frequency.png, id=688, 931.3194pt x 426.393pt>
 File: ../images/chap03/flag_frequency.png Graphic file (type png)
 <use ../images/chap03/flag_frequency.png>
 Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
@@ -2376,7 +2337,7 @@ e 38.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../images/chap03/score_distribution.png, id=678, 642.2394pt x 425.9112pt>
+<../images/chap03/score_distribution.png, id=689, 642.2394pt x 425.9112pt>
 File: ../images/chap03/score_distribution.png Graphic file (type png)
 <use ../images/chap03/score_distribution.png>
 Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
@@ -2385,15 +2346,12 @@ Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <../images/chap03/confusion_matrix.png>] [20 <../images/chap03/flag_frequen
-cy.png>] [21 <../images/chap03/score_distribution.png>]
+[18 <../images/chap03/confusion_matrix.png>] [19 <../images/chap03/flag_frequen
+cy.png>] [20 <../images/chap03/score_distribution.png>]
 Overfull \hbox (10.9545pt too wide) in paragraph at lines 141--142
 []\T1/LinuxLibertineT-TLF/m/n/10.95 Differentiating anoma-lous ex-pert playstyl
 es (ex-otic but le-git-i-mate be-hav-iors) from software-assisted
  []
-
-
-LaTeX Warning: Citation 'Loo2025' on page 22 undefined on input line 156.
 
 
 Overfull \hbox (1.27951pt too wide) in paragraph at lines 156--157
@@ -2401,11 +2359,12 @@ Overfull \hbox (1.27951pt too wide) in paragraph at lines 156--157
 edged in the lit-er-a-ture: open-source be-havioural de-tec-tion trained
  []
 
-[22]) (Chapters/conclu.tex [23])
+[21]) (Chapters/conclu.tex [22]) [23
 
-LaTeX Warning: Empty bibliography on input line 89.
-
-(manuscrit.gls [24
+]
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 10.95pt on input line 89.
+ (manuscrit.gls [24
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
@@ -2414,8 +2373,8 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 
 
 ] [26{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
-.enc}]) (manuscrit.acr [27]) (Annexes/annex02.tex
-[28
+.enc}])
+(manuscrit.acr [27]) (Annexes/annex02.tex [28
 
 
 ]
@@ -2454,20 +2413,17 @@ Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
 \T1/LinuxLibertineT-TLF/m/sc/24.88 nam-ics of Kernel-Level Anti-Cheat Im-ple-
  []
 
-
-LaTeX Warning: Citation 'Dorner2024' on page 35 undefined on input line 11.
-
 [35
 
 ]
-<../images/annex01/fig6.png, id=815, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=853, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
 (pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
  [36 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [37]
 Appendix E.
-<../images/annex05/cheaters.png, id=828, 533.74406pt x 797.22844pt>
+<../images/annex05/cheaters.png, id=866, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
 <use ../images/annex05/cheaters.png>
 Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
@@ -2476,7 +2432,7 @@ Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../images/annex05/csst.png, id=829, 866.48718pt x 639.13782pt>
+<../images/annex05/csst.png, id=867, 866.48718pt x 639.13782pt>
 File: ../images/annex05/csst.png Graphic file (type png)
 <use ../images/annex05/csst.png>
 Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
@@ -2496,27 +2452,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `manuscrit.out' has not changed.
-(rerunfilecheck)             Checksum: 4A9F698532817589D9963E155DC443B3;12911.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                manuscrit
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 8AD68E580B39F300557D5D252FC5FF07;12911.
 Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 \openout1 = `manuscrit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62002 strings out of 467866
- 1384604 string characters out of 5418325
- 2512530 words of memory out of 5000000
- 89698 multiletter control sequences out of 15000+600000
- 782571 words of font info for 139 fonts, out of 8000000 for 9000
+ 62136 strings out of 467866
+ 1387263 string characters out of 5418325
+ 2514461 words of memory out of 5000000
+ 89822 multiletter control sequences out of 15000+600000
+ 787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,120p,2548b,2612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/Li
@@ -2526,9 +2473,9 @@ s/type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb>
-Output written on manuscrit.pdf (47 pages, 16878669 bytes).
+Output written on manuscrit.pdf (47 pages, 16893732 bytes).
 PDF statistics:
- 923 PDF objects out of 1000 (max. 8388607)
- 157 named destinations out of 1000 (max. 500000)
+ 962 PDF objects out of 1000 (max. 8388607)
+ 164 named destinations out of 1000 (max. 500000)
  563 words of extra memory for PDF output out of 10000 (max. 10000000)
 

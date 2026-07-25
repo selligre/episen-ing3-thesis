@@ -3,21 +3,21 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces Comparison of the recoil from the AK-47 in-game with its theoretical model, implying that the recoil is deterministic and can be compensated for with a script.}}{5}{figure.caption.4}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of wallhack demonstration using built-in command "r\_aoproxy\_show 1" in CS2, which forces the engine to render near entity models regardless of occlusion (top) and an ad from a cheating software provider showing wallhack in action (bottom).}}{11}{figure.caption.5}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Radarhack demonstration showing the extraction of enemy positions from the game's entity list and their projection onto a secondary interface.}}{12}{figure.caption.6}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Privilege \gls {rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3.}}{12}{figure.caption.7}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing.}}{13}{figure.caption.8}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of wallhack demonstration using built-in command "r\_aoproxy\_show 1" in CS2, which forces the engine to render near entity models regardless of occlusion (top) and an ad from a cheating software provider showing wallhack in action (bottom).}}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Radarhack demonstration showing the extraction of enemy positions from the game's entity list and their projection onto a secondary interface.}}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Privilege \gls {rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3.}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing.}}{10}{figure.caption.8}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}}{19}{figure.caption.9}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{20}{figure.caption.10}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{21}{figure.caption.11}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{20}{figure.caption.11}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{36}{figure.caption.17}%
+\contentsline {figure}{\numberline {9}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{36}{figure.caption.18}%
 \addvspace {10\p@ }
 \contentsfinish 
-\contentsline {figure}{\numberline {10}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{40}{figure.caption.18}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{41}{figure.caption.19}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{40}{figure.caption.19}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{41}{figure.caption.20}%
