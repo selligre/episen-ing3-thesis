@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  28 JUL 2026 00:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  28 JUL 2026 01:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2531,7 +2531,7 @@ Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 Here is how much of TeX's memory you used:
  62203 strings out of 467866
  1388922 string characters out of 5418325
- 2518543 words of memory out of 5000000
+ 2518544 words of memory out of 5000000
  89877 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
