@@ -8,16 +8,22 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Privilege \gls {rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3.}}{8}{figure.caption.7}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing.}}{10}{figure.caption.8}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6}{\ignorespaces Sensitive value ("Mot de passe : Test1234!") entered into a Notepad process left resident in memory on the isolated Windows 10 virtual machine.}}{17}{figure.caption.9}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Windows-Kernel-Explorer process list, showing the target notepad.exe process isolated by its PID, PPID, EPROCESS pointer, and executable path.}}{17}{figure.caption.10}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Memory map of the notepad.exe process returned by Windows-Kernel-Explorer, listing several hundred regions by base address, size, allocation state, and protection flags.}}{18}{figure.caption.11}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Cheat Engine string scan of notepad.exe's memory for "Mot de passe", returning a single matching address.}}{19}{figure.caption.12}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Raw hexadecimal bytes at the matched address, viewed through Windows-Kernel-Explorer's memory editor, showing the target string split across three contiguous rows.}}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Reconstruction of the original string via a hexadecimal-to-ASCII converter, confirming an exact match with the value entered in Notepad.}}{20}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}}{18}{figure.caption.9}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{19}{figure.caption.10}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{20}{figure.caption.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}}{23}{figure.caption.15}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{24}{figure.caption.16}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{25}{figure.caption.17}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {9}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{36}{figure.caption.18}%
+\contentsline {figure}{\numberline {15}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{41}{figure.caption.24}%
 \addvspace {10\p@ }
 \contentsfinish 
-\contentsline {figure}{\numberline {10}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{40}{figure.caption.19}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{41}{figure.caption.20}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{45}{figure.caption.25}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{46}{figure.caption.26}%

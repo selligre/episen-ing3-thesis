@@ -56,26 +56,72 @@ Taken together, these three cost vectors (maintenance, incident response, and ad
 \subsection{Experimental Objective}
 \label{sec:two:two:one}
 
-\begin{itemize}
-\item Illustrate the level of access of a privileged component
-\item Demonstrate security and privacy implications
-\item Headstart thanks to https://github.com/AxtMueller/Windows-Kernel-Explorer --> PROBLEM: ONLY SUPPORTED UNTIL WINDOWS 10. WHAT DO DO INSTEAD? I SEARCHED FOR ALTERNATIVES (READ RAM CONTENT ON LINUX, OTHER TOOLS TO READ RAM CONTENT ON WINDOWS) BUT COULDN'T GET ANYTHING TO WORK ON LINUX NOR WINDOWS. I COULD SHOW HOW CHEAT ENGINE CAN FIND A VARIABLE LOCATION IN RAM FROM USING SUCCESIVE VALUES TO PINPOINT THE EXACT LOCATION OF THE VARIABLE IN RAM (MEANING YOU CAN THEN READ IT OR MODIFY IT) BUT WOULD THAT BE REALLY USEFULL IN THE CONTENT OF THIS THESIS?
-\end{itemize}
+The structural and economic limitations identified in Section 2.1 rest on the premise that kernel-level access exceeds what its stated purpose (detecting cheat software) strictly requires, and that this margin constitutes an exploitable, or at minimum uncomfortable, degree of intrusiveness. Rather than argue this point abstractly, this section reproduces from user mode the kind of memory inspection that a Ring 0 driver performs continuously and invisibly. Windows-Kernel-Explorer exposes a privileged interface reflecting the visibility a kernel driver holds over process memory, while Cheat Engine complements it with the targeted search capability that raw memory enumeration alone does not provide. Both tools were deployed on an isolated Windows 10 virtual machine running a Notepad process seeded with a string standing in for a sensitive value, "Mot de passe : Test1234!" (Figure 6), left resident in RAM as user data would remain during normal operation. The objective is twofold: first, to illustrate concretely the level of access a privileged component holds over an unrelated process's memory; second, to derive from this access the security and privacy implications that follow when such visibility is exercised outside of user-mode oversight.
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap02/2.png}
+    \end{center}
+    \caption{Sensitive value ("Mot de passe : Test1234!") entered into a Notepad process left resident in memory on the isolated Windows 10 virtual machine.}
+    \label{fig:chapter02-2}
+\end{figure}
 
 \subsection{Experimental Observations}
 \label{sec:two:two:two}
 
-\begin{itemize}
-\item Access to sensitive system resources
-\item Privilege differences compared to regular software
-\item Observation of non-game-related data
-\end{itemize}
+Launching Windows-Kernel-Explorer with administrative privileges exposes the complete list of processes running on the system, each annotated with its PID, parent PID, EPROCESS kernel pointer, and executable path, from which the target notepad.exe process is isolated by its PID (Figure 7).
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap02/4.png}
+    \end{center}
+    \caption{Windows-Kernel-Explorer process list, showing the target notepad.exe process isolated by its PID, PPID, EPROCESS pointer, and executable path.}
+    \label{fig:chapter02-4}
+\end{figure}
+
+Requesting its memory map returns several hundred discrete regions, each characterized by base address, size, allocation state (free, reserved, committed), protection flags, and, where applicable, mapped module (Figure 8). This granularity confirms that a privileged component can enumerate, without any cooperation from the monitored process, the entirety of its address space — but it also exposes the practical obstacle to exploiting that access manually: the sheer number of regions makes an exhaustive review intractable, and nothing in the listing indicates which region, if any, holds a given value, since a string of this length may be stored contiguously or split across adjacent allocations. Windows-Kernel-Explorer's built-in hex viewer allows individual regions to be inspected, but browsing them one by one is not a substitute for a proper search, which the tool does not provide.
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap02/5.png}
+    \end{center}
+    \caption{Memory map of the notepad.exe process returned by Windows-Kernel-Explorer, listing several hundred regions by base address, size, allocation state, and protection flags.}
+    \label{fig:chapter02-5}
+\end{figure}
+
+Cheat Engine was therefore attached to the same notepad.exe process to perform this search directly, scanning process memory for the text string "Mot de passe" under a UTF-16 string-scan filter. The scan returns a single matching address (Figure 9), and inspecting the surrounding memory through Windows-Kernel-Explorer's memory editor at that address shows the target string split across three contiguous rows of raw bytes rather than stored as a single block, requiring the three rows to be reassembled (Figure 10).
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap02/11.png}
+    \end{center}
+    \caption{Cheat Engine string scan of notepad.exe's memory for "Mot de passe", returning a single matching address.}
+    \label{fig:chapter02-11}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap02/15.png}
+    \end{center}
+    \caption{Raw hexadecimal bytes at the matched address, viewed through Windows-Kernel-Explorer's memory editor, showing the target string split across three contiguous rows.}
+    \label{fig:chapter02-15}
+\end{figure}
+
+These bytes were transcribed and passed through a standard hexadecimal-to-ASCII converter, which reconstructed the exact original string, "Mot de passe : Test1234!" (Figure 11) — confirming that the value located, split, and read via privileged memory access was byte-for-byte identical to the value entered into Notepad.
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap02/16.png}
+    \end{center}
+    \caption{Reconstruction of the original string via a hexadecimal-to-ASCII converter, confirming an exact match with the value entered in Notepad.}
+    \label{fig:chapter02-16}
+\end{figure}
 
 \subsection{Critical Analysis}
 \label{sec:two:two:three}
 
-\begin{itemize}
-\item Real vs theoretical implications
-\item Link with user perception
-\item Discussion of effectiveness vs intrusiveness proportionality
-\end{itemize}
+The experiment above was conducted manually and semi-interactively: locating the target string required a dedicated third-party search tool, and reconstructing it required cross-referencing three discontiguous memory rows by hand. A production kernel-level anti-cheat performs structurally equivalent operations — process enumeration, memory-region traversal, targeted content inspection — automatically, continuously, and without any user-facing indication, at a privilege level the operating system does not allow user-mode software to countermand. The gap between what was demonstrated here and what a kernel driver is capable of is therefore one of automation and discretion, not of technical scope: nothing observed in this experiment required capabilities beyond those a Ring 0 driver already possesses by design, as established in Section 2.1.1.
+
+This distinction separates two arguments frequently conflated in player-facing discourse around kernel-level anti-cheat. The first is theoretical — that Ring 0 access is broad enough to reach arbitrary process memory — which Section 2.1 already establishes on architectural grounds. The second, illustrated here, is demonstrated: that this breadth is trivially exercisable against an entirely unrelated, non-gaming process, using tools requiring no elevated engineering effort. Player skepticism toward kernel-level anti-cheat, discussed in Appendix D.2, is frequently characterized as a perception problem rather than a substantiated risk; the experiment above suggests the opposite — that the underlying access is concrete and immediately actionable, and that user distrust tracks a real technical property of the system rather than a misunderstanding of it.
+
+The proportionality question that follows is whether the detection value obtained from this level of access justifies granting it. The target string used here was, by design, an isolated and clearly labeled example; on an actual gaming session, the equivalent surface is every process resident in memory at the same time, including any web browser left open in the background. Session cookies, authentication tokens, saved form data, and, depending on browser and extension configuration, unencrypted credential fields are held in process memory in essentially the same manner as the string retrieved above, and are reachable through the same primitive: not network interception, but direct, local, privileged access to a resident process's memory — indistinguishable in mechanism from what was demonstrated here. An anti-cheat driver holding Ring 0 privileges is not architecturally prevented from performing this same read against a browser process instead of a game process; it is prevented only by the software's design intent, which — unlike the operating system's privilege boundary itself — is neither independently verifiable by the end user nor enforced by the platform. This asymmetry is precisely what motivates the shift toward a detection model that does not require this class of access at all, developed in Chapter 3.

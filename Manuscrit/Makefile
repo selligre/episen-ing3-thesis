@@ -27,7 +27,6 @@ fuck:
 	pdflatex manuscrit.tex
 	makeglossaries manuscrit
 	biber manuscrit
-	makeindex -s "manuscrit.ist" -t "manuscrit.glg" -o "manuscrit.gls" "manuscrit.glo"
 	pdflatex manuscrit.tex
 	pdflatex manuscrit.tex
 

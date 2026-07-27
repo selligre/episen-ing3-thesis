@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  25 JUL 2026 09:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  28 JUL 2026 00:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2120,7 +2120,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 ...l System Deployment}{19}{subsection.3.1.3}
+l.26 ...l System Deployment}{24}{subsection.3.1.3}
                                                   % [1
 
 
@@ -2131,20 +2131,20 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 ...nti-Cheat Implementations}{35}{appendix.D}
+l.55 ...nti-Cheat Implementations}{40}{appendix.D}
                                                   % [2])
 \tf@toc=\write9
 \openout9 = `manuscrit.toc'.
 
- [3] (manuscrit.lof)
-\tf@lof=\write10
-\openout10 = `manuscrit.lof'.
-
-
+ [3] (manuscrit.lof
 [4
 
 
-] (Chapters/intro.tex
+])
+\tf@lof=\write10
+\openout10 = `manuscrit.lof'.
+
+ [5] (Chapters/intro.tex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 4.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
@@ -2204,7 +2204,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [4
 
 ]
-<../images/chap01/fig1.png, id=531, 1151.80313pt x 719.68875pt>
+<../images/chap01/fig1.png, id=560, 1151.80313pt x 719.68875pt>
 File: ../images/chap01/fig1.png Graphic file (type png)
 <use ../images/chap01/fig1.png>
 Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 30.
@@ -2214,13 +2214,13 @@ Underfull \vbox (badness 4181) has occurred while \output is active []
 
  [5{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn
 _naooyc.enc} <../images/chap01/fig1.png>]
-<../images/chap01/ingamewallhack.png, id=541, 1926.44719pt x 1083.29718pt>
+<../images/chap01/ingamewallhack.png, id=570, 1926.44719pt x 1083.29718pt>
 File: ../images/chap01/ingamewallhack.png Graphic file (type png)
 <use ../images/chap01/ingamewallhack.png>
 Package pdftex.def Info: ../images/chap01/ingamewallhack.png  used on input lin
 e 47.
 (pdftex.def)             Requested size: 455.36072pt x 256.0748pt.
-<../images/chap01/paidwallhack.png, id=542, 1926.44719pt x 1083.29718pt>
+<../images/chap01/paidwallhack.png, id=571, 1926.44719pt x 1083.29718pt>
 File: ../images/chap01/paidwallhack.png Graphic file (type png)
 <use ../images/chap01/paidwallhack.png>
 Package pdftex.def Info: ../images/chap01/paidwallhack.png  used on input line 
@@ -2230,7 +2230,7 @@ Package pdftex.def Info: ../images/chap01/paidwallhack.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<../images/chap01/radarhack.png, id=545, 1926.44719pt x 802.49812pt>
+<../images/chap01/radarhack.png, id=574, 1926.44719pt x 802.49812pt>
 File: ../images/chap01/radarhack.png Graphic file (type png)
 <use ../images/chap01/radarhack.png>
 Package pdftex.def Info: ../images/chap01/radarhack.png  used on input line 64.
@@ -2246,13 +2246,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6] [7 <../images/chap01/ingamewallhack.png> <../images/chap01/paidwallhack.png
 >]
-<../images/chap01/fig4.png, id=562, 738.50906pt x 470.50781pt>
+<../images/chap01/fig4.png, id=591, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
 Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 77.
 (pdftex.def)             Requested size: 401.93294pt x 256.0748pt.
  [8 <../images/chap01/radarhack.png> <../images/chap01/fig4.png>]
-<../images/chap01/fig5.png, id=576, 947.03813pt x 472.01344pt>
+<../images/chap01/fig5.png, id=605, 947.03813pt x 472.01344pt>
 File: ../images/chap01/fig5.png Graphic file (type png)
 <use ../images/chap01/fig5.png>
 Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 98.
@@ -2301,12 +2301,82 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
 
 [15]
-Overfull \hbox (13.70195pt too wide) in paragraph at lines 62--63
-[]\T1/LinuxLibertineT-TLF/m/n/10.95 Headstart thanks to https://github.com/AxtM
-ueller/Windows-Kernel-Explorer --> PROB-LEM: ONLY
+<../images/chap02/2.png, id=679, 1926.44719pt x 1083.29718pt>
+File: ../images/chap02/2.png Graphic file (type png)
+<use ../images/chap02/2.png>
+Package pdftex.def Info: ../images/chap02/2.png  used on input line 63.
+(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+<../images/chap02/4.png, id=685, 1926.44719pt x 1083.29718pt>
+File: ../images/chap02/4.png Graphic file (type png)
+<use ../images/chap02/4.png>
+Package pdftex.def Info: ../images/chap02/4.png  used on input line 76.
+(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 24.71541pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.71541pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
+
+[17 <../images/chap02/2.png> <../images/chap02/4.png>]
+<../images/chap02/5.png, id=693, 1926.44719pt x 1083.29718pt>
+File: ../images/chap02/5.png Graphic file (type png)
+<use ../images/chap02/5.png>
+Package pdftex.def Info: ../images/chap02/5.png  used on input line 86.
+(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+<../images/chap02/11.png, id=694, 1926.44719pt x 1083.29718pt>
+File: ../images/chap02/11.png Graphic file (type png)
+<use ../images/chap02/11.png>
+Package pdftex.def Info: ../images/chap02/11.png  used on input line 96.
+(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <../images/chap02/5.png>]
+<../images/chap02/15.png, id=702, 1926.44719pt x 1083.29718pt>
+File: ../images/chap02/15.png Graphic file (type png)
+<use ../images/chap02/15.png>
+Package pdftex.def Info: ../images/chap02/15.png  used on input line 104.
+(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+
+Overfull \hbox (1.061pt too wide) in paragraph at lines 110--111
+[]\T1/LinuxLibertineT-TLF/m/n/10.95 These bytes were tran-scribed and passed th
+rough a stan-dard hexadecimal-to-ASCII con-verter, which
  []
 
-) (Chapters/chapter03.tex [16]
+<../images/chap02/16.png, id=703, 1926.44719pt x 1083.29718pt>
+File: ../images/chap02/16.png Graphic file (type png)
+<use ../images/chap02/16.png>
+Package pdftex.def Info: ../images/chap02/16.png  used on input line 114.
+(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 24.71541pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.71541pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
+
+[19 <../images/chap02/11.png> <../images/chap02/15.png>])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <../images/chap02/16.png>] (Chapters/chapter03.tex
+
+Package fancyhdr Warning: \headheight is too small (14.0pt): 
+(fancyhdr)                Make it at least 24.71541pt, for example:
+(fancyhdr)                \setlength{\headheight}{24.71541pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
+
+[21]
 Chapter 3.
 Package mdframed Info: mdframed works in twoside mode on input line 10.
 Package mdframed Info: mdframed detected package amsthm 
@@ -2318,16 +2388,16 @@ Package mdframed Info: mdframed inside a box
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17
+ [22
 
 ]
-<../images/chap03/confusion_matrix.png, id=687, 486.618pt x 389.7762pt>
+<../images/chap03/confusion_matrix.png, id=758, 486.618pt x 389.7762pt>
 File: ../images/chap03/confusion_matrix.png Graphic file (type png)
 <use ../images/chap03/confusion_matrix.png>
 Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
 ine 30.
 (pdftex.def)             Requested size: 319.71353pt x 256.0748pt.
-<../images/chap03/flag_frequency.png, id=688, 931.3194pt x 426.393pt>
+<../images/chap03/flag_frequency.png, id=759, 931.3194pt x 426.393pt>
 File: ../images/chap03/flag_frequency.png Graphic file (type png)
 <use ../images/chap03/flag_frequency.png>
 Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
@@ -2337,7 +2407,7 @@ e 38.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../images/chap03/score_distribution.png, id=689, 642.2394pt x 425.9112pt>
+<../images/chap03/score_distribution.png, id=760, 642.2394pt x 425.9112pt>
 File: ../images/chap03/score_distribution.png Graphic file (type png)
 <use ../images/chap03/score_distribution.png>
 Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
@@ -2346,8 +2416,8 @@ Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <../images/chap03/confusion_matrix.png>] [19 <../images/chap03/flag_frequen
-cy.png>] [20 <../images/chap03/score_distribution.png>]
+[23 <../images/chap03/confusion_matrix.png>] [24 <../images/chap03/flag_frequen
+cy.png>] [25 <../images/chap03/score_distribution.png>]
 Overfull \hbox (10.9545pt too wide) in paragraph at lines 141--142
 []\T1/LinuxLibertineT-TLF/m/n/10.95 Differentiating anoma-lous ex-pert playstyl
 es (ex-otic but le-git-i-mate be-hav-iors) from software-assisted
@@ -2359,29 +2429,29 @@ Overfull \hbox (1.27951pt too wide) in paragraph at lines 156--157
 edged in the lit-er-a-ture: open-source be-havioural de-tec-tion trained
  []
 
-[21]) (Chapters/conclu.tex [22]) [23
+[26]) (Chapters/conclu.tex [27]) [28
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 89.
- (manuscrit.gls [24
+ (manuscrit.gls [29
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 3.
- [25
+ [30
 
 
-] [26{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
+] [31{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit
 .enc}])
-(manuscrit.acr [27]) (Annexes/annex02.tex [28
+(manuscrit.acr [32]) (Annexes/annex02.tex [33
 
 
 ]
 Appendix A.
-[29
+[34
 
-]) (Annexes/annex03.tex [30]
+]) (Annexes/annex03.tex [35]
 Appendix B.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 21.
@@ -2391,9 +2461,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 21.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 21.
-[31
+[36
 
-]) (Annexes/annex04.tex [32]
+]) (Annexes/annex04.tex [37]
 Appendix C.
 
 Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
@@ -2403,27 +2473,27 @@ Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33
+ [38
 
 ])
-(Annexes/annex01.tex [34]
+(Annexes/annex01.tex [39]
 Appendix D.
 
 Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
 \T1/LinuxLibertineT-TLF/m/sc/24.88 nam-ics of Kernel-Level Anti-Cheat Im-ple-
  []
 
-[35
+[40
 
 ]
-<../images/annex01/fig6.png, id=853, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=925, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
 (pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
- [36 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [37]
+ [41 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [42]
 Appendix E.
-<../images/annex05/cheaters.png, id=866, 533.74406pt x 797.22844pt>
+<../images/annex05/cheaters.png, id=938, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
 <use ../images/annex05/cheaters.png>
 Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
@@ -2432,7 +2502,7 @@ Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../images/annex05/csst.png, id=867, 866.48718pt x 639.13782pt>
+<../images/annex05/csst.png, id=939, 866.48718pt x 639.13782pt>
 File: ../images/annex05/csst.png Graphic file (type png)
 <use ../images/annex05/csst.png>
 Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
@@ -2440,29 +2510,29 @@ Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (quatriemeDeCouverture.tex [38
+) (quatriemeDeCouverture.tex [43
 
 ])
 \tf@ptc=\write11
 \openout11 = `manuscrit.ptc'.
 
- [39] [40 <../images/annex05/cheaters.png>]
-[41 <../images/annex05/csst.png>] (manuscrit.aux)
+ [44] [45 <../images/annex05/cheaters.png>]
+[46 <../images/annex05/csst.png>] (manuscrit.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `manuscrit.out' has not changed.
-(rerunfilecheck)             Checksum: 8AD68E580B39F300557D5D252FC5FF07;12911.
+(rerunfilecheck)             Checksum: 159E4428C052F8EE6FEC890D8AA1E674;12911.
 Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 \openout1 = `manuscrit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62136 strings out of 467866
- 1387263 string characters out of 5418325
- 2514461 words of memory out of 5000000
- 89822 multiletter control sequences out of 15000+600000
+ 62203 strings out of 467866
+ 1388922 string characters out of 5418325
+ 2518543 words of memory out of 5000000
+ 89877 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,120p,2548b,2612s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2473,9 +2543,9 @@ s/type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb>
-Output written on manuscrit.pdf (47 pages, 16893732 bytes).
+Output written on manuscrit.pdf (53 pages, 21375873 bytes).
 PDF statistics:
- 962 PDF objects out of 1000 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
- 563 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1036 PDF objects out of 1200 (max. 8388607)
+ 176 named destinations out of 1000 (max. 500000)
+ 593 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -19,7 +19,7 @@
 \@glsorder{word}
 \babel@aux{english}{}
 \pgfsyspdfmark {pgfid1}{6708151}{4530627}
-\@writefile{toc}{\contentsline {chapter}{List of Figures}{iv}{chapter*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{List of Figures}{v}{chapter*.2}\protected@file@percent }
 \abx@aux@cite{0}{Kuzhii2024}
 \abx@aux@segm{0}{0}{Kuzhii2024}
 \newlabel{chap:intro}{{}{1}{Introduction}{chapter*.3}{}}
@@ -31,8 +31,8 @@
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{chap:one}{{1}{4}{State of the Art - Cheats and Anti-Cheats}{chapter.1}{}}
 \ttl@writefile{ptc}{\ttl@starttoc{chapters@1}}
-\zref@newlabel{mdf@pagelabel-1}{\default{1}\page{4}\abspage{10}\mdf@pagevalue{4}}
-\pgfsyspdfmark {pgfid23}{5895477}{22986023}
+\zref@newlabel{mdf@pagelabel-1}{\default{1}\page{4}\abspage{11}\mdf@pagevalue{4}}
+\pgfsyspdfmark {pgfid29}{5895477}{22986023}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Cheat-Based Exploration of System Architecture}{4}{section.1.1}\protected@file@percent }
 \newlabel{sec:one:one}{{1.1}{4}{Cheat-Based Exploration of System Architecture}{section.1.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}Automation Cheats}{4}{subsection.1.1.1}\protected@file@percent }
@@ -79,8 +79,8 @@
 \ttl@writefile{ptc}{\ttl@stoptoc{chapters@1}}
 \ttl@writefile{ptc}{\ttl@stoptoc{chapters@1}}
 \ttl@writefile{ptc}{\ttl@starttoc{chapters@2}}
-\zref@newlabel{mdf@pagelabel-2}{\default{2}\page{13}\abspage{19}\mdf@pagevalue{13}}
-\pgfsyspdfmark {pgfid26}{7760157}{18658330}
+\zref@newlabel{mdf@pagelabel-2}{\default{2}\page{13}\abspage{20}\mdf@pagevalue{13}}
+\pgfsyspdfmark {pgfid32}{7760157}{18658330}
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}Structural Limitations of Kernel-Level Anti-Cheats}{13}{section.2.1}\protected@file@percent }
 \newlabel{sec:two:one}{{2.1}{13}{Structural Limitations of Kernel-Level Anti-Cheats}{section.2.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Technological Arms Race}{13}{subsection.2.1.1}\protected@file@percent }
@@ -100,66 +100,78 @@
 \newlabel{sec:two:two}{{2.2}{16}{Experimental Section: Illustrating Potential Intrusiveness}{section.2.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Experimental Objective}{16}{subsection.2.2.1}\protected@file@percent }
 \newlabel{sec:two:two:one}{{2.2.1}{16}{Experimental Objective}{subsection.2.2.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Experimental Observations}{16}{subsection.2.2.2}\protected@file@percent }
-\newlabel{sec:two:two:two}{{2.2.2}{16}{Experimental Observations}{subsection.2.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Critical Analysis}{16}{subsection.2.2.3}\protected@file@percent }
-\newlabel{sec:two:two:three}{{2.2.3}{16}{Critical Analysis}{subsection.2.2.3}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Server-Side Approaches: Development of a Gameplay Analytics Pipeline for Suspicion Scoring}{17}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Sensitive value ("Mot de passe : Test1234!") entered into a Notepad process left resident in memory on the isolated Windows 10 virtual machine.}}{17}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:chapter02-2}{{6}{17}{Sensitive value ("Mot de passe : Test1234!") entered into a Notepad process left resident in memory on the isolated Windows 10 virtual machine}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Experimental Observations}{17}{subsection.2.2.2}\protected@file@percent }
+\newlabel{sec:two:two:two}{{2.2.2}{17}{Experimental Observations}{subsection.2.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Windows-Kernel-Explorer process list, showing the target notepad.exe process isolated by its PID, PPID, EPROCESS pointer, and executable path.}}{17}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:chapter02-4}{{7}{17}{Windows-Kernel-Explorer process list, showing the target notepad.exe process isolated by its PID, PPID, EPROCESS pointer, and executable path}{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Memory map of the notepad.exe process returned by Windows-Kernel-Explorer, listing several hundred regions by base address, size, allocation state, and protection flags.}}{18}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:chapter02-5}{{8}{18}{Memory map of the notepad.exe process returned by Windows-Kernel-Explorer, listing several hundred regions by base address, size, allocation state, and protection flags}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Cheat Engine string scan of notepad.exe's memory for "Mot de passe", returning a single matching address.}}{19}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:chapter02-11}{{9}{19}{Cheat Engine string scan of notepad.exe's memory for "Mot de passe", returning a single matching address}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Raw hexadecimal bytes at the matched address, viewed through Windows-Kernel-Explorer's memory editor, showing the target string split across three contiguous rows.}}{19}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:chapter02-15}{{10}{19}{Raw hexadecimal bytes at the matched address, viewed through Windows-Kernel-Explorer's memory editor, showing the target string split across three contiguous rows}{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Reconstruction of the original string via a hexadecimal-to-ASCII converter, confirming an exact match with the value entered in Notepad.}}{20}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:chapter02-16}{{11}{20}{Reconstruction of the original string via a hexadecimal-to-ASCII converter, confirming an exact match with the value entered in Notepad}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Critical Analysis}{20}{subsection.2.2.3}\protected@file@percent }
+\newlabel{sec:two:two:three}{{2.2.3}{20}{Critical Analysis}{subsection.2.2.3}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Server-Side Approaches: Development of a Gameplay Analytics Pipeline for Suspicion Scoring}{22}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{chap:three}{{3}{17}{Server-Side Approaches: Development of a Gameplay Analytics Pipeline for Suspicion Scoring}{chapter.3}{}}
+\newlabel{chap:three}{{3}{22}{Server-Side Approaches: Development of a Gameplay Analytics Pipeline for Suspicion Scoring}{chapter.3}{}}
 \ttl@writefile{ptc}{\ttl@stoptoc{chapters@2}}
 \ttl@writefile{ptc}{\ttl@stoptoc{chapters@2}}
 \ttl@writefile{ptc}{\ttl@starttoc{chapters@3}}
-\zref@newlabel{mdf@pagelabel-3}{\default{3}\page{17}\abspage{23}\mdf@pagevalue{17}}
-\pgfsyspdfmark {pgfid29}{7760157}{10252596}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Pipeline Implementation}{17}{section.3.1}\protected@file@percent }
-\newlabel{sec:three:one}{{3.1}{17}{Pipeline Implementation}{section.3.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}}{18}{figure.caption.9}\protected@file@percent }
-\newlabel{fig:confusion_matrix}{{6}{18}{Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs}{figure.caption.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Ingestion and Scoring Objectives}{18}{subsection.3.1.1}\protected@file@percent }
-\newlabel{sec:three:one:one}{{3.1.1}{18}{Ingestion and Scoring Objectives}{subsection.3.1.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{19}{figure.caption.10}\protected@file@percent }
-\newlabel{fig:flag_frequency}{{7}{19}{Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste}{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Algorithmic Architecture and Core Concepts}{19}{subsection.3.1.2}\protected@file@percent }
-\newlabel{sec:three:one:two}{{3.1.2}{19}{Algorithmic Architecture and Core Concepts}{subsection.3.1.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Practical System Deployment}{19}{subsection.3.1.3}\protected@file@percent }
-\newlabel{sec:three:one:three}{{3.1.3}{19}{Practical System Deployment}{subsection.3.1.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Dataset and Features}{19}{section.3.2}\protected@file@percent }
-\newlabel{sec:three:two}{{3.2}{19}{Dataset and Features}{section.3.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Telemetry Data Model}{19}{subsection.3.2.1}\protected@file@percent }
-\newlabel{sec:three:two:one}{{3.2.1}{19}{Telemetry Data Model}{subsection.3.2.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{20}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:score_distribution}{{8}{20}{Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel}{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Data Sources and Profiling}{20}{subsection.3.2.2}\protected@file@percent }
-\newlabel{sec:three:two:two}{{3.2.2}{20}{Data Sources and Profiling}{subsection.3.2.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Data Constraints and Limitations}{20}{subsection.3.2.3}\protected@file@percent }
-\newlabel{sec:three:two:three}{{3.2.3}{20}{Data Constraints and Limitations}{subsection.3.2.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Benchmark Execution and Raw Outputs}{20}{section.3.3}\protected@file@percent }
-\newlabel{sec:three:three}{{3.3}{20}{Benchmark Execution and Raw Outputs}{section.3.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Experimental Protocol}{20}{subsection.3.3.1}\protected@file@percent }
-\newlabel{sec:three:three:one}{{3.3.1}{20}{Experimental Protocol}{subsection.3.3.1}{}}
+\zref@newlabel{mdf@pagelabel-3}{\default{3}\page{22}\abspage{29}\mdf@pagevalue{22}}
+\pgfsyspdfmark {pgfid35}{5895477}{10252596}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Pipeline Implementation}{22}{section.3.1}\protected@file@percent }
+\newlabel{sec:three:one}{{3.1}{22}{Pipeline Implementation}{section.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}}{23}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:confusion_matrix}{{12}{23}{Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Ingestion and Scoring Objectives}{23}{subsection.3.1.1}\protected@file@percent }
+\newlabel{sec:three:one:one}{{3.1.1}{23}{Ingestion and Scoring Objectives}{subsection.3.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{24}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:flag_frequency}{{13}{24}{Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste}{figure.caption.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Algorithmic Architecture and Core Concepts}{24}{subsection.3.1.2}\protected@file@percent }
+\newlabel{sec:three:one:two}{{3.1.2}{24}{Algorithmic Architecture and Core Concepts}{subsection.3.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Practical System Deployment}{24}{subsection.3.1.3}\protected@file@percent }
+\newlabel{sec:three:one:three}{{3.1.3}{24}{Practical System Deployment}{subsection.3.1.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Dataset and Features}{24}{section.3.2}\protected@file@percent }
+\newlabel{sec:three:two}{{3.2}{24}{Dataset and Features}{section.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Telemetry Data Model}{24}{subsection.3.2.1}\protected@file@percent }
+\newlabel{sec:three:two:one}{{3.2.1}{24}{Telemetry Data Model}{subsection.3.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{25}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:score_distribution}{{14}{25}{Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Data Sources and Profiling}{25}{subsection.3.2.2}\protected@file@percent }
+\newlabel{sec:three:two:two}{{3.2.2}{25}{Data Sources and Profiling}{subsection.3.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Data Constraints and Limitations}{25}{subsection.3.2.3}\protected@file@percent }
+\newlabel{sec:three:two:three}{{3.2.3}{25}{Data Constraints and Limitations}{subsection.3.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Benchmark Execution and Raw Outputs}{25}{section.3.3}\protected@file@percent }
+\newlabel{sec:three:three}{{3.3}{25}{Benchmark Execution and Raw Outputs}{section.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Experimental Protocol}{25}{subsection.3.3.1}\protected@file@percent }
+\newlabel{sec:three:three:one}{{3.3.1}{25}{Experimental Protocol}{subsection.3.3.1}{}}
 \abx@aux@cite{0}{Loo2025}
 \abx@aux@segm{0}{0}{Loo2025}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Raw Evaluation Results}{21}{subsection.3.3.2}\protected@file@percent }
-\newlabel{sec:three:three:two}{{3.3.2}{21}{Raw Evaluation Results}{subsection.3.3.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Analysis and Performance Discussion}{21}{section.3.4}\protected@file@percent }
-\newlabel{sec:three:four}{{3.4}{21}{Analysis and Performance Discussion}{section.3.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Net Detection Results}{21}{subsection.3.4.1}\protected@file@percent }
-\newlabel{sec:three:four:one}{{3.4.1}{21}{Net Detection Results}{subsection.3.4.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Mitigating the High-Skill Bias}{21}{subsection.3.4.2}\protected@file@percent }
-\newlabel{sec:three:four:two}{{3.4.2}{21}{Mitigating the High-Skill Bias}{subsection.3.4.2}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Future Optimizations}{21}{subsection.3.4.3}\protected@file@percent }
-\newlabel{sec:three:four:three}{{3.4.3}{21}{Future Optimizations}{subsection.3.4.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Comparison with Kernel-level approach}{21}{section.3.5}\protected@file@percent }
-\newlabel{sec:three:five}{{3.5}{21}{Comparison with Kernel-level approach}{section.3.5}{}}
-\abx@aux@backref{8}{Loo2025}{0}{21}{21}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Raw Evaluation Results}{26}{subsection.3.3.2}\protected@file@percent }
+\newlabel{sec:three:three:two}{{3.3.2}{26}{Raw Evaluation Results}{subsection.3.3.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Analysis and Performance Discussion}{26}{section.3.4}\protected@file@percent }
+\newlabel{sec:three:four}{{3.4}{26}{Analysis and Performance Discussion}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Net Detection Results}{26}{subsection.3.4.1}\protected@file@percent }
+\newlabel{sec:three:four:one}{{3.4.1}{26}{Net Detection Results}{subsection.3.4.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Mitigating the High-Skill Bias}{26}{subsection.3.4.2}\protected@file@percent }
+\newlabel{sec:three:four:two}{{3.4.2}{26}{Mitigating the High-Skill Bias}{subsection.3.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}Future Optimizations}{26}{subsection.3.4.3}\protected@file@percent }
+\newlabel{sec:three:four:three}{{3.4.3}{26}{Future Optimizations}{subsection.3.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Comparison with Kernel-level approach}{26}{section.3.5}\protected@file@percent }
+\newlabel{sec:three:five}{{3.5}{26}{Comparison with Kernel-level approach}{section.3.5}{}}
+\abx@aux@backref{8}{Loo2025}{0}{26}{26}
 \ttl@writefile{ptc}{\ttl@stoptoc{chapters@3}}
-\newlabel{chap:conclu}{{3.5}{23}{Conclusion}{chapter*.12}{}}
-\@writefile{toc}{\contentsline {chapter}{Conclusion}{23}{chapter*.12}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{24}{chapter*.13}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{Glossary}{25}{section*.14}\protected@file@percent }
+\newlabel{chap:conclu}{{3.5}{28}{Conclusion}{chapter*.18}{}}
+\@writefile{toc}{\contentsline {chapter}{Conclusion}{28}{chapter*.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{29}{chapter*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Glossary}{30}{section*.20}\protected@file@percent }
 \@glsxtr@savepreloctag{aimbot}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{cheat}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{client}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
@@ -167,7 +179,7 @@
 \@glsxtr@savepreloctag{cybersecurity}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{driver}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{esport}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
-\@glsxtr@savepreloctag{FPS}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
+\@glsxtr@savepreloctag{FPS}{{\color  {colorEPISEN-MEMOIRE}\textbf  {Pages~: }}}
 \@glsxtr@savepreloctag{kernel}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{Leetify.gg}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{Microsoft}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
@@ -179,8 +191,8 @@
 \@glsxtr@savepreloctag{tick}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{Valve}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{wallhack}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
-\newlabel{chap:glossaire}{{3.5}{27}{Conclusion}{chapter*.15}{}}
-\@writefile{toc}{\contentsline {chapter}{Acronyms}{28}{section*.16}\protected@file@percent }
+\newlabel{chap:glossaire}{{3.5}{32}{Conclusion}{chapter*.21}{}}
+\@writefile{toc}{\contentsline {chapter}{Acronyms}{33}{section*.22}\protected@file@percent }
 \@glsxtr@savepreloctag{API}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{BYOVD}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{CPU}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
@@ -195,61 +207,61 @@
 \@glsxtr@savepreloctag{RAM}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{TTD}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
 \@glsxtr@savepreloctag{VAC}{ {\color  {colorEPISEN-MEMOIRE}\textbf  {Page~: }}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Game Context and Rules}{29}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Game Context and Rules}{34}{appendix.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{annexe:two}{{A}{29}{Game Context and Rules}{appendix.A}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Competitive Format}{29}{section.A.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {A.2}Core Mechanics Relevant to Cheating}{29}{section.A.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {B}Why Cheating Breaks Game Balance: The Bullet Penetration Case}{31}{appendix.B}\protected@file@percent }
+\newlabel{annexe:two}{{A}{34}{Game Context and Rules}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Competitive Format}{34}{section.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Core Mechanics Relevant to Cheating}{34}{section.A.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Why Cheating Breaks Game Balance: The Bullet Penetration Case}{36}{appendix.B}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{annexe:three}{{B}{31}{Why Cheating Breaks Game Balance: The Bullet Penetration Case}{appendix.B}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {B.1}The Penetration Power Mechanic}{31}{section.B.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {B.2}Link to Information Cheats}{32}{section.B.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {C}Client/Server Architecture and Network Communication}{33}{appendix.C}\protected@file@percent }
+\newlabel{annexe:three}{{B}{36}{Why Cheating Breaks Game Balance: The Bullet Penetration Case}{appendix.B}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {B.1}The Penetration Power Mechanic}{36}{section.B.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B.2}Link to Information Cheats}{37}{section.B.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Client/Server Architecture and Network Communication}{38}{appendix.C}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{annexe:four}{{C}{33}{Client/Server Architecture and Network Communication}{appendix.C}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {C.1}The Authoritative Server Model}{33}{section.C.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {C.2}Snapshot Scope and Client Memory}{33}{section.C.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {C.3}Network Channel Encryption}{33}{section.C.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {C.4}Memory-Based Exploit Surface}{34}{section.C.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {C.5}DMA Cheats}{34}{section.C.5}\protected@file@percent }
+\newlabel{annexe:four}{{C}{38}{Client/Server Architecture and Network Communication}{appendix.C}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C.1}The Authoritative Server Model}{38}{section.C.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C.2}Snapshot Scope and Client Memory}{38}{section.C.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C.3}Network Channel Encryption}{38}{section.C.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C.4}Memory-Based Exploit Surface}{39}{section.C.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C.5}DMA Cheats}{39}{section.C.5}\protected@file@percent }
 \abx@aux@cite{0}{Dorner2024}
 \abx@aux@segm{0}{0}{Dorner2024}
-\@writefile{toc}{\contentsline {chapter}{\numberline {D}Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{35}{appendix.D}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{40}{appendix.D}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{annexe:one}{{D}{35}{Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{appendix.D}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.1}System Visibility Level and Perceived Intrusion}{35}{section.D.1}\protected@file@percent }
-\abx@aux@backref{13}{Dorner2024}{0}{35}{35}
-\@writefile{toc}{\contentsline {section}{\numberline {D.2}Social Perception and Community Acceptance}{36}{section.D.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{36}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:fig6}{{9}{36}{User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures}{figure.caption.18}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {D.3}Legal and Regulatory Questions}{37}{section.D.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {E}Other appendixes}{38}{appendix.E}\protected@file@percent }
+\newlabel{annexe:one}{{D}{40}{Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{appendix.D}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.1}System Visibility Level and Perceived Intrusion}{40}{section.D.1}\protected@file@percent }
+\abx@aux@backref{13}{Dorner2024}{0}{40}{40}
+\@writefile{toc}{\contentsline {section}{\numberline {D.2}Social Perception and Community Acceptance}{41}{section.D.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{41}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:fig6}{{15}{41}{User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures}{figure.caption.24}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {D.3}Legal and Regulatory Questions}{42}{section.D.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {E}Other appendixes}{43}{appendix.E}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{annexe:five}{{E}{38}{Other appendixes}{appendix.E}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {E.1}Cheaters in CS2}{38}{section.E.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {E.2}Existing data aggregation tool}{38}{section.E.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\color  {colorEPISEN-MEMOIRE}Abstract:}{39}{paragraph*.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{\color  {colorEPISEN-MEMOIRE}Keywords:}{39}{paragraph*.22}\protected@file@percent }
-\newlabel{LastPage}{{E.2}{39}{\color {colorEPISEN-MEMOIRE}Keywords:}{paragraph*.22}{}}
+\newlabel{annexe:five}{{E}{43}{Other appendixes}{appendix.E}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E.1}Cheaters in CS2}{43}{section.E.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {E.2}Existing data aggregation tool}{43}{section.E.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\color  {colorEPISEN-MEMOIRE}Abstract:}{44}{paragraph*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{\color  {colorEPISEN-MEMOIRE}Keywords:}{44}{paragraph*.28}\protected@file@percent }
+\newlabel{LastPage}{{E.2}{44}{\color {colorEPISEN-MEMOIRE}Keywords:}{paragraph*.28}{}}
 \ttl@finishall
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{40}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:cheaters}{{10}{40}{Data aggregation made by a CS2 player to show the chance of a cheater being in a game}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{41}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:csst}{{11}{41}{Existing data aggregation tool to help visualize a player's game statistics}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{45}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:cheaters}{{16}{45}{Data aggregation made by a CS2 player to show the chance of a cheater being in a game}{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{46}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:csst}{{17}{46}{Existing data aggregation tool to help visualize a player's game statistics}{figure.caption.26}{}}
 \abx@aux@read@bbl@mdfivesum{AF2715010DD359A5F98F9B295DEDC8BC}
 \abx@aux@defaultrefcontext{0}{Kuzhii2024}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Collins2024}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Dorner2024}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Loo2025}{none/global//global/global/global}
-\gdef \@abspage@last{47}
+\gdef \@abspage@last{53}
