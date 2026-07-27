@@ -6,11 +6,11 @@
 \contentsline {section}{\numberline {1.1}Cheat-Based Exploration of System Architecture}{4}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Automation Cheats}{4}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Information Cheats}{6}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Advanced Cheats}{7}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Anti-Cheat Mechanisms}{9}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Client-Side Anti-Cheats}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.1.3}Advanced Cheats}{9}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Anti-Cheat Mechanisms}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Client-Side Anti-Cheats}{11}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Kernel-Level Anti-Cheats}{11}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Data-Driven Detection Methods}{11}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Data-Driven Detection Methods}{12}{subsection.1.2.3}%
 \contentsline {chapter}{\numberline {2}Assessing Risks and Limitations of Kernel-Level Anti-Cheats using Windows-Kernel-Explorer}{13}{chapter.2}%
 \ttl@stoptoc {chapters@1}
 \ttl@stoptoc {chapters@1}
@@ -28,15 +28,15 @@
 \ttl@stoptoc {chapters@2}
 \ttl@starttoc {chapters@3}
 \contentsline {section}{\numberline {3.1}Pipeline Implementation}{22}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Ingestion and Scoring Objectives}{23}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Algorithmic Architecture and Core Concepts}{24}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Practical System Deployment}{24}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Dataset and Features}{24}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Telemetry Data Model}{24}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.1.1}Ingestion and Scoring Objectives}{24}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Algorithmic Architecture and Core Concepts}{25}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Practical System Deployment}{25}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Dataset and Features}{25}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Telemetry Data Model}{25}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Data Sources and Profiling}{25}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Data Constraints and Limitations}{25}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Benchmark Execution and Raw Outputs}{25}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Experimental Protocol}{25}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.3}Benchmark Execution and Raw Outputs}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Experimental Protocol}{26}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Raw Evaluation Results}{26}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Analysis and Performance Discussion}{26}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Net Detection Results}{26}{subsection.3.4.1}%
@@ -66,7 +66,7 @@
 \contentsline {section}{\numberline {D.3}Legal and Regulatory Questions}{42}{section.D.3}%
 \contentsline {chapter}{\numberline {E}Other appendixes}{43}{appendix.E}%
 \contentsline {section}{\numberline {E.1}Cheaters in CS2}{43}{section.E.1}%
-\contentsline {section}{\numberline {E.2}Existing data aggregation tool}{43}{section.E.2}%
-\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Abstract:}{44}{paragraph*.27}%
-\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Keywords:}{44}{paragraph*.28}%
+\contentsline {section}{\numberline {E.2}Existing data aggregation tool}{44}{section.E.2}%
+\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Abstract:}{46}{paragraph*.27}%
+\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Keywords:}{46}{paragraph*.28}%
 \contentsfinish 
