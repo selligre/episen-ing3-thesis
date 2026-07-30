@@ -15,15 +15,15 @@
 \contentsline {figure}{\numberline {10}{\ignorespaces Raw hexadecimal bytes at the matched address, viewed through Windows-Kernel-Explorer's memory editor, showing the target string split across three contiguous rows.}}{19}{figure.caption.13}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Reconstruction of the original string via a hexadecimal-to-ASCII converter, confirming an exact match with the value entered in Notepad.}}{20}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12}{\ignorespaces Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}}{23}{figure.caption.15}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}}{24}{figure.caption.16}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}}{24}{figure.caption.17}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Confusion Matrix for Suspicion Scoring (row-normalised percentages). The casual class is perfectly recovered, and no cheater is ever misclassified as casual; the entire classification error is concentrated at the skilled/cheater boundary.}}{28}{figure.caption.15}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Detection Flag Trigger Rate by Profile.}}{29}{figure.caption.16}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Suspicion Score Distribution by Player Profile, with the classification threshold (48) overlaid. The cheater distribution straddles the threshold, while casual and skilled distributions remain well below it.}}{29}{figure.caption.17}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {15}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{41}{figure.caption.24}%
+\contentsline {figure}{\numberline {15}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{46}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {16}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{44}{figure.caption.25}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{45}{figure.caption.26}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{49}{figure.caption.25}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{50}{figure.caption.26}%
 \contentsfinish 

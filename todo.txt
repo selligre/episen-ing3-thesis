@@ -3,3 +3,5 @@ Chapter 03
 Conclusion
 
 Reprendre tous les acronyms pour les parenthèses ou pour retirer les itérations suivantes qui reprennent quand même le terme complet (on devrait avoir "\gls{VAC} (VAC)" lors de la première occurrence, puis "VAC" lors des suivantes)
+
+Reprendre les numéros de citations des figures

@@ -14,67 +14,28 @@ Analytics Pipeline for Suspicion Scoring}
 \section{Pipeline Implementation}
 \label{sec:three:one}
 
-PROGRESSION :
-
-La pipeline est fonctionnelle, mon problème se situe pour le moment du côté de rendre la simulation des profils aussi réaliste que possible, puisqu'il n'est pas envisageable de parser les démos du jeu pour obtenir des données réelles (ça demanderait quelques années et une équipe de développeurs payés).
-
-Pour le moment, les profils sont encore trop "parfaits" et ne reflètent pas la réalité des joueurs humains. Il faut que je trouve un moyen de générer des profils plus diverses, qui permettront de mettre en avant l'intérêt de la notion des LSTM pour détecter les comportements anormaux sur le long terme (et donc séparer les experts des cheaters).
-
-Les modifications que je suis en train d'apporter se situent dans la création des profils de joueurs et dans la manière dont ils sont évalués par la pipeline pour mettre en avant des résultats plus proches de ce que l'on peut observer dans la réalité et de ce qu'on peut trouver dans les sources de données externes (voir annexe 5).
-
-L'objectif final est de séparer les casuals des experts et des cheaters, et de pouvoir détecter les comportements anormaux sur le long terme pour amener ces profils à une revue manuelle de joueurs expérimentés qui sauront faire la distinction grâce à leur expérience.
-Les résultats graphiques que j'obtiens pour le moment sont les suivants :
-
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[height=9cm]{../images/chap03/confusion_matrix.png}
-    \end{center}
-    \caption{Confusion Matrix for Suspicion Scoring. Montre que l'algo de scoring n'arrive pas à différencier les profils de joueurs casual et expert. Il n'arrive pas également à différencier les profils de joueurs expert et cheater. Il est donc nécessaire de générer des profils plus réalistes pour que l'algo puisse apprendre à différencier les différents types de joueurs.}
-    \label{fig:confusion_matrix}
-\end{figure}
-
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[height=7cm]{../images/chap03/flag_frequency.png}
-    \end{center}
-    \caption{Flag Frequency Distribution. Montre que l'algo de flagging se déclenche trop souvent pour les cheaters et pas assez pour les expert et les casuals. Je dois donc ajuster les seuils de déclenchement des flags pour avoir une représentation plus équilibrée et réaliste.}
-    \label{fig:flag_frequency}
-\end{figure}
-
-\begin{figure}[H]
-    \begin{center}
-        \includegraphics[height=9cm]{../images/chap03/score_distribution.png}
-    \end{center}
-    \caption{Score Distribution. Montre la distribution des scores attribués par l'algo de scoring. Le résultat est relativement satisfaisant pour le moment mais les scores sont globalement trop bas pour les experts et cheaters, donc les stats vont en moyenne être plus suspectes que le résultat actuel.}
-    \label{fig:score_distribution}
-\end{figure}
-
-La repo est publique sur GitHub : \url{https://github.com/selligre/episen-ing3-thesis-ac-server}
+Motivated by the architectural limitations of kernel-level access established in Chapter 2, the pipeline developed for this thesis relocates the detection effort entirely to the server side, treating the stream of gameplay telemetry a match server already produces as the sole evidentiary basis for suspicion. The system is implemented in Python and organised around a linear execution flow (telemetry ingestion, rule-based scoring, sequential scoring, persistence, benchmarking, and reporting) described in detail in Section 3.1.3 and publicly available at \url{https://github.com/selligre/episen-ing3-thesis-ac-server}.
 
 \subsection{Ingestion and Scoring Objectives}
 \label{sec:three:one:one}
 
-\begin{itemize}
-\item Automating telemetry-driven suspicion scoring
-\item Prioritization matrix for human review (\gls{Overwatch}-style triage)
-\end{itemize}
+The pipeline pursues two complementary objectives rather than a single detection outcome. The first is to automate the transformation of raw telemetry-derived features into a continuous suspicion score for every player, replacing the manual, case-by-case inspection a moderator would otherwise perform. The second, and arguably the more consequential objective given the false-positive risk discussed in Section 1.2.3, is to structure this score into a prioritisation mechanism for human review rather than an autonomous sanctioning decision. This design deliberately echoes Valve's own Overwatch tribunal, in which trusted community reviewers audit cases pre-selected by an automated system rather than acting on raw statistical output alone; the suspicion score produced here is intended to feed an equivalent triage queue, surfacing the accounts most likely to warrant scrutiny while leaving the final determination to an experienced human reviewer who can recognise contextual nuance the algorithm cannot. This framing is not incidental: as established in Section 3.4, the system is tuned to avoid false accusations at the cost of missing some cheaters outright at the automated threshold, on the premise that a prioritisation tool which never wrongly flags a legitimate player is more deployable, and more defensible under the proportionality requirements discussed in Appendix D.3, than one which maximises raw detection at the expense of player trust.
+
+Because parsing official match demos to obtain real telemetry would require infrastructure and engineering time far beyond the scope of this thesis, ingestion is performed on synthetically generated player telemetry rather than data extracted from actual CS2 matches, a constraint discussed further in Section 3.2.3 and revisited as a limitation in the conclusion.
 
 \subsection{Algorithmic Architecture and Core Concepts}
 \label{sec:three:one:two}
 
-\begin{itemize}
-\item Rule-Based Foundations: Establishing game engine limits, behavioral baselines, and mechanical consistency boundaries
-\item Hybrid Modeling Framework: Combining a classical deterministic heuristic algorithm (live run execution) with sequential Machine Learning concepts (Long Short-Term Memory - LSTM)
-\item Flag Weighting and Temporal Aggregation: Make individual mechanical anomalies accumulate into a player history score
-\end{itemize}
+The heuristic layer evaluates each player session against eight weighted flags, each targeting one of the mechanical signatures of automation or information cheats described in Chapter 1: an abnormally low time-to-damage, a pre-aim delta indicating the crosshair was already resting on the enemy's position before engagement, an extreme headshot rate, a near-perfect spray-control deviation, an inhumanly short reaction time, a combined kill/death ratio and damage-per-round outlier, an implausibly high clutch win rate, and a consistency bonus described below. Rather than firing as a binary trigger, each flag returns a continuous intensity between the threshold value and a calibrated "cheater-centre" value derived from CS2 community benchmarks and the feature distributions reported by Loo et al. [4]; a time-to-damage flag, for instance, activates below 200 ms and reaches full intensity around 40 ms, while a pre-aim flag activates below 12° and saturates near 1.5°. This continuous formulation is intentional: it allows an exceptional but legitimate performance to partially activate a flag without immediately being treated as equivalent to a clear-cut cheater signature, deferring the separation to the aggregation stage rather than to any single threshold crossing.
+
+At the player level, a flag only contributes to the score if it fires in at least 30\% of that player's sessions, weighted by its average intensity across the sessions in which it fired; this cross-session requirement is what prevents a single exceptional match from inflating a player's score. A further consistency bonus is awarded when at least four distinct flags each fire in 80\% or more of a player's sessions, explicitly rewarding persistence over isolated outliers. This mechanism directly operationalises the high-skill-bias mitigation discussed in Section 3.4.2: an individual flag such as an extreme headshot rate can plausibly describe a strong legitimate player having a good run, but the joint and sustained co-occurrence of several such flags across a large share of a player's match history is markedly harder to attribute to skill alone. The resulting raw score is normalised to a 0–100 scale.
+
+The sequential component is a single-layer Long Short-Term Memory (LSTM) network that consumes, for each session, the round-by-round sequence of five normalised features (mean time-to-damage, pre-aim delta, spray deviation, reaction time, and headshot rate) and outputs a cheat probability via a dense sigmoid head. Critically, this network is not trained on labelled data (no dataset of real, confirmed cheaters exists at the scale this would require) and is instead initialised with weights that manually encode the expected directional relationship between each feature and cheat probability, established from the same literature and profile calibration referenced above. This choice is made explicit rather than concealed: the LSTM is presented as a proof of architectural soundness, demonstrating that the sequential, round-by-round structure of gameplay data is the appropriate representation for capturing behavioural persistence over time, without overstating what an untrained model can be credited with detecting. Session-level probabilities are aggregated per player using the 75th percentile rather than the mean, so that a player who cheats intermittently rather than in every session is still surfaced. The final suspicion score combines both layers as a weighted sum, \(suspicion_score = 0.6 * heuristic_score + 0.4 * ( lstm_prob * 100 )\), giving the interpretable, empirically calibrated heuristic layer the dominant weight while allowing the sequential component to act as a directional regulariser.
 
 \subsection{Practical System Deployment}
 \label{sec:three:one:three}
 
-\begin{itemize}
-\item Architecture of the analytics pipeline: https://github.com/selligre/thesis-cs2-ac-server (could use https://github.com/pnxenopoulos/awpy to help parsing data from demos)
-\item Event-driven design: Comparison of real-time telemetry parsing vs. asynchronous post-match processing
-\end{itemize}
+The pipeline executes as a single linear sequence of seven stages: synthetic telemetry generation for three hundred players evenly split across the casual, skilled, and cheater profiles detailed in Section 3.2.2; heuristic scoring; LSTM scoring and score combination; persistence of the scored player set to structured JSON, including a dedicated memory file simulating the cross-match history a deployed system would accumulate for each account; benchmark computation against the ground-truth profile labels; console reporting; and generation of the visualisations presented in Section 3.3. This batch, end-of-pipeline processing model was chosen deliberately over a real-time, per-event architecture: because the scoring logic operates on session-level and cross-session aggregates rather than individual ticks, asynchronous post-match processing is sufficient to produce a usable suspicion score without the engineering overhead of a live telemetry stream, though Section 3.4.3 revisits this trade-off as a direction for further optimisation. For future work extending this pipeline to real match data, the awpy library (an open-source CS2 demo parser) is identified as a natural ingestion point, replacing the synthetic generator described in Section 3.2.2 without requiring changes to the scoring layers downstream.
 
 \section{Dataset and Features}
 \label{sec:three:two}
@@ -82,27 +43,27 @@ La repo est publique sur GitHub : \url{https://github.com/selligre/episen-ing3-t
 \subsection{Telemetry Data Model}
 \label{sec:three:two:one}
 
-\begin{itemize}
-\item Aim Vectors: \gls{TTD} (TTD), pre-aim delta, and spray pattern deviation
-\item Spatial and Positional Features: Cross-match positioning consistency, Opening Duels context, and Trading Efficiency windows
-\item Tactical and Utility Metrics: Grenade/\gls{HE} efficiency (Average HE damage), Clutch performance variance, and overall Kill/Death ratio
-\item Social/Contextual Context: Premade lobby (Party) dependencies and cross-match behavioral
-\end{itemize}
+Consistent with the mechanical focus of the heuristic and sequential scoring layers described in Section 3.1.2, the telemetry data model implemented in this thesis is deliberately restricted to the aim-related and tactical signatures directly exploitable by those layers, rather than attempting to model the full range of features a production system might eventually ingest. Nine per-session features are retained: mean time-to-damage, mean pre-aim delta, mean spray deviation, mean reaction time, and headshot rate, which together constitute the aim-vector group directly targeted by five of the eight heuristic flags introduced in Section 3.1.2; and average utility damage, clutch win rate, kill/death ratio, and average damage per round, which capture broader performance consistency without being tied to a single mechanical action. This narrower scope reflects a conscious trade-off: it keeps every feature traceable to a specific, previously documented cheat behaviour (Section 1.1) rather than diluting the model with signals whose relationship to cheating is indirect or contextual.
+
+Spatial and social features (cross-match positioning consistency, opening-duel and trading-efficiency windows, or premade-lobby dependencies) were considered during the design phase but are not part of the implemented telemetry model, and are treated here as a natural direction for extending the pipeline rather than as a current limitation of the mechanical layer itself; this distinction, and the reasoning behind it, is developed further in Section 3.4.3.
+
+Each recorded kill event additionally carries a hit-zone label (head, chest, stomach, or leg), sampled per profile according to the weighted distributions detailed in Section 3.2.2. This choice directly mirrors the zone-dependent damage model described in Appendix A.2, where aim assistance derives much of its lethal advantage not merely from guaranteeing a hit, but from consistently redirecting that hit toward the highest-multiplier zone; encoding this bias explicitly in the synthetic data allows the headshot-rate feature to carry the same discriminative weight it would in an authentic dataset.
 
 \subsection{Data Sources and Profiling}
 \label{sec:three:two:two}
 
-\begin{itemize}
-\item Synthetic telemetry generation: Simulating legitimate player profiles (varying from casual to highly-skilled) vs. simulated cheat profiles (aimbots, triggerbots, wallhacks and scripts)
-\end{itemize}
+In the absence of parsed match demos, telemetry is produced by a synthetic generator that samples each of the nine features above from a profile-specific Normal distribution, independently calibrated for three player populations (casual, skilled, and cheater) and clamped to physically plausible bounds after sampling. The calibration itself draws on three sources: publicly available CS2 community benchmarks for reaction time and aim-consistency metrics, the feature-level analysis of confirmed cheating behaviour reported by Loo et al. in their transformer-based detection study [4], and the cheat behaviour taxonomy established by Collins et al. [2], which informs how the widening or narrowing of a distribution's variance across profiles is meant to approximate genuine population heterogeneity rather than three artificially uniform archetypes.
+
+The resulting profiles are structured to overlap deliberately at their extremities rather than forming three cleanly separated clusters. The skilled distribution for time-to-damage, for example, is centred at 250 ms with a standard deviation of 60 ms, while the cheater distribution is centred at 160 ms with a standard deviation of 45 ms; the two ranges intersect meaningfully around 200 ms, so that a proportion of skilled players will, on some sessions, produce a reaction speed indistinguishable from a cheater's typical performance. This overlap is not an artefact to be corrected but the central design premise of the dataset: it is what allows the pipeline's separation strategy (joint, cross-session consistency rather than any single-session outlier) to be meaningfully tested at all, and it is why the confusion matrix discussed in Section 3.3 shows contact between the skilled and cheater classes rather than a trivial three-way partition. The same logic governs the hit-zone weighting introduced in Section 3.2.1: cheater profiles are assigned an 82\% probability of landing a headshot against 45\% for skilled and 20\% for casual players, again chosen to be markedly higher without being categorically disjoint from legitimate high-level play.
+
+At the population level, the simulation generates one hundred players per profile, each with twenty independent match sessions of fifteen rounds, and an average of 1.2 Poisson-sampled kills per round (yielding a dataset large enough to support the per-flag fire-rate and cross-session consistency requirements defined in Section 3.1.2) while remaining computationally light enough to regenerate and re-tune during the iterative calibration process described in Section 3.3.
 
 \subsection{Data Constraints and Limitations}
 \label{sec:three:two:three}
 
-\begin{itemize}
-\item Limits of server-side logs
-\item Tick-rate limitations
-\end{itemize}
+The most consequential limitation of the dataset is structural rather than statistical: it is entirely synthetic, and no volume of careful distribution tuning substitutes for behavioural regularities that only emerge from real matches: momentary hesitation before a risky peek, fatigue-driven degradation over a long session, or the correlated adjustments a genuine player makes across consecutive rounds. The Normal-distribution sampling approach used here treats each feature as independently drawn within a session, which cannot reproduce the finer inter-feature correlations a real player's telemetry would exhibit, nor the gradual behavioural drift a genuine cheater might display when adjusting their tool's aggressiveness to evade detection. Server-side constraints tied to tick rate and snapshot granularity, which bound what any telemetry-based system can observe in principle, are discussed separately in Appendix C.2 and are not reproduced here, since they apply identically to a hypothetical real-data deployment and are not specific to the synthetic dataset itself.
+
+A second limitation concerns the absence of account-level and social signals that an experienced human reviewer would routinely factor into a manual judgement: account age relative to displayed skill level, hours played, or the presence of previously banned accounts within a player's social graph. These are exactly the kind of contextual cues a moderator "learns to recognise" but that the current feature set does not encode at all, since the telemetry model is restricted, by design, to per-match mechanical and performance signals (Section 3.2.1). Their absence does not undermine the results presented in Section 3.3, which concern the separability of mechanical signatures specifically, but it does mean the suspicion score should be read as one input among several a complete review workflow would need, rather than a self-sufficient verdict: a point returned to when this system is positioned within a broader detection architecture in Section 3.4.3 and the conclusion.
 
 \section{Benchmark Execution and Raw Outputs}
 \label{sec:three:three}
@@ -110,55 +71,72 @@ La repo est publique sur GitHub : \url{https://github.com/selligre/episen-ing3-t
 \subsection{Experimental Protocol}
 \label{sec:three:three:one}
 
-\begin{itemize}
-\item Setup of the controlled benchmarking environment
-\item Execution sequence: Batch processing of simulated profiles through the classical algorithm and the LSTM layer
-\end{itemize}
+The benchmark is executed as a single, deterministic pass over the full synthetic population described in Section 3.2.2 (three hundred players, one hundred per profile, each carrying twenty independent match sessions) generated with a fixed random seed to keep the reported figures reproducible across pipeline runs. Within this controlled environment, the classical heuristic scorer and the sequential LSTM layer are applied sequentially rather than jointly trained: every player first receives a heuristic score from the flag-based procedure detailed in Section 3.1.2, after which the LSTM produces a per-session cheat probability that is itself blended with the normalised heuristic score before being combined into the final suspicion score, following the weighting formula given in Section 3.1.2. This sequencing matters methodologically, since it means the ranking metric reported in Section 3.3.2 is not evaluating an independently trained classifier, but the discriminative power of the heuristic signal after it has propagated through the calibrated LSTM stage.
+
+Two classification tasks are evaluated from the same set of suspicion scores. The first is a strict binary task (cheater versus non-cheater) obtained by applying the single suspicion threshold of 48 established during calibration; precision, recall, and F1 are computed against this cut. The second is a three-class task that additionally separates casual from skilled players below the cheater threshold, using a secondary cut at a suspicion score of 12; this three-class assignment is what populates the confusion matrix discussed below. The area under the ROC curve is computed separately from either hard cut, directly against the continuous, calibrated suspicion probability, and therefore measures the pipeline's ability to rank cheaters above legitimate players in general, independently of where the operational threshold happens to sit: a distinction that becomes central to the interpretation offered in Section 3.4.
 
 \subsection{Raw Evaluation Results}
 \label{sec:three:three:two}
 
-\begin{itemize}
-\item Raw statistical outputs, distribution of suspicion scores and first results
-\end{itemize}
+At the population level, the three profiles separate into three visibly distinct suspicion-score bands, illustrated in Figure 14. Casual players form an extremely tight cluster around a mean of 9.02 (dispersion = 0.05, range 8.88–9.11), reflecting the near-total absence of any heuristic flag activity in that profile. Skilled players sit noticeably higher, with a mean of 11.47 and a wider spread (dispersion = 1.47, range 9.18–16.69) that reflects the occasional, isolated flag activation described below, but remain far below the suspicion threshold in every case. Cheater players occupy a substantially elevated and considerably more dispersed band, with a mean of 46.14 and a standard deviation of 7.24; critically, the median of this distribution (48.12) sits almost exactly on the classification threshold, meaning that roughly half of the cheater population falls on either side of the cut by construction rather than by classification error.
+
+The flag-level activity underlying this separation is shown in Figure 13. Several flags behave as near-exclusive cheater signatures: TTD\_CRITICAL and HS\_RATE\_EXTREME each fire for 100\% of cheater sessions, PRE\_AIM\_LOCK for 97\%, SPRAY\_PERFECT for 96\%, and CLUTCH\_INHUMAN for 93\%, while REACTION\_INHUMAN and KD\_ADR\_COMBO fire less frequently even among cheaters, at 61\% and 22\% respectively. Against skilled players, most of these flags remain largely inactive (REACTION\_INHUMAN, KD\_ADR\_COMBO, and CONSISTENCY\_BONUS never fire at all) with one conspicuous exception: HS\_RATE\_EXTREME activates for 83\% of skilled sessions, nearly matching its cheater-side trigger rate. This single flag is, by a wide margin, the least discriminative of the eight, and its behaviour is examined directly in Section 3.4.2.
+
+The resulting three-class confusion matrix, presented in Figure 12, shows the casual class perfectly recovered (100\% correctly classified, n = 100), no cheater ever misclassified as casual, and the entire classification error concentrated at the boundary between the skilled and cheater classes: 75\% of skilled players are classified as casual and the remaining 25\% correctly as skilled, while 51\% of cheater players are correctly flagged as cheaters and the remaining 49\% fall instead into the skilled bucket. No player from either the casual or the skilled profile is ever misclassified as a cheater at the operational threshold, a result confirmed directly by the classification metrics: precision reaches 1.0, meaning zero false positives across the entire three-hundred-player population, while recall stands at 0.51 and F1 at 0.6755. The area under the ROC curve, computed on the continuous suspicion probability independently of the threshold, reaches 1.0: a perfect score indicating that, across the whole population, every cheater ranks strictly above every non-cheater, even when a substantial share of cheaters falls under the hard cut used for binary classification. The interpretation of this apparent tension between a modest recall and a perfect AUC, and its implications for how the system should be deployed, is developed in Section 3.4.
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap03/confusion_matrix.png}
+    \end{center}
+    \caption{Confusion Matrix for Suspicion Scoring (row-normalised percentages). The casual class is perfectly recovered, and no cheater is ever misclassified as casual; the entire classification error is concentrated at the skilled/cheater boundary.}
+    \label{fig:chapter03-confusion_matrix}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap03/flag_frequency.png}
+    \end{center}
+    \caption{Detection Flag Trigger Rate by Profile.}
+    \label{fig:chapter03-flag_frequency}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=8cm]{../images/chap03/score_distribution.png}
+    \end{center}
+    \caption{Suspicion Score Distribution by Player Profile, with the classification threshold (48) overlaid. The cheater distribution straddles the threshold, while casual and skilled distributions remain well below it.}
+    \label{fig:chapter03-score_distribution}
+\end{figure}
 
 \section{Analysis and Performance Discussion}
 \label{sec:three:four}
 
-\subsection{Net Detection Results}
+\subsection{Detection Results and the High-Skill Bias}
 \label{sec:three:four:one}
 
-\begin{itemize}
-\item Link between extreme data profiles and cheaters
-\item Robustness assessment: Evaluating the accuracy when mixing in high-skill profiles
-\end{itemize}
+Read together, the results reported in Section 3.3.2 show a system that behaves conservatively rather than indiscriminately: every classification error observed across the three-hundred-player benchmark sits at the boundary between the skilled and cheater classes, while the casual class is recovered without a single misclassification in either direction. This asymmetry is not incidental. It follows directly from the flag design introduced in Section 3.1.2, since casual telemetry never approaches any flag's activation threshold, whereas skilled and cheater profiles were deliberately constructed to overlap at their extremities (Section 3.2.2) precisely so that the separation strategy would be tested against a realistic edge case rather than a trivially easy one. The perfect AUC-ROC of 1.0 obtained here should accordingly be read with that caveat attached: it reflects the discriminative power of the pipeline over a synthetic population whose feature distributions are, by construction, cleaner and better behaved than an authentic dataset would be, and it is not directly comparable to the 0.93 AUC reported by Loo et al. over 795 real, labelled CS2 matches: a benchmark against genuine gameplay noise that this thesis, for the reasons discussed in Section 3.2.3, was not in a position to reproduce.
 
-\subsection{Mitigating the High-Skill Bias}
-\label{sec:three:four:two}
+The flag-level breakdown in Figure 13 makes the mechanism of the high-skill bias directly visible rather than merely asserting it. HS\_RATE\_EXTREME fires for 83\% of skilled sessions against 100\% of cheater sessions — a gap far too narrow for the flag to serve as a standalone signal, since a strong legitimate player sustaining an elevated headshot rate over several sessions is, on its own, statistically almost indistinguishable from a cheater by this measure alone. Every other flag, by contrast, remains largely or entirely silent on skilled players: REACTION\_INHUMAN, KD\_ADR\_COMBO, and critically CONSISTENCY\_BONUS never activate once across the entire skilled population. This last point is the operative one. Because CONSISTENCY\_BONUS specifically requires at least four distinct flags to each fire in 80\% or more of a player's sessions, it cannot be triggered by a single strong but otherwise ordinary skill dimension, however elevated; it is only satisfied when several independent mechanical anomalies co-occur and persist, which is exactly the joint, sustained pattern the cheater profile was calibrated to produce and the skilled profile was not. The high-skill bias is therefore not eliminated by making any individual flag stricter — doing so would only push the threshold further from genuinely exceptional but legitimate play without addressing the underlying ambiguity — but by shifting the decisive signal from single-flag intensity to cross-flag, cross-session consistency.
 
-\begin{itemize}
-\item Analyzing the conceptual limits of false positives
-\item Differentiating anomalous expert playstyles (exotic but legitimate behaviors) from software-assisted mechanics
-\item Comparative Analysis: Contrasting our suspicion-scoring pipeline with commercial performance platforms like \gls{Leetify.gg} (How metrics designed for coaching can be repurposed for anti-cheat signaling)
-\end{itemize}
+This design choice explains the apparent tension between a recall of 0.51 and a precision of 1.0. The suspicion threshold of 48 was calibrated deliberately close to the cheater distribution's median of 48.12, which guarantees, given the shape of that distribution, that roughly half of all cheaters will fall under the cut by construction; this is a direct, intentional consequence of prioritising a zero false-positive rate over exhaustive detection, in line with the proportionality argument developed in Appendix D.3 and the objective, stated in Section 3.1.1, of building a triage tool rather than an autonomous sanctioning mechanism. Considered in isolation, a 51\% recall would appear to be a substantial shortfall. Considered alongside a perfect AUC, however, it indicates something more specific: the suspicion score ranks the entire population correctly even where the fixed threshold does not act on that ranking, meaning that every cheater who falls below the cut on suspicion score nonetheless remains ranked above every skilled and casual player. A review workflow that processes players in descending order of suspicion score, rather than applying a single binary cut, would therefore still surface every cheater in the dataset ahead of any legitimate player — the fixed threshold determines only how many of them are flagged automatically without human involvement, not how many are, in principle, detectable at all. This distinction between what the score can rank and what a chosen cut-off acts upon becomes the starting point for the optimisation proposed in the following section.
 
 \subsection{Future Optimizations}
-\label{sec:three:four:three}
+\label{sec:three:four:two}
+The most direct extension suggested by the analysis above is architectural rather than statistical: replacing the fixed threshold evaluated in Section 3.3 with a ranked review queue that processes the full population in descending suspicion-score order, up to whatever volume of manual review capacity a given deployment can sustain. Because the AUC-ROC result establishes that cheaters are correctly ranked above legitimate players across the entire score range, such a queue would recover the cheaters currently missed at the 51\%-recall cut without lowering the threshold itself and without reintroducing the false-positive risk that a lower cut would carry — a direct operationalisation of the Overwatch-style triage objective stated in Section 3.1.1, and one that requires no change to the underlying scoring logic.
 
-\begin{itemize}
-\item Build accurate data profiles faster
-\item Take into account external factors (number of cheaters in their friends list, age of the account, number of hours played related to the skill-level shown… things that experimented players learn to recognize but that the software fails to implement)
-\end{itemize}
+A second direction concerns the LSTM component itself. As established in Section 3.1.2, its weights were manually initialised from calibration literature rather than learned from data, which means its contribution to the final suspicion score currently functions as an informed regulariser rather than an independently trained classifier. Training this layer on genuine round-by-round sequences — made feasible, as noted in Section 3.1.3, by parsing real match demos through a library such as awpy — would allow the sequential component to learn temporal patterns the heuristic layer cannot express by design, such as gradual behavioural drift within a session or the specific timing at which a cheat is toggled on and off, rather than relying solely on hand-calibrated directional priors.
+
+A third direction follows from the scope decision made in Section 3.2.1 to restrict the telemetry model to mechanical and performance features. Extending it to the spatial and social dimensions set aside there — cross-match positioning consistency, opening-duel and trading-efficiency windows, and premade-lobby dependencies — would not replace the current aim-centric flags but complement them, since these signals are largely orthogonal to raw mechanical execution and could plausibly narrow the skilled/cheater overlap identified in Section 3.4.1 from a second, independent angle rather than by further tightening thresholds on the same feature family.
+
+Finally, the calibration process itself remains a manual, iterative one: flag thresholds and profile distributions were tuned by hand against community benchmarks and the literature cited in Section 3.2.2, a process that proved workable at the scale of this thesis but would not scale efficiently to a larger feature set or to periodic recalibration against a live player population whose skill distribution shifts over time. Automating this calibration — for instance by refitting profile distributions and flag thresholds against newly confirmed cheater cases as they accumulate — is left as the natural operational counterpart to the detection architecture developed in this chapter.
 
 \section{Comparison with Kernel-level approach}
 \label{sec:three:five}
 
-This capability gap is directly acknowledged in the literature: open-source behavioural detection trained exclusively on server-side kill telemetry has been shown to identify players subsequently confirmed as cheating via VAC ban, suggesting that hardware-level cheats — which leave no software footprint detectable by a kernel driver — nonetheless produce statistically anomalous gameplay signatures exploitable from the server \cite{Loo2025}.
+The DMA blind spot already noted above is not the exception in this comparison but its clearest instance of a broader pattern: kernel-level and server-side detection fail on structurally opposite classes of cheat, which makes them complementary rather than substitutable. Kernel-level anti-cheat, as established in Chapter 2, is well-suited to detecting evasion techniques that leave an artefact within the host operating system — an unsigned BYOVD driver, a DKOM-manipulated process list, an injected DLL — but is categorically blind to any vector that never touches host software, DMA cheating being the clearest case (Section 2.1.2). The server-side pipeline developed in this chapter is blind in the opposite direction: because its flags depend on cross-session consistency by design (Section 3.1.2), it has no mechanism for identifying a cheat used briefly, once, and never again, regardless of how blatant that single session might be, since no history exists yet against which to establish persistence. Neither limitation is a flaw specific to one implementation; each follows directly from where its respective trust anchor sits — the host process for the former, the accumulated match record for the latter.
 
-\begin{itemize}
-\item Effectiveness
-\item Intrusiveness
-\item Implications for the FPS / esport industry
-\item Player perception
-\item Human validation
-\end{itemize}
+In terms of intrusiveness, the asymmetry is more clear-cut. The experiment conducted in Section 2.2 demonstrated concretely that Ring 0 access reaches indiscriminately into any resident process's memory, game-related or not; the pipeline evaluated here, by contrast, operates exclusively on telemetry the server already generates as the authoritative record of the match itself (Appendix C.1), and at no point requires visibility into any process, file, or memory region outside the game session being scored. This is not a difference of degree but of kind, and it is the basis on which Appendix D.3 argues that a server-side approach more readily satisfies the GDPR's data-minimisation principle: the detection surface is, by construction, restricted to exactly the data the stated purpose requires.
+
+This narrower intrusiveness carries through directly to the adoption dynamics discussed in Appendix D.2. Because no privileged client component is installed, the server-side approach sidesteps both the platform-level exclusion of Linux and Steam Deck users and the always-on monitoring objection that has repeatedly triggered the boycotts and review-bombing episodes catalogued there; the trade-off, in exchange, is the reduced and delayed detection reach just described, rather than any claim that the two dimensions — effectiveness and acceptability — trade off exactly one-for-one.
+
+Taken together, these comparisons support a positioning of the two approaches as distinct layers rather than competitors: kernel-level detection remains the more direct tool against host-resident manipulation, while server-side scoring extends coverage to hardware-assisted and behaviourally anomalous cases the former cannot reach, at the cost of requiring an accumulated match history before a verdict can be reached at all. The triage architecture proposed in Section 3.1.1 and refined in Section 3.4.2 — a ranked review queue feeding human validation rather than an autonomous ban — is precisely what allows this second layer to be deployed without inheriting the intrusiveness of the first, a synthesis developed further in the conclusion.

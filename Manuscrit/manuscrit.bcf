@@ -2380,8 +2380,7 @@
     <bcf:citekey order="5" intorder="1">Collins2024</bcf:citekey>
     <bcf:citekey order="6" intorder="1">Collins2024</bcf:citekey>
     <bcf:citekey order="7" intorder="1">Dorner2024</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">Loo2025</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">Dorner2024</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Dorner2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
