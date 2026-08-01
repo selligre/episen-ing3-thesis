@@ -1,7 +1,11 @@
-Chapter 03
+Dernier jury
 
-Conclusion
+Abstract
 
-Reprendre tous les acronyms pour les parenthèses ou pour retirer les itérations suivantes qui reprennent quand même le terme complet (on devrait avoir "\gls{VAC} (VAC)" lors de la première occurrence, puis "VAC" lors des suivantes)
+Keywords
 
-Reprendre les numéros de citations des figures
+Renvois de figures incohérentes
+
+Coquilles 1.1.1, 1.1.3
+
+Remerciements

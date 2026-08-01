@@ -37,6 +37,14 @@ The sequential component is a single-layer Long Short-Term Memory (LSTM) network
 
 The pipeline executes as a single linear sequence of seven stages: synthetic telemetry generation for three hundred players evenly split across the casual, skilled, and cheater profiles detailed in Section 3.2.2; heuristic scoring; LSTM scoring and score combination; persistence of the scored player set to structured JSON, including a dedicated memory file simulating the cross-match history a deployed system would accumulate for each account; benchmark computation against the ground-truth profile labels; console reporting; and generation of the visualisations presented in Section 3.3. This batch, end-of-pipeline processing model was chosen deliberately over a real-time, per-event architecture: because the scoring logic operates on session-level and cross-session aggregates rather than individual ticks, asynchronous post-match processing is sufficient to produce a usable suspicion score without the engineering overhead of a live telemetry stream, though Section 3.4.3 revisits this trade-off as a direction for further optimisation. For future work extending this pipeline to real match data, the awpy library (an open-source CS2 demo parser) is identified as a natural ingestion point, replacing the synthetic generator described in Section 3.2.2 without requiring changes to the scoring layers downstream.
 
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[height=7cm]{../images/chap03/pipeline_diagram.png}
+    \end{center}
+    \caption{Architecture of the gameplay analytics pipeline. Synthetic telemetry is scored independently by the heuristic and LSTM layers before being combined into a single suspicion score, persisted per player, benchmarked against ground-truth profile labels, and surfaced as a ranked queue for human review.}
+    \label{fig:chapter03-pipeline_diagram}
+\end{figure}
+
 \section{Dataset and Features}
 \label{sec:three:two}
 
@@ -80,32 +88,32 @@ Two classification tasks are evaluated from the same set of suspicion scores. Th
 
 At the population level, the three profiles separate into three visibly distinct suspicion-score bands, illustrated in Figure 14. Casual players form an extremely tight cluster around a mean of 9.02 (dispersion = 0.05, range 8.88–9.11), reflecting the near-total absence of any heuristic flag activity in that profile. Skilled players sit noticeably higher, with a mean of 11.47 and a wider spread (dispersion = 1.47, range 9.18–16.69) that reflects the occasional, isolated flag activation described below, but remain far below the suspicion threshold in every case. Cheater players occupy a substantially elevated and considerably more dispersed band, with a mean of 46.14 and a standard deviation of 7.24; critically, the median of this distribution (48.12) sits almost exactly on the classification threshold, meaning that roughly half of the cheater population falls on either side of the cut by construction rather than by classification error.
 
-The flag-level activity underlying this separation is shown in Figure 13. Several flags behave as near-exclusive cheater signatures: TTD\_CRITICAL and HS\_RATE\_EXTREME each fire for 100\% of cheater sessions, PRE\_AIM\_LOCK for 97\%, SPRAY\_PERFECT for 96\%, and CLUTCH\_INHUMAN for 93\%, while REACTION\_INHUMAN and KD\_ADR\_COMBO fire less frequently even among cheaters, at 61\% and 22\% respectively. Against skilled players, most of these flags remain largely inactive (REACTION\_INHUMAN, KD\_ADR\_COMBO, and CONSISTENCY\_BONUS never fire at all) with one conspicuous exception: HS\_RATE\_EXTREME activates for 83\% of skilled sessions, nearly matching its cheater-side trigger rate. This single flag is, by a wide margin, the least discriminative of the eight, and its behaviour is examined directly in Section 3.4.2.
-
-The resulting three-class confusion matrix, presented in Figure 12, shows the casual class perfectly recovered (100\% correctly classified, n = 100), no cheater ever misclassified as casual, and the entire classification error concentrated at the boundary between the skilled and cheater classes: 75\% of skilled players are classified as casual and the remaining 25\% correctly as skilled, while 51\% of cheater players are correctly flagged as cheaters and the remaining 49\% fall instead into the skilled bucket. No player from either the casual or the skilled profile is ever misclassified as a cheater at the operational threshold, a result confirmed directly by the classification metrics: precision reaches 1.0, meaning zero false positives across the entire three-hundred-player population, while recall stands at 0.51 and F1 at 0.6755. The area under the ROC curve, computed on the continuous suspicion probability independently of the threshold, reaches 1.0: a perfect score indicating that, across the whole population, every cheater ranks strictly above every non-cheater, even when a substantial share of cheaters falls under the hard cut used for binary classification. The interpretation of this apparent tension between a modest recall and a perfect AUC, and its implications for how the system should be deployed, is developed in Section 3.4.
-
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap03/confusion_matrix.png}
+        \includegraphics[height=7cm]{../images/chap03/score_distribution.png}
     \end{center}
-    \caption{Confusion Matrix for Suspicion Scoring (row-normalised percentages). The casual class is perfectly recovered, and no cheater is ever misclassified as casual; the entire classification error is concentrated at the skilled/cheater boundary.}
-    \label{fig:chapter03-confusion_matrix}
+    \caption{Suspicion Score Distribution by Player Profile, with the classification threshold (48) overlaid. The cheater distribution straddles the threshold, while casual and skilled distributions remain well below it.}
+    \label{fig:chapter03-score_distribution}
 \end{figure}
 
+The flag-level activity underlying this separation is shown in Figure 13. Several flags behave as near-exclusive cheater signatures: TTD\_CRITICAL and HS\_RATE\_EXTREME each fire for 100\% of cheater sessions, PRE\_AIM\_LOCK for 97\%, SPRAY\_PERFECT for 96\%, and CLUTCH\_INHUMAN for 93\%, while REACTION\_INHUMAN and KD\_ADR\_COMBO fire less frequently even among cheaters, at 61\% and 22\% respectively. Against skilled players, most of these flags remain largely inactive (REACTION\_INHUMAN, KD\_ADR\_COMBO, and CONSISTENCY\_BONUS never fire at all) with one conspicuous exception: HS\_RATE\_EXTREME activates for 83\% of skilled sessions, nearly matching its cheater-side trigger rate. This single flag is, by a wide margin, the least discriminative of the eight, and its behaviour is examined directly in Section 3.4.2.
+
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap03/flag_frequency.png}
+        \includegraphics[height=7cm]{../images/chap03/flag_frequency.png}
     \end{center}
     \caption{Detection Flag Trigger Rate by Profile.}
     \label{fig:chapter03-flag_frequency}
 \end{figure}
 
+The resulting three-class confusion matrix, presented in Figure 12, shows the casual class perfectly recovered (100\% correctly classified, n = 100), no cheater ever misclassified as casual, and the entire classification error concentrated at the boundary between the skilled and cheater classes: 75\% of skilled players are classified as casual and the remaining 25\% correctly as skilled, while 51\% of cheater players are correctly flagged as cheaters and the remaining 49\% fall instead into the skilled bucket. No player from either the casual or the skilled profile is ever misclassified as a cheater at the operational threshold, a result confirmed directly by the classification metrics: precision reaches 1.0, meaning zero false positives across the entire three-hundred-player population, while recall stands at 0.51 and F1 at 0.6755. The area under the ROC curve, computed on the continuous suspicion probability independently of the threshold, reaches 1.0: a perfect score indicating that, across the whole population, every cheater ranks strictly above every non-cheater, even when a substantial share of cheaters falls under the hard cut used for binary classification. The interpretation of this apparent tension between a modest recall and a perfect AUC, and its implications for how the system should be deployed, is developed in Section 3.4.
+
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap03/score_distribution.png}
+        \includegraphics[height=7cm]{../images/chap03/confusion_matrix.png}
     \end{center}
-    \caption{Suspicion Score Distribution by Player Profile, with the classification threshold (48) overlaid. The cheater distribution straddles the threshold, while casual and skilled distributions remain well below it.}
-    \label{fig:chapter03-score_distribution}
+    \caption{Confusion Matrix for Suspicion Scoring (row-normalised percentages). The casual class is perfectly recovered, and no cheater is ever misclassified as casual; the entire classification error is concentrated at the skilled/cheater boundary.}
+    \label{fig:chapter03-confusion_matrix}
 \end{figure}
 
 \section{Analysis and Performance Discussion}

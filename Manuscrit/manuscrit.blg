@@ -1,15 +1,15 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'manuscrit.blg'
-[436] biber-MSWIN64:342> INFO - === 
-[616] Biber.pm:421> INFO - Reading 'manuscrit.bcf'
-[847] Biber.pm:1002> INFO - Found 4 citekeys in bib section 0
-[872] Biber.pm:4487> INFO - Processing section 0
-[918] Biber.pm:4678> INFO - Looking for bibtex file '../bibliographie.bib' for section 0
-[1004] bibtex.pm:1713> INFO - LaTeX decoding ...
-[1039] bibtex.pm:1519> INFO - Found BibTeX data source '../bibliographie.bib'
-[1213] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1214] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1214] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1214] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[1331] bbl.pm:676> INFO - Writing 'manuscrit.bbl' with encoding 'UTF-8'
-[1338] bbl.pm:779> INFO - Output to manuscrit.bbl
+[175] biber-MSWIN64:342> INFO - === 
+[237] Biber.pm:421> INFO - Reading 'manuscrit.bcf'
+[416] Biber.pm:1002> INFO - Found 4 citekeys in bib section 0
+[437] Biber.pm:4487> INFO - Processing section 0
+[454] Biber.pm:4678> INFO - Looking for bibtex file '../bibliographie.bib' for section 0
+[531] bibtex.pm:1713> INFO - LaTeX decoding ...
+[546] bibtex.pm:1519> INFO - Found BibTeX data source '../bibliographie.bib'
+[638] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[638] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[638] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[638] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[651] bbl.pm:676> INFO - Writing 'manuscrit.bbl' with encoding 'UTF-8'
+[657] bbl.pm:779> INFO - Output to manuscrit.bbl

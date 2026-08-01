@@ -26,38 +26,38 @@
 \contentsline {subsection}{\numberline {3.1.3}Practical System Deployment}{24}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Dataset and Features}{25}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Telemetry Data Model}{25}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Data Sources and Profiling}{25}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Data Sources and Profiling}{26}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Data Constraints and Limitations}{26}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Benchmark Execution and Raw Outputs}{27}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Experimental Protocol}{27}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Raw Evaluation Results}{27}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Analysis and Performance Discussion}{29}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Detection Results and the High-Skill Bias}{29}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.3.2}Raw Evaluation Results}{28}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Analysis and Performance Discussion}{30}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detection Results and the High-Skill Bias}{30}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Future Optimizations}{31}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Comparison with Kernel-level approach}{31}{section.3.5}%
-\contentsline {chapter}{Conclusion}{33}{chapter*.18}%
-\contentsline {chapter}{Bibliography}{34}{chapter*.19}%
-\contentsline {chapter}{Glossary}{35}{section*.20}%
-\contentsline {chapter}{Acronyms}{38}{section*.22}%
-\contentsline {chapter}{\numberline {A}Game Context and Rules}{39}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Competitive Format}{39}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Core Mechanics Relevant to Cheating}{39}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Why Cheating Breaks Game Balance: The Bullet Penetration Case}{41}{appendix.B}%
-\contentsline {section}{\numberline {B.1}The Penetration Power Mechanic}{41}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Link to Information Cheats}{42}{section.B.2}%
-\contentsline {chapter}{\numberline {C}Client/Server Architecture and Network Communication}{43}{appendix.C}%
-\contentsline {section}{\numberline {C.1}The Authoritative Server Model}{43}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Snapshot Scope and Client Memory}{43}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Network Channel Encryption}{43}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Memory-Based Exploit Surface}{44}{section.C.4}%
-\contentsline {section}{\numberline {C.5}DMA Cheats}{44}{section.C.5}%
-\contentsline {chapter}{\numberline {D}Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{45}{appendix.D}%
-\contentsline {section}{\numberline {D.1}System Visibility Level and Perceived Intrusion}{45}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Social Perception and Community Acceptance}{46}{section.D.2}%
-\contentsline {section}{\numberline {D.3}Legal and Regulatory Questions}{47}{section.D.3}%
-\contentsline {chapter}{\numberline {E}Other appendixes}{48}{appendix.E}%
-\contentsline {section}{\numberline {E.1}Cheaters in CS2}{48}{section.E.1}%
-\contentsline {section}{\numberline {E.2}Existing data aggregation tool}{49}{section.E.2}%
-\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Abstract:}{51}{paragraph*.27}%
-\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Keywords:}{51}{paragraph*.28}%
+\contentsline {section}{\numberline {3.5}Comparison with Kernel-level approach}{32}{section.3.5}%
+\contentsline {chapter}{Conclusion}{34}{chapter*.19}%
+\contentsline {chapter}{Bibliography}{36}{chapter*.20}%
+\contentsline {chapter}{Glossary}{37}{section*.21}%
+\contentsline {chapter}{Acronyms}{40}{section*.23}%
+\contentsline {chapter}{\numberline {A}Game Context and Rules}{41}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Competitive Format}{41}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Core Mechanics Relevant to Cheating}{41}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Why Cheating Breaks Game Balance: The Bullet Penetration Case}{43}{appendix.B}%
+\contentsline {section}{\numberline {B.1}The Penetration Power Mechanic}{43}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Link to Information Cheats}{44}{section.B.2}%
+\contentsline {chapter}{\numberline {C}Client/Server Architecture and Network Communication}{45}{appendix.C}%
+\contentsline {section}{\numberline {C.1}The Authoritative Server Model}{45}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Snapshot Scope and Client Memory}{45}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Network Channel Encryption}{45}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Memory-Based Exploit Surface}{46}{section.C.4}%
+\contentsline {section}{\numberline {C.5}DMA Cheats}{46}{section.C.5}%
+\contentsline {chapter}{\numberline {D}Socio-Legal, Privacy, and Community Dynamics of Kernel-Level Anti-Cheat Implementations}{47}{appendix.D}%
+\contentsline {section}{\numberline {D.1}System Visibility Level and Perceived Intrusion}{47}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Social Perception and Community Acceptance}{48}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Legal and Regulatory Questions}{49}{section.D.3}%
+\contentsline {chapter}{\numberline {E}Other appendixes}{50}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Cheaters in CS2}{50}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Existing data aggregation tool}{51}{section.E.2}%
+\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Abstract:}{53}{paragraph*.28}%
+\contentsline {paragraph}{\color {colorEPISEN-MEMOIRE}Keywords:}{53}{paragraph*.29}%
 \contentsfinish 
