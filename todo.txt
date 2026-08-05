@@ -4,11 +4,4 @@ Keywords
 
 Renvois de figures incohérentes
 
-Coquilles 1.1.1, 1.1.3
-
-Cohérence à vérifier : score moyen "skilled" très proche du seuil casual/skilled
-Lié au point précédent : la moyenne "skilled" (11.47) est presque collée au seuil de coupure casual/skilled (12), et très éloignée de la moyenne "cheater" (46.14). Cela contredit un peu le narratif du chevauchement "skilled/cheater aux extrémités" mis en avant en 3.2.2 — dans les scores finaux, le vrai chevauchement semble minime. Vaut le coup de vérifier si c'est le comportement voulu ou si la calibration mérite d'être revue/expliquée.
-
-Références à la bibliographie
-
-Enlever les doubles tiraits — vu que je sais pas ecrire avec
+Enlever les doubles tiraits —
