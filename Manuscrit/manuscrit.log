@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  4 AUG 2026 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  11 AUG 2026 13:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2560,7 +2560,7 @@ Package logreq Info: Writing requests to 'manuscrit.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  62207 strings out of 467866
- 1389141 string characters out of 5418325
+ 1389141 string characters out of 5418326
  2519224 words of memory out of 5000000
  89876 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
@@ -2576,7 +2576,7 @@ ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Use
 rs/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/User
 s/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on manuscrit.pdf (60 pages, 21638145 bytes).
+Output written on manuscrit.pdf (60 pages, 21639232 bytes).
 PDF statistics:
  1073 PDF objects out of 1200 (max. 8388607)
  179 named destinations out of 1000 (max. 500000)

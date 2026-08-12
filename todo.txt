@@ -5,3 +5,11 @@ Keywords
 Renvois de figures incohérentes
 
 Enlever les doubles tiraits —
+
+Incohérence de contenu entre l'Annexe A et le Chapitre 3
+Dans l'Annexe A.1, tu écris que le "buy phase" et les "premade lobby dependencies" sont "directly relevant to the telemetry features discussed in Chapter 3". Or, en 3.2.1, tu précises explicitement que les "premade-lobby dependencies" ont été écartées du modèle télémétrique implémenté et relèvent d'une extension future (reprise en 3.4.2). C'est une contradiction factuelle réelle, pas juste un problème de renvoi : l'annexe laisse penser que cette feature existe dans le pipeline, alors que le corps du mémoire dit l'inverse. À corriger dans l'annexe (remplacer l'exemple par "average utility damage", qui lui est bien dans le modèle).
+
+Phrases très longues
+Le registre académique dense fait partie de ta charte de style, mais certaines phrases dépassent 90-100 mots avec 3-4 subordonnées imbriquées (ex. dans 2.2.3, 3.4.1, la conclusion). Ça reste lisible à la relecture attentive, mais un jury qui lit vite peut perdre le fil. Ce ne sont pas des erreurs, juste des candidates à un découpage en deux phrases si tu veux gagner en clarté sans perdre en densité.
+
+Formatage de l'équation en 3.1.2
