@@ -1,11 +1,9 @@
-Abstract
-
-Keywords
-
-Renvois de figures incohérentes
+Formatage de l'équation en 3.1.2
 
 Enlever les doubles tiraits —
 
-Formatage de l'équation en 3.1.2
-
 Citations d'articles qui n'ont pas de \cite{}
+
+Positionnement des figures
+
+Renvois de figures incohérentes

@@ -18,8 +18,12 @@
 \paragraph{\color{colorEPISEN-MEMOIRE}Abstract:}
 \begin{small}
 
-Awesome abstract.
+This thesis investigates whether cheating in competitive first-person shooters can be detected effectively without relying on the privileged, system-wide access that kernel-level anti-cheat software requires. After reviewing the main categories of cheats and anti-cheat mechanisms, an experimental study using Windows-Kernel-Explorer and Cheat Engine demonstrates, on an isolated virtual machine, that Ring 0 access can trivially expose sensitive data resident in the memory of any process, not only the targeted game client. Building on this finding, the thesis designs and implements a server-side gameplay analytics pipeline that combines rule-based heuristics with an architecturally motivated LSTM layer to compute a suspicion score from behavioral telemetry alone. Benchmarked against a calibrated synthetic population of casual, skilled, and cheater profiles, the pipeline reaches perfect precision and a perfect AUC-ROC, with a deliberately conservative threshold yielding zero false positives at the cost of a moderate recall. These results support positioning behavioral, server-side detection as a complementary layer to kernel-level anti-cheat within a multi-layer architecture that reconciles detection effectiveness, system security, and player trust.
 
 \end{small}
 \vspace*{-5mm}
-\paragraph{\color{colorEPISEN-MEMOIRE}Keywords:} {\small Key, Words.}
+
+\paragraph{\color{colorEPISEN-MEMOIRE}Keywords:}
+\begin{small}
+Anti-cheat Systems, Kernel-Level Security, Behavioral Detection, Counter-Strike 2, Player Privacy
+\end{small}
