@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  13 AUG 2026 14:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  13 AUG 2026 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2395,20 +2395,24 @@ Overfull \hbox (4.38902pt too wide) in paragraph at lines 33--34
 se-quence of five nor-malised fea-tures (mean time-to-damage,
  []
 
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 35.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 35.
 <../images/chap03/pipeline_diagram.png, id=759, 643.203pt x 440.847pt>
 File: ../images/chap03/pipeline_diagram.png Graphic file (type png)
 <use ../images/chap03/pipeline_diagram.png>
 Package pdftex.def Info: ../images/chap03/pipeline_diagram.png  used on input l
-ine 42.
+ine 47.
 (pdftex.def)             Requested size: 290.58696pt x 199.16928pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.
-enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
+ [24{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
+{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}
 {C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
 ]
-Overfull \hbox (3.05046pt too wide) in paragraph at lines 56--57
+Overfull \hbox (3.05046pt too wide) in paragraph at lines 61--62
 []\T1/LinuxLibertineT-TLF/m/n/10.95 Spatial and so-cial fea-tures (cross-match 
 po-si-tion-ing con-sis-tency, opening-duel and trading-efficiency
  []
@@ -2420,27 +2424,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
-<../images/chap03/score_distribution.png, id=788, 642.2394pt x 425.9112pt>
+<../images/chap03/score_distribution.png, id=789, 642.2394pt x 425.9112pt>
 File: ../images/chap03/score_distribution.png Graphic file (type png)
 <use ../images/chap03/score_distribution.png>
 Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
- line 93.
+ line 98.
 (pdftex.def)             Requested size: 300.33359pt x 199.16928pt.
-<../images/chap03/flag_frequency.png, id=789, 931.3194pt x 426.393pt>
+<../images/chap03/flag_frequency.png, id=790, 931.3194pt x 426.393pt>
 File: ../images/chap03/flag_frequency.png Graphic file (type png)
 <use ../images/chap03/flag_frequency.png>
 Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
-e 103.
+e 108.
 (pdftex.def)             Requested size: 435.02013pt x 199.16928pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28 <../images/chap03/score_distribution.png>]
-<../images/chap03/confusion_matrix.png, id=796, 486.618pt x 389.7762pt>
+<../images/chap03/confusion_matrix.png, id=797, 486.618pt x 389.7762pt>
 File: ../images/chap03/confusion_matrix.png Graphic file (type png)
 <use ../images/chap03/confusion_matrix.png>
 Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
-ine 113.
+ine 118.
 (pdftex.def)             Requested size: 248.65453pt x 199.16928pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2483,13 +2487,9 @@ Appendix A.
 ]) (Annexes/annex03.tex [42]
 Appendix B.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 21.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 21.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 21.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 21.
 [43
 
 ]) (Annexes/annex04.tex [44]
@@ -2515,14 +2515,14 @@ Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
 [47
 
 ]
-<../images/annex01/fig6.png, id=962, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=963, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
 (pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
  [48 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [49]
 Appendix E.
-<../images/annex05/cheaters.png, id=975, 533.74406pt x 797.22844pt>
+<../images/annex05/cheaters.png, id=976, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
 <use ../images/annex05/cheaters.png>
 Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
@@ -2534,7 +2534,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [50
 
 ]
-<../images/annex05/csst.png, id=980, 866.48718pt x 639.13782pt>
+<../images/annex05/csst.png, id=981, 866.48718pt x 639.13782pt>
 File: ../images/annex05/csst.png Graphic file (type png)
 <use ../images/annex05/csst.png>
 Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
@@ -2559,10 +2559,10 @@ Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62207 strings out of 467866
- 1389141 string characters out of 5418326
- 2519260 words of memory out of 5000000
- 89876 multiletter control sequences out of 15000+600000
+ 62211 strings out of 467866
+ 1389233 string characters out of 5418326
+ 2519331 words of memory out of 5000000
+ 89879 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,15n,120p,2548b,2612s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2573,12 +2573,11 @@ s/type1/public/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
-ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Use
-rs/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/User
-s/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on manuscrit.pdf (60 pages, 21645903 bytes).
+ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use
+rs/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on manuscrit.pdf (60 pages, 21637763 bytes).
 PDF statistics:
- 1089 PDF objects out of 1200 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
+ 1086 PDF objects out of 1200 (max. 8388607)
+ 180 named destinations out of 1000 (max. 500000)
  590 words of extra memory for PDF output out of 10000 (max. 10000000)
 
