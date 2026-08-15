@@ -9,9 +9,9 @@ CS2 follows a client-server architecture in which the server is authoritative ov
 
 \section{Snapshot Scope and Client Memory}
 
-Each client receives a snapshot covering all entities in the game world — including the positions, health values, and state of every player, regardless of their visibility to the receiving client. The client-side engine is responsible for rendering only what the local player should legitimately see; the underlying data for all entities is present in the client process's memory regardless.
+Each client receives a snapshot covering all entities in the game world including the positions, health values, and state of every player, regardless of their visibility to the receiving client. The client-side engine is responsible for rendering only what the local player should legitimately see; the underlying data for all entities is present in the client process's memory regardless.
 
-After reception, the snapshot is decrypted and parsed into the Entity List — a data structure held in RAM containing plaintext 3D coordinates, health values, velocity vectors, and other attributes for every entity in the game. This in-memory representation is what the local engine uses to run prediction and rendering logic.
+After reception, the snapshot is decrypted and parsed into the Entity List: a data structure held in RAM containing plaintext 3D coordinates, health values, velocity vectors, and other attributes for every entity in the game. This in-memory representation is what the local engine uses to run prediction and rendering logic.
 
 \section{Network Channel Encryption}
 
@@ -19,7 +19,7 @@ CS2 traffic is relayed through Valve's Steam Datagram Relay (SDR) infrastructure
 
 \section{Memory-Based Exploit Surface}
 
-Because the full world state is present in plaintext in the client process's RAM after decryption, it can be read by any component with access to that memory space. Radarhacks and wallhacks operate on this basis: a separate process reads the Entity List and uses the extracted coordinates to render enemy positions on a minimap or through geometry — data the client holds locally but would not normally display.
+Because the full world state is present in plaintext in the client process's RAM after decryption, it can be read by any component with access to that memory space. Radarhacks and wallhacks operate on this basis: a separate process reads the Entity List and uses the extracted coordinates to render enemy positions on a minimap or through geometry (data the client holds locally but would not normally display).
 
 \section{DMA Cheats}
 

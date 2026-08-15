@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{List of Figures}{v}{chapter*.2}%
 \contentsline {chapter}{Introduction}{1}{chapter*.3}%
-\contentsline {chapter}{\numberline {1}State of the Art - Cheats and Anti-Cheats}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {1}State of the Art: Cheats and Anti-Cheats}{4}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Cheat-Based Exploration of System Architecture}{4}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Automation Cheats}{4}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Information Cheats}{6}{subsection.1.1.2}%
