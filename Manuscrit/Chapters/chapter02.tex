@@ -1,4 +1,4 @@
-\chapter{Assessing Risks and Limitations of Kernel-Level Anti-Cheats
+\chapter{Assessing Risks and Limits of Kernel-Level Anti-Cheats
 using Windows-Kernel-Explorer}
 \label{chap:two}
 
@@ -12,7 +12,7 @@ using Windows-Kernel-Explorer}
 
 \fancyhead[LE]{\textsc{\chaptername~\thechapter}}
 
-\section{Structural Limitations of Kernel-Level Anti-Cheats}
+\section{Structural Limits of Kernel-Level Anti-Cheats}
 \label{sec:two:one}
 
 \subsection{Technological Arms Race}
@@ -40,7 +40,7 @@ The architectural conclusion follows directly: kernel-level anti-cheat can only 
 \subsection{Economic and Operational Costs}
 \label{sec:two:one:three}
 
-The structural limitations described above do not manifest in a vacuum: they translate into concrete and ongoing economic costs for publishers who choose to deploy kernel-level anti-cheat systems. These costs operate across three distinct dimensions that collectively challenge the long-term viability of the approach.
+The structural limits described above do not manifest in a vacuum: they translate into concrete and ongoing economic costs for publishers who choose to deploy kernel-level anti-cheat systems. These costs operate across three distinct dimensions that collectively challenge the long-term viability of the approach.
 
 The first is driver maintenance. A kernel driver is not a product that can be shipped and forgotten: it must be continuously adapted to new OS versions, new hardware generations, and new security policies enforced by Microsoft's evolving Secure Boot and driver signing infrastructure. Each Windows update cycle introduces potential compatibility breaks that must be diagnosed and patched before they manifest as crashes or silent detection failures in the player base. This maintenance burden requires a dedicated engineering team with specialized kernel-level expertise: a skillset that is both scarce and expensive in the current software labor market.
 
@@ -48,7 +48,7 @@ The second is security incident management. As discussed in Appendix D.3, the ma
 
 The third is reputational and commercial impact. As detailed in Appendix D.2, a growing segment of the player base actively rejects kernel-level solutions, translating publisher anti-cheat decisions into measurable adoption losses. The exclusion of Linux and Steam Deck users (a platform whose market share has grown substantially with the mainstream success of Valve's handheld) from titles enforcing kernel drivers represents a quantifiable reduction in the addressable player pool. This exclusion is compounded by the architectural characteristics of the most aggressive solutions: always-on kernel drivers that boot independently of the game process and that, in the case of FACEIT Anti-Cheat, require users to disable Windows memory integrity protections and Hyper-V: a condition that exposes the system to a broader class of threats than those it is intended to prevent \cite{Dorner2024}. For free-to-play titles where player count directly drives monetization through network effects and cosmetic economies, this trade-off carries direct financial consequences that compound over time.
 
-Taken together, these three cost vectors (maintenance, incident response, and adoption friction) establish that kernel-level anti-cheat is not simply a technical solution with technical limitations, but a strategic commitment with sustained organizational costs. The central question for publishers is therefore whether the detection effectiveness gained justifies this investment, particularly given the categorical limitations against hardware-assisted cheating vectors identified in Section 2.1.2. It is precisely this question that motivates the server-side behavioral approach explored in Chapter 3.
+Taken together, these three cost vectors (maintenance, incident response, and adoption friction) establish that kernel-level anti-cheat is not simply a technical solution with technical limits, but a strategic commitment with sustained organizational costs. The central question for publishers is therefore whether the detection effectiveness gained justifies this investment, particularly given the categorical limitations against hardware-assisted cheating vectors identified in Section 2.1.2. It is precisely this question that motivates the server-side behavioral approach explored in Chapter 3.
 
 \section{Experimental Section: Illustrating Potential Intrusiveness}
 \label{sec:two:two}
@@ -60,7 +60,7 @@ The structural and economic limitations identified in Section 2.1 rest on the pr
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap02/2.png}
+        \includegraphics[height=7cm]{../images/chap02/2.png}
     \end{center}
     \caption{Sensitive value ("Mot de passe : Test1234!") entered into a Notepad process left resident in memory on the isolated Windows 10 virtual machine.}
     \label{fig:chapter02-2}
@@ -73,17 +73,17 @@ Launching Windows-Kernel-Explorer with administrative privileges exposes the com
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap02/4.png}
+        \includegraphics[height=7cm]{../images/chap02/4.png}
     \end{center}
     \caption{Windows-Kernel-Explorer process list, showing the target notepad.exe process isolated by its PID, PPID, EPROCESS pointer, and executable path.}
     \label{fig:chapter02-4}
 \end{figure}
 
-Requesting its memory map returns several hundred discrete regions, each characterized by base address, size, allocation state (free, reserved, committed), protection flags, and, where applicable, mapped module (Figure 8). This granularity confirms that a privileged component can enumerate, without any cooperation from the monitored process, the entirety of its address space. However, it also exposes the practical obstacle to exploiting that access manually: the sheer number of regions makes an exhaustive review intractable, and nothing in the listing indicates which region, if any, holds a given value, since a string of this length may be stored contiguously or split across adjacent allocations. Windows-Kernel-Explorer's built-in hex viewer allows individual regions to be inspected, but browsing them one by one is not a substitute for a proper search, which the tool does not provide.
+Requesting its memory map returns several hundred discrete regions, each characterized by base address, size, allocation state (free, reserved, committed), protection flags, and, where applicable, mapped module (Figure 8). This level of details confirms that a privileged component can enumerate, without any cooperation from the monitored process, the entirety of its address space. However, it also exposes the practical obstacle to exploiting that access manually: the sheer number of regions makes an exhaustive review intractable, and nothing in the listing indicates which region, if any, holds a given value, since a string of this length may be stored contiguously or split across adjacent allocations. Windows-Kernel-Explorer's built-in hex viewer allows individual regions to be inspected, but browsing them one by one is not a substitute for a proper search, which the tool does not provide.
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap02/5.png}
+        \includegraphics[height=7cm]{../images/chap02/5.png}
     \end{center}
     \caption{Memory map of the notepad.exe process returned by Windows-Kernel-Explorer, listing several hundred regions by base address, size, allocation state, and protection flags.}
     \label{fig:chapter02-5}
@@ -93,7 +93,7 @@ Cheat Engine was therefore attached to the same notepad.exe process to perform t
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap02/11.png}
+        \includegraphics[height=7cm]{../images/chap02/11.png}
     \end{center}
     \caption{Cheat Engine string scan of notepad.exe's memory for "Mot de passe", returning a single matching address.}
     \label{fig:chapter02-11}
@@ -101,7 +101,7 @@ Cheat Engine was therefore attached to the same notepad.exe process to perform t
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap02/15.png}
+        \includegraphics[height=7cm]{../images/chap02/15.png}
     \end{center}
     \caption{Raw hexadecimal bytes at the matched address, viewed through Windows-Kernel-Explorer's memory editor, showing the target string split across three contiguous rows.}
     \label{fig:chapter02-15}
@@ -111,7 +111,7 @@ These bytes were transcribed and passed through a standard hexadecimal-to-ASCII 
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=8cm]{../images/chap02/16.png}
+        \includegraphics[height=7cm]{../images/chap02/16.png}
     \end{center}
     \caption{Reconstruction of the original string via a hexadecimal-to-ASCII converter, confirming an exact match with the value entered in Notepad.}
     \label{fig:chapter02-16}

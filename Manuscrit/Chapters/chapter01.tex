@@ -21,15 +21,15 @@ Automation cheats represent a critical class of malicious software engineered to
 To achieve this automation, the software must interface directly with either the operating system's input layer or manipulate the inner variables governing the game engine logic. The depth of this interaction generally defines the cheat's sophistication and detection difficulty:
 
 \begin{itemize}
-    \item Input Layer Manipulation: Client-side automation tools often operate by injecting synthetic mouse and keyboard events directly into the operating system's input stream. A typical triggerbot, for example, continuously polls the game client's state or memory addresses to determine when an enemy entity's hitbox intersects with the exact coordinates of the player's crosshair. The moment this condition is validated, the cheat programmatically fires a click event into the input queue, completely bypassing human visual processing and nervous system latency. The latency between the detection of the event and the actual input can be configured to try to pass as a human reaction, though the main point of this process is still to be considerably faster than the average player.
-    \item Subversion of Game Engine Logic: More advanced automation mechanisms bypass peripheral input emulation altogether, executing modifications directly within the local game engine client memory space. An aimbot reads the real-time spatial positions (three-dimensional coordinates) of all active opponents from the engine's local entity list. It then calculates the precise angular vector offsets required to bridge the gap between the current viewpoint and the target's head hitbox. By overwriting the client's view-angle variables within the engine memory before the next frame rendering or \gls{tick} packet serialization, the cheat forces perfect accuracy.
+    \item Input Layer Manipulation: Client-side automation tools often operate by injecting synthetic mouse and keyboard events directly into the operating system's input stream. A typical triggerbot continuously polls the game client's state to determine when an enemy entity's hitbox intersects with the exact coordinates of the player's crosshair. The moment this condition is validated, the cheat programmatically fires a click event into the input queue, completely bypassing human visual processing and nervous system latency. The latency between the detection of the event and the actual input can be configured to try to pass as a human reaction, though the main point of this process is still to be considerably faster than the average player.
+    \item Subversion of Game Engine Logic: More advanced automation mechanisms bypass peripheral input emulation altogether, executing modifications directly within the local game engine client memory space. An aimbot reads the real-time spatial positions of all active opponents from the engine's local entity list. It then calculates the precise angular vector offsets required to bridge the gap between the current viewpoint and the target's head hitbox. By overwriting the client's view-angle variables within the engine memory before the next frame rendering or \gls{tick} packet serialization, the cheat forces perfect accuracy.
 \end{itemize}
 
 \begin{figure}[H]
     \begin{center}
         \includegraphics[height=9cm]{../images/chap01/fig1.png}
     \end{center}
-    \caption[Comparison of the recoil from the AK-47 in-game with its theoretical model, implying that the recoil is deterministic and can be compensated for with a script.]{https://cs2pulse.com/spray-patterns/ak-47/}
+    \caption[Comparison of the recoil from the AK-47 in-game with its theoretical model, implying that the recoil is deterministic and can be compensated for with a script.]{Comparison of the recoil from the AK-47 in-game with its theoretical model, implying that the recoil is deterministic and can be compensated for with a script. Source: \url{https://cs2pulse.com/spray-patterns/ak-47/}}
     \label{fig:fig1}
 \end{figure}
 
@@ -43,27 +43,27 @@ Unlike automation tools that directly override a player's physical inputs, infor
 To achieve this asymmetric visualization, these tools typically exploit two distinct technical vectors within the local client system:
 
 \begin{figure}[H]
+    \centering
     \begin{center}
-        \includegraphics[height=9cm]{../images/chap01/ingamewallhack.png}
+        \includegraphics[height=7cm]{../images/chap01/ingamewallhack.png}
     \end{center}
     \begin{center}
-        \includegraphics[height=9cm]{../images/chap01/paidwallhack.png}
+        \includegraphics[height=7cm]{../images/chap01/paidwallhack.png}
     \end{center}
     \caption{Comparison of wallhack demonstration using built-in command "r\_aoproxy\_show 1" in CS2, which forces the engine to render near entity models regardless of occlusion (top) and an ad from a cheating software provider showing wallhack in action (bottom).}
     \label{fig:comparisonwallhack}
 \end{figure}
 
 \begin{itemize}
-    \item Rendering Pipeline Exploitation: Wallhacks operate by intercepting or altering the graphics rendering pipeline responsible for drawing the game world onto the player's screen. In a legitimate game loop, the engine utilizes occlusion to ensure that player models hidden behind opaque geometry (such as walls or solid terrain) are not drawn on the screen. Wallhacks circumvent this by hooking into the graphic \gls{API}s (APIs) used by the engine. By injecting code that forces the graphics card to ignore occlusion parameters when processing enemy entity models, the cheat renders these entities on top of intervening geometry. This is frequently accompanied by \gls{ESP} (ESP) boxes, which overlay real-time lines, health bars, and item descriptions directly onto the player's view canvas (a result visually indistinguishable from the engine's own debug rendering mode), as shown in Figure 2, where the output of a native CS2 command forcing occlusion bypass (top) is compared side-by-side with a commercial cheat advertisement (bottom).
-
+    \item Rendering Pipeline Exploitation: Wallhacks operate by intercepting or altering the graphics rendering pipeline responsible for drawing the game world onto the player's screen. In a legitimate game loop, the engine utilizes occlusion to ensure that player models hidden behind opaque geometry (such as walls or solid terrain) are not drawn on the screen. Wallhacks bypass this by hooking into the graphic \gls{API}s (API) used by the engine. By injecting code that forces the graphics card to ignore occlusion parameters when processing enemy entity models, the cheat renders these entities on top of intervening geometry. This is frequently accompanied by \gls{ESP} (ESP) boxes, which overlay real-time lines, health bars, and item descriptions directly onto the player's view canvas (a result visually indistinguishable from the engine's own debug rendering mode), as shown in Figure 2, where the output of a native CS2 command forcing occlusion bypass (top) is compared side-by-side with a commercial cheat advertisement (bottom).
     \item Game Data Exposure: Radarhacks bypass the visual canvas entirely, targeting the underlying spatial data structures residing within the client’s volatile memory or network socket streams. Every online game client maintains a local "Entity List" containing the precise three-dimensional coordinate vectors of all active participants, transmitted by the server to ensure local interpolation and hit registration. A radarhack continuously scans the process memory space to extract these spatial vectors or sniffs incoming network packets before they are parsed by the client. This data is then projected onto a secondary web-based interface, an external execution window, or a simulated 2D mini-map overlay. Because this methodology leaves the primary visual interface completely clean and does not alter rendering hooks, it provides the cheater with absolute situational awareness while significantly minimizing visibility to automated anti-cheat screen capture mechanisms or human review systems. This type of cheating is one of the hardest to detect as, except for the direct scanning of the process memory space, the behaviour of such cheaters can often be associated with a good game-sense or instincts, hence being harder to prove as blatant cheating. Figure 3 illustrates this extraction pipeline, showing enemy coordinates pulled from the entity list and projected onto a clean secondary interface that leaves the primary game view entirely unaltered.
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[h]
     \begin{center}
         \includegraphics[height=7cm]{../images/chap01/radarhack.png}
     \end{center}
-    \caption[Radarhack demonstration showing the extraction of enemy positions from the game's entity list and their projection onto a secondary interface.]{https://github.com/bordeanu05/cs2cheat}
+    \caption[Radarhack demonstration showing the extraction of enemy positions from the game's entity list and their projection onto a secondary interface.]{Radarhack demonstration showing the extraction of enemy positions from the game's entity list and their projection onto a secondary interface. Source: \url{https://github.com/bordeanu05/cs2cheat}}
     \label{fig:figradarhack}
 \end{figure}
 
@@ -74,9 +74,9 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[height=9cm]{../images/chap01/fig4.png}
+        \includegraphics[height=8cm]{../images/chap01/fig4.png}
     \end{center}
-    \caption[Privilege \gls{rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3.]{https://www.tutorialspoint.com/article/protection-ring}
+    \caption[Privilege \gls{rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3.]{Privilege \gls{rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3. Source: \url{https://www.tutorialspoint.com/article/protection-ring}}
     \label{fig:fig4}
 \end{figure}
 
@@ -90,14 +90,14 @@ As client-side anti-cheat mechanisms evolved to actively monitor user-mode opera
         \item Direct System Manipulation: Once established inside Ring 0, the cheat can modify the operating system's internal tracking structures. Using a method known as  \gls{DKOM} (DKOM), the cheat can erase its own program from the active process list or alter the system’s memory maps. This disguises the cheat's memory footprint, making it look like a harmless, native operating system component.
     \end{itemize}
 
-    \item External Cheats and Hardware Interfaces: The most modern escalation in this technical conflict involves external and hardware-assisted cheats, which decouple the cheat execution environment from the host operating system running the game client. This paradigm relies on physical hardware interfaces, most notably Direct Memory Access (DMA) via specialized hardware expansion cards installed directly into the host machine's \gls{PCIe} (PCIe) slots. The DMA card physically reads and writes to the system's volatile \gls{RAM} (RAM) directly through the hardware controller, completely bypassing the \gls{CPU} (CPU) and any software-level security controls enforced by the operating system kernel. This raw memory stream is transmitted via a physical interface to a secondary, completely isolated computer. This external machine parses the game state asynchronously, calculates visual overlays or aim vectors, and can send synthetic peripheral inputs back to the host via specialized hardware input spoofers or modified mouse firmware. Because no malicious code executes, modifies memory, or hooks processes on the primary gaming machine, hardware-assisted vectors leave zero software footprint for traditional detection engines to scan. Figure 5 details this infrastructure, showing how the PCIe card reads host RAM through the hardware controller and relays the raw memory stream to an isolated external machine responsible for processing and input spoofing.
+    \item External Cheats and Hardware Interfaces: The most modern escalation in this technical conflict involves external and hardware-assisted cheats, which decouple the cheat execution environment from the host operating system running the game client. This technique relies on physical hardware interfaces, most notably \gls{DMA} (DMA), via specialized hardware expansion cards installed directly into the host machine's \gls{PCIe} (PCIe) slots. The DMA card physically reads and writes to the system's volatile \gls{RAM} (RAM) directly through the hardware controller, completely bypassing the \gls{CPU} (CPU) and any software-level security controls enforced by the operating system kernel. This raw memory stream is transmitted via a physical interface to a secondary, completely isolated computer. This external machine parses the game state asynchronously, calculates visual overlays or aim vectors, and can send synthetic peripheral inputs back to the host via specialized hardware input spoofers or modified mouse firmware. Because no malicious code executes, modifies memory, or hooks processes on the primary gaming machine, hardware-assisted vectors leave zero software footprint for traditional detection engines to scan. Figure 5 details this infrastructure, showing how the PCIe card reads host RAM through the hardware controller and relays the raw memory stream to an isolated external machine responsible for processing and input spoofing.
 \end{itemize}
 
 \begin{figure}[H]
     \begin{center}
         \includegraphics[height=7cm]{../images/chap01/fig5.png}
     \end{center}
-    \caption[Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing.]{https://steams360.com/blogs/news/what-are-dma-cheats-and-how-does-it-work}
+    \caption[Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing.]{Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing. Source: \url{https://steams360.com/blogs/news/what-are-dma-cheats-and-how-does-it-work}}
     \label{fig:fig5}
 \end{figure}
 
@@ -144,4 +144,4 @@ A third paradigm reframes the detection problem entirely by shifting the trust a
 
 Recent work demonstrates the concrete feasibility of this shift: a transformer-based model trained on kill-event context windows extracted from 795 labelled CS2 matches achieves an accuracy of 89\% and an AUC of 0.93 on an unaugmented test set, while maintaining a low false-positive rate: a requirement particularly critical in competitive contexts where erroneous bans carry direct reputational costs \cite{Loo2025}.
 
-This approach, however, is not without conceptual limitations. Behavioral models remain exposed to false positives, particularly when distinguishing between a genuinely skilled player and a cheater exhibiting similarly consistent performance, creating a tension commonly referred to as the high-skill bias. Legitimate but statistically unusual play patterns (an exceptional clutch, an outlier reaction time) can likewise be misclassified as suspicious. These limitations are precisely what motivate the design choices explored in depth in Chapter 3.
+This approach, however, is not without limits. Behavioral models remain exposed to false positives, particularly when distinguishing between a genuinely skilled player and a cheater exhibiting similarly consistent performance, creating a tension commonly referred to as the high-skill bias. Legitimate but statistically unusual play patterns (an exceptional clutch, an outlier reaction time) can likewise be misclassified as suspicious. These limitations are precisely what motivate the design choices explored in Chapter 3.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  15 AUG 2026 03:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  15 AUG 2026 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2126,7 +2126,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 ...l System Deployment}{24}{subsection.3.1.3}
+l.26 ...l System Deployment}{23}{subsection.3.1.3}
                                                   % [1
 
 
@@ -2137,7 +2137,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 ...and Community Acceptance}{48}{section.D.2}
+l.56 ...and Community Acceptance}{47}{section.D.2}
                                                   % [2])
 \tf@toc=\write9
 \openout9 = `manuscrit.toc'.
@@ -2215,28 +2215,25 @@ File: ../images/chap01/fig1.png Graphic file (type png)
 Package pdftex.def Info: ../images/chap01/fig1.png  used on input line 30.
 (pdftex.def)             Requested size: 409.83324pt x 256.0748pt.
 
-Underfull \vbox (badness 1622) has occurred while \output is active []
-
- [5{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn
-_naooyc.enc} <../images/chap01/fig1.png>]
-<../images/chap01/ingamewallhack.png, id=566, 1926.44719pt x 1083.29718pt>
+[5{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_
+naooyc.enc} <../images/chap01/fig1.png>]
+<../images/chap01/ingamewallhack.png, id=569, 1926.44719pt x 1083.29718pt>
 File: ../images/chap01/ingamewallhack.png Graphic file (type png)
 <use ../images/chap01/ingamewallhack.png>
 Package pdftex.def Info: ../images/chap01/ingamewallhack.png  used on input lin
-e 47.
-(pdftex.def)             Requested size: 455.36072pt x 256.0748pt.
-<../images/chap01/paidwallhack.png, id=567, 1926.44719pt x 1083.29718pt>
+e 48.
+(pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
+<../images/chap01/paidwallhack.png, id=570, 1926.44719pt x 1083.29718pt>
 File: ../images/chap01/paidwallhack.png Graphic file (type png)
 <use ../images/chap01/paidwallhack.png>
 Package pdftex.def Info: ../images/chap01/paidwallhack.png  used on input line 
-50.
-(pdftex.def)             Requested size: 455.36072pt x 256.0748pt.
+51.
+(pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]
-[7 <../images/chap01/ingamewallhack.png> <../images/chap01/paidwallhack.png>]
-<../images/chap01/radarhack.png, id=585, 1926.44719pt x 802.49812pt>
+ [6 <../images/chap01/ingamewallhack.png> <../images/chap01/paidwallhack.png>]
+<../images/chap01/radarhack.png, id=582, 1926.44719pt x 802.49812pt>
 File: ../images/chap01/radarhack.png Graphic file (type png)
 <use ../images/chap01/radarhack.png>
 Package pdftex.def Info: ../images/chap01/radarhack.png  used on input line 64.
@@ -2248,31 +2245,39 @@ Overfull \hbox (22.86848pt too wide) in paragraph at lines 64--65
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [8 <../images/chap01/radarhack.png>]
-<../images/chap01/fig4.png, id=593, 738.50906pt x 470.50781pt>
+<../images/chap01/fig4.png, id=585, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
 Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 77.
-(pdftex.def)             Requested size: 401.93294pt x 256.0748pt.
- [9 <../images/chap01/fig4.png>]
-<../images/chap01/fig5.png, id=608, 947.03813pt x 472.01344pt>
+(pdftex.def)             Requested size: 357.27496pt x 227.62204pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8 <../images/chap01/radarhack.png> <../images/chap01/fig4.png>]
+<../images/chap01/fig5.png, id=612, 947.03813pt x 472.01344pt>
 File: ../images/chap01/fig5.png Graphic file (type png)
 <use ../images/chap01/fig5.png>
 Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 98.
 (pdftex.def)             Requested size: 399.61743pt x 199.16928pt.
- [10 <../images/chap01/fig5.png>] [11]) (Chapters/chapter02.tex [12]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+[10 <../images/chap01/fig5.png>] [11]) (Chapters/chapter02.tex [12]
 Chapter 2.
 
-Overfull \hbox (12.4873pt too wide) in paragraph at lines 2--2
-|\T1/LinuxLibertineT-TLF/m/sc/24.88 Assessing Risks and Lim-i-ta-tions of Kerne
-l-
+Overfull \hbox (12.98494pt too wide) in paragraph at lines 2--2
+|\T1/LinuxLibertineT-TLF/m/sc/24.88 Assessing Risks and Lim-its of Kernel-Level
+
  []
 
 
-Overfull \hbox (18.4735pt too wide) in paragraph at lines 2--2
-\T1/LinuxLibertineT-TLF/m/sc/24.88 Level Anti-Cheats us-ing Windows-Kernel-
+Overfull \hbox (53.6861pt too wide) in paragraph at lines 2--2
+\T1/LinuxLibertineT-TLF/m/sc/24.88 Anti-Cheats us-ing Windows-Kernel-Explorer| 
+
  []
 
 Package mdframed Info: mdframed works in twoside mode on input line 11.
@@ -2293,91 +2298,56 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 24.71541pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.71541pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
-
-[15]
-<../images/chap02/2.png, id=676, 1926.44719pt x 1083.29718pt>
+ [15]
+<../images/chap02/2.png, id=689, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/2.png Graphic file (type png)
 <use ../images/chap02/2.png>
 Package pdftex.def Info: ../images/chap02/2.png  used on input line 63.
-(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+(pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
-<../images/chap02/4.png, id=682, 1926.44719pt x 1083.29718pt>
+ [16 <../images/chap02/2.png>]
+<../images/chap02/4.png, id=696, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/4.png Graphic file (type png)
 <use ../images/chap02/4.png>
 Package pdftex.def Info: ../images/chap02/4.png  used on input line 76.
-(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 24.71541pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.71541pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
-
-[17 <../images/chap02/2.png> <../images/chap02/4.png>]
-<../images/chap02/5.png, id=690, 1926.44719pt x 1083.29718pt>
+(pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
+<../images/chap02/5.png, id=697, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/5.png Graphic file (type png)
 <use ../images/chap02/5.png>
 Package pdftex.def Info: ../images/chap02/5.png  used on input line 86.
-(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
-<../images/chap02/11.png, id=691, 1926.44719pt x 1083.29718pt>
-File: ../images/chap02/11.png Graphic file (type png)
-<use ../images/chap02/11.png>
-Package pdftex.def Info: ../images/chap02/11.png  used on input line 96.
-(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+(pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18 <../images/chap02/5.png>]
-<../images/chap02/15.png, id=699, 1926.44719pt x 1083.29718pt>
+ [17 <../images/chap02/4.png>]
+<../images/chap02/11.png, id=704, 1926.44719pt x 1083.29718pt>
+File: ../images/chap02/11.png Graphic file (type png)
+<use ../images/chap02/11.png>
+Package pdftex.def Info: ../images/chap02/11.png  used on input line 96.
+(pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
+<../images/chap02/15.png, id=705, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/15.png Graphic file (type png)
 <use ../images/chap02/15.png>
 Package pdftex.def Info: ../images/chap02/15.png  used on input line 104.
-(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
+(pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <../images/chap02/5.png> <../images/chap02/11.png>]
 Overfull \hbox (1.061pt too wide) in paragraph at lines 110--111
 []\T1/LinuxLibertineT-TLF/m/n/10.95 These bytes were tran-scribed and passed th
 rough a stan-dard hexadecimal-to-ASCII con-verter, which
  []
 
-<../images/chap02/16.png, id=700, 1926.44719pt x 1083.29718pt>
+<../images/chap02/16.png, id=714, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/16.png Graphic file (type png)
 <use ../images/chap02/16.png>
 Package pdftex.def Info: ../images/chap02/16.png  used on input line 114.
-(pdftex.def)             Requested size: 404.77162pt x 227.62204pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 24.71541pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.71541pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
-
-[19 <../images/chap02/11.png> <../images/chap02/15.png>])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20 <../images/chap02/16.png>] (Chapters/chapter03.tex
-
-Package fancyhdr Warning: \headheight is too small (14.0pt): 
-(fancyhdr)                Make it at least 24.71541pt, for example:
-(fancyhdr)                \setlength{\headheight}{24.71541pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-10.71541pt}.
-
-[21]
+(pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
+[19 <../images/chap02/15.png> <../images/chap02/16.png>])
+(Chapters/chapter03.tex [20]
 Chapter 3.
 Package mdframed Info: mdframed works in twoside mode on input line 10.
 Package mdframed Info: mdframed detected package amsthm 
@@ -2389,12 +2359,12 @@ Package mdframed Info: mdframed inside a box
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22
+ [21
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
+ [22]
 Overfull \hbox (4.38902pt too wide) in paragraph at lines 33--34
 \T1/LinuxLibertineT-TLF/m/n/10.95 sumes, for each ses-sion, the round-by-round 
 se-quence of five nor-malised fea-tures (mean time-to-damage,
@@ -2404,7 +2374,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 35.
-<../images/chap03/pipeline_diagram.png, id=760, 643.203pt x 440.847pt>
+<../images/chap03/pipeline_diagram.png, id=768, 643.203pt x 440.847pt>
 File: ../images/chap03/pipeline_diagram.png Graphic file (type png)
 <use ../images/chap03/pipeline_diagram.png>
 Package pdftex.def Info: ../images/chap03/pipeline_diagram.png  used on input l
@@ -2413,7 +2383,7 @@ ine 47.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
+ [23{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
 {C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}
 {C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}
 ]
@@ -2422,20 +2392,20 @@ Overfull \hbox (3.05046pt too wide) in paragraph at lines 61--62
 po-si-tion-ing con-sis-tency, opening-duel and trading-efficiency
  []
 
-[25 <../images/chap03/pipeline_diagram.png>]
+[24 <../images/chap03/pipeline_diagram.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27]
-<../images/chap03/score_distribution.png, id=790, 642.2394pt x 425.9112pt>
+<../images/chap03/score_distribution.png, id=798, 642.2394pt x 425.9112pt>
 File: ../images/chap03/score_distribution.png Graphic file (type png)
 <use ../images/chap03/score_distribution.png>
 Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
  line 98.
 (pdftex.def)             Requested size: 300.33359pt x 199.16928pt.
-<../images/chap03/flag_frequency.png, id=791, 931.3194pt x 426.393pt>
+<../images/chap03/flag_frequency.png, id=799, 931.3194pt x 426.393pt>
 File: ../images/chap03/flag_frequency.png Graphic file (type png)
 <use ../images/chap03/flag_frequency.png>
 Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
@@ -2444,8 +2414,8 @@ e 108.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28 <../images/chap03/score_distribution.png>]
-<../images/chap03/confusion_matrix.png, id=798, 486.618pt x 389.7762pt>
+ [27 <../images/chap03/score_distribution.png>]
+<../images/chap03/confusion_matrix.png, id=806, 486.618pt x 389.7762pt>
 File: ../images/chap03/confusion_matrix.png Graphic file (type png)
 <use ../images/chap03/confusion_matrix.png>
 Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
@@ -2454,50 +2424,50 @@ ine 118.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 <../images/chap03/flag_frequency.png>]
+ [28 <../images/chap03/flag_frequency.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30 <../images/chap03/confusion_matrix.png>]
+ [29 <../images/chap03/confusion_matrix.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
+ [30]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32])
-(Chapters/conclu.tex [33]
+ [31])
+(Chapters/conclu.tex [32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34
+ [33
 
 ])
-[35]
+[34]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 89.
- (manuscrit.gls [36
+ (manuscrit.gls [35
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 24.88pt on input line 3.
- [37
+ [36
 
 
-] [38]) (manuscrit.acr [39]) (Annexes/annex02.tex
-[40
+] [37]) (manuscrit.acr [38]) (Annexes/annex02.tex
+[39
 
 
 ]
 Appendix A.
-[41
+[40
 
-]) (Annexes/annex03.tex [42]
+]) (Annexes/annex03.tex [41]
 Appendix B.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 21.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 21.
-[43
+[42
 
-]) (Annexes/annex04.tex [44]
+]) (Annexes/annex04.tex [43]
 Appendix C.
 
 Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
@@ -2507,27 +2477,27 @@ Overfull \hbox (14.14442pt too wide) in paragraph at lines 1--1
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45
+ [44
 
 ])
-(Annexes/annex01.tex [46]
+(Annexes/annex01.tex [45]
 Appendix D.
 
 Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
 \T1/LinuxLibertineT-TLF/m/sc/24.88 nam-ics of Kernel-Level Anti-Cheat Im-ple-
  []
 
-[47
+[46
 
 ]
-<../images/annex01/fig6.png, id=964, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=974, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
 (pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
- [48 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [49]
+ [47 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [48]
 Appendix E.
-<../images/annex05/cheaters.png, id=977, 533.74406pt x 797.22844pt>
+<../images/annex05/cheaters.png, id=987, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
 <use ../images/annex05/cheaters.png>
 Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
@@ -2536,10 +2506,10 @@ Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50
+ [49
 
 ]
-<../images/annex05/csst.png, id=982, 866.48718pt x 639.13782pt>
+<../images/annex05/csst.png, id=992, 866.48718pt x 639.13782pt>
 File: ../images/annex05/csst.png Graphic file (type png)
 <use ../images/annex05/csst.png>
 Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
@@ -2547,26 +2517,26 @@ Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51 <../images/annex05/cheaters.png>] (quatriemeDeCouverture.tex [52 <../image
+ [50 <../images/annex05/cheaters.png>] (quatriemeDeCouverture.tex [51 <../image
 s/annex05/csst.png>])
 \tf@ptc=\write11
 \openout11 = `manuscrit.ptc'.
 
- [53] (manuscrit.aux)
+ [52] (manuscrit.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `manuscrit.out' has not changed.
-(rerunfilecheck)             Checksum: AA87017292CD2245E0651CA33905A64F;12791.
+(rerunfilecheck)             Checksum: E772714F69FC74FF2A41174D0D628EA6;12741.
 Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 \openout1 = `manuscrit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62211 strings out of 467866
- 1389233 string characters out of 5418325
- 2518329 words of memory out of 5000000
+ 62210 strings out of 467866
+ 1389226 string characters out of 5418325
+ 2518320 words of memory out of 5000000
  89879 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2580,9 +2550,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use
 rs/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on manuscrit.pdf (60 pages, 21637617 bytes).
+Output written on manuscrit.pdf (59 pages, 21638426 bytes).
 PDF statistics:
- 1087 PDF objects out of 1200 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
+ 1097 PDF objects out of 1200 (max. 8388607)
+ 179 named destinations out of 1000 (max. 500000)
  590 words of extra memory for PDF output out of 10000 (max. 10000000)
 

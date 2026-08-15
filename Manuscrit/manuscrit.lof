@@ -3,28 +3,28 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces Comparison of the recoil from the AK-47 in-game with its theoretical model, implying that the recoil is deterministic and can be compensated for with a script.}}{5}{figure.caption.4}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of wallhack demonstration using built-in command "r\_aoproxy\_show 1" in CS2, which forces the engine to render near entity models regardless of occlusion (top) and an ad from a cheating software provider showing wallhack in action (bottom).}}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of wallhack demonstration using built-in command "r\_aoproxy\_show 1" in CS2, which forces the engine to render near entity models regardless of occlusion (top) and an ad from a cheating software provider showing wallhack in action (bottom).}}{6}{figure.caption.5}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Radarhack demonstration showing the extraction of enemy positions from the game's entity list and their projection onto a secondary interface.}}{8}{figure.caption.6}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Privilege \gls {rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3.}}{9}{figure.caption.7}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Privilege \gls {rings} in an OS' structure, highlighting the elevated access of kernel-level cheats in Ring 0 compared to user-mode applications in Ring 3.}}{8}{figure.caption.7}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Infrastructure of a DMA cheat setup, where a specialized PCIe card reads the host system's RAM directly and transmits the data to an external machine for processing and input spoofing.}}{10}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces Sensitive value ("Mot de passe : Test1234!") entered into a Notepad process left resident in memory on the isolated Windows 10 virtual machine.}}{17}{figure.caption.9}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Sensitive value ("Mot de passe : Test1234!") entered into a Notepad process left resident in memory on the isolated Windows 10 virtual machine.}}{16}{figure.caption.9}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Windows-Kernel-Explorer process list, showing the target notepad.exe process isolated by its PID, PPID, EPROCESS pointer, and executable path.}}{17}{figure.caption.10}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Memory map of the notepad.exe process returned by Windows-Kernel-Explorer, listing several hundred regions by base address, size, allocation state, and protection flags.}}{18}{figure.caption.11}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Cheat Engine string scan of notepad.exe's memory for "Mot de passe", returning a single matching address.}}{19}{figure.caption.12}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Cheat Engine string scan of notepad.exe's memory for "Mot de passe", returning a single matching address.}}{18}{figure.caption.12}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Raw hexadecimal bytes at the matched address, viewed through Windows-Kernel-Explorer's memory editor, showing the target string split across three contiguous rows.}}{19}{figure.caption.13}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Reconstruction of the original string via a hexadecimal-to-ASCII converter, confirming an exact match with the value entered in Notepad.}}{20}{figure.caption.14}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Reconstruction of the original string via a hexadecimal-to-ASCII converter, confirming an exact match with the value entered in Notepad.}}{19}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12}{\ignorespaces Architecture of the gameplay analytics pipeline. Synthetic telemetry is scored independently by the heuristic and LSTM layers before being combined into a single suspicion score, persisted per player, benchmarked against ground-truth profile labels, and surfaced as a ranked queue for human review.}}{25}{figure.caption.15}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Suspicion Score Distribution by Player Profile, with the classification threshold (48) overlaid. The cheater distribution straddles the threshold, while casual and skilled distributions remain well below it.}}{28}{figure.caption.16}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Detection Flag Trigger Rate by Profile.}}{29}{figure.caption.17}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Confusion Matrix for Suspicion Scoring (row-normalised percentages). The casual class is perfectly recovered, and no cheater is ever misclassified as casual; the entire classification error is concentrated at the skilled/cheater boundary.}}{30}{figure.caption.18}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {12}{\ignorespaces Architecture of the gameplay analytics pipeline. Synthetic telemetry is scored independently by the heuristic and LSTM layers before being combined into a single suspicion score, persisted per player, benchmarked against ground-truth profile labels, and surfaced as a ranked queue for human review.}}{24}{figure.caption.15}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Suspicion Score Distribution by Player Profile, with the classification threshold (48) overlaid. The cheater distribution straddles the threshold, while casual and skilled distributions remain well below it.}}{27}{figure.caption.16}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Detection Flag Trigger Rate by Profile.}}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Confusion Matrix for Suspicion Scoring (row-normalised percentages). The casual class is perfectly recovered, and no cheater is ever misclassified as casual; the entire classification error is concentrated at the skilled/cheater boundary.}}{29}{figure.caption.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {16}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{48}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {17}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{51}{figure.caption.26}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{52}{figure.caption.27}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {16}{\ignorespaces User Segmentation \& Acceptance Divide, highlighting the contrasting perspectives of competitive and casual players regarding intrusive anti-cheat measures.}}{47}{figure.caption.25}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {17}{\ignorespaces Data aggregation made by a CS2 player to show the chance of a cheater being in a game.}}{50}{figure.caption.26}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Existing data aggregation tool to help visualize a player's game statistics.}}{51}{figure.caption.27}%
 \contentsfinish 

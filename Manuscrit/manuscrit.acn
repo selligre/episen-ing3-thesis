@@ -3,10 +3,11 @@
 \glossaryentry{Direct Memory Access?\glossentry{DMA}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{Long Short-Term Memory?\glossentry{LSTM}|setentrycounter[]{page}"\glsnumberformat}{3}
 \glossaryentry{Application Programming Interface?\glossentry{API}|setentrycounter[]{page}"\glsnumberformat}{7}
-\glossaryentry{Extra Sensory Perception?\glossentry{ESP}|setentrycounter[]{page}"\glsnumberformat}{8}
+\glossaryentry{Extra Sensory Perception?\glossentry{ESP}|setentrycounter[]{page}"\glsnumberformat}{7}
 \glossaryentry{Bring Your Own Vulnerable Driver?\glossentry{BYOVD}|setentrycounter[]{page}"\glsnumberformat}{9}
-\glossaryentry{Direct Kernel Object Manipulation?\glossentry{DKOM}|setentrycounter[]{page}"\glsnumberformat}{10}
-\glossaryentry{Peripheral Component Interconnect Express?\glossentry{PCIe}|setentrycounter[]{page}"\glsnumberformat}{10}
-\glossaryentry{Random Access Memory?\glossentry{RAM}|setentrycounter[]{page}"\glsnumberformat}{10}
-\glossaryentry{Central Processing Unit?\glossentry{CPU}|setentrycounter[]{page}"\glsnumberformat}{10}
+\glossaryentry{Direct Kernel Object Manipulation?\glossentry{DKOM}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{Direct Memory Access?\glossentry{DMA}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{Peripheral Component Interconnect Express?\glossentry{PCIe}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{Random Access Memory?\glossentry{RAM}|setentrycounter[]{page}"\glsnumberformat}{9}
+\glossaryentry{Central Processing Unit?\glossentry{CPU}|setentrycounter[]{page}"\glsnumberformat}{9}
 \glossaryentry{Operating System?\glossentry{OS}|setentrycounter[]{page}"\glsnumberformat}{14}
