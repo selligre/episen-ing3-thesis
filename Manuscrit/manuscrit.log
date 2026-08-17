@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  15 AUG 2026 16:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  17 AUG 2026 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2299,7 +2299,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-<../images/chap02/2.png, id=689, 1926.44719pt x 1083.29718pt>
+<../images/chap02/2.png, id=688, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/2.png Graphic file (type png)
 <use ../images/chap02/2.png>
 Package pdftex.def Info: ../images/chap02/2.png  used on input line 63.
@@ -2308,12 +2308,12 @@ Package pdftex.def Info: ../images/chap02/2.png  used on input line 63.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16 <../images/chap02/2.png>]
-<../images/chap02/4.png, id=696, 1926.44719pt x 1083.29718pt>
+<../images/chap02/4.png, id=695, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/4.png Graphic file (type png)
 <use ../images/chap02/4.png>
 Package pdftex.def Info: ../images/chap02/4.png  used on input line 76.
 (pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
-<../images/chap02/5.png, id=697, 1926.44719pt x 1083.29718pt>
+<../images/chap02/5.png, id=696, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/5.png Graphic file (type png)
 <use ../images/chap02/5.png>
 Package pdftex.def Info: ../images/chap02/5.png  used on input line 86.
@@ -2322,12 +2322,12 @@ Package pdftex.def Info: ../images/chap02/5.png  used on input line 86.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17 <../images/chap02/4.png>]
-<../images/chap02/11.png, id=704, 1926.44719pt x 1083.29718pt>
+<../images/chap02/11.png, id=703, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/11.png Graphic file (type png)
 <use ../images/chap02/11.png>
 Package pdftex.def Info: ../images/chap02/11.png  used on input line 96.
 (pdftex.def)             Requested size: 354.18251pt x 199.16928pt.
-<../images/chap02/15.png, id=705, 1926.44719pt x 1083.29718pt>
+<../images/chap02/15.png, id=704, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/15.png Graphic file (type png)
 <use ../images/chap02/15.png>
 Package pdftex.def Info: ../images/chap02/15.png  used on input line 104.
@@ -2341,7 +2341,7 @@ Overfull \hbox (1.061pt too wide) in paragraph at lines 110--111
 rough a stan-dard hexadecimal-to-ASCII con-verter, which
  []
 
-<../images/chap02/16.png, id=714, 1926.44719pt x 1083.29718pt>
+<../images/chap02/16.png, id=713, 1926.44719pt x 1083.29718pt>
 File: ../images/chap02/16.png Graphic file (type png)
 <use ../images/chap02/16.png>
 Package pdftex.def Info: ../images/chap02/16.png  used on input line 114.
@@ -2374,7 +2374,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 35.
-<../images/chap03/pipeline_diagram.png, id=768, 643.203pt x 440.847pt>
+<../images/chap03/pipeline_diagram.png, id=767, 643.203pt x 440.847pt>
 File: ../images/chap03/pipeline_diagram.png Graphic file (type png)
 <use ../images/chap03/pipeline_diagram.png>
 Package pdftex.def Info: ../images/chap03/pipeline_diagram.png  used on input l
@@ -2399,13 +2399,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26]
-<../images/chap03/score_distribution.png, id=798, 642.2394pt x 425.9112pt>
+<../images/chap03/score_distribution.png, id=797, 642.2394pt x 425.9112pt>
 File: ../images/chap03/score_distribution.png Graphic file (type png)
 <use ../images/chap03/score_distribution.png>
 Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
  line 98.
 (pdftex.def)             Requested size: 300.33359pt x 199.16928pt.
-<../images/chap03/flag_frequency.png, id=799, 931.3194pt x 426.393pt>
+<../images/chap03/flag_frequency.png, id=798, 931.3194pt x 426.393pt>
 File: ../images/chap03/flag_frequency.png Graphic file (type png)
 <use ../images/chap03/flag_frequency.png>
 Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
@@ -2415,7 +2415,7 @@ e 108.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27 <../images/chap03/score_distribution.png>]
-<../images/chap03/confusion_matrix.png, id=806, 486.618pt x 389.7762pt>
+<../images/chap03/confusion_matrix.png, id=805, 486.618pt x 389.7762pt>
 File: ../images/chap03/confusion_matrix.png Graphic file (type png)
 <use ../images/chap03/confusion_matrix.png>
 Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
@@ -2490,14 +2490,14 @@ Overfull \hbox (6.94662pt too wide) in paragraph at lines 1--1
 [46
 
 ]
-<../images/annex01/fig6.png, id=974, 1307.63531pt x 505.89pt>
+<../images/annex01/fig6.png, id=973, 1307.63531pt x 505.89pt>
 File: ../images/annex01/fig6.png Graphic file (type png)
 <use ../images/annex01/fig6.png>
 Package pdftex.def Info: ../images/annex01/fig6.png  used on input line 23.
 (pdftex.def)             Requested size: 426.79134pt x 165.11475pt.
  [47 <../images/annex01/fig6.png>]) (Annexes/annex05.tex [48]
 Appendix E.
-<../images/annex05/cheaters.png, id=987, 533.74406pt x 797.22844pt>
+<../images/annex05/cheaters.png, id=986, 533.74406pt x 797.22844pt>
 File: ../images/annex05/cheaters.png Graphic file (type png)
 <use ../images/annex05/cheaters.png>
 Package pdftex.def Info: ../images/annex05/cheaters.png  used on input line 12.
@@ -2509,7 +2509,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [49
 
 ]
-<../images/annex05/csst.png, id=992, 866.48718pt x 639.13782pt>
+<../images/annex05/csst.png, id=991, 866.48718pt x 639.13782pt>
 File: ../images/annex05/csst.png Graphic file (type png)
 <use ../images/annex05/csst.png>
 Package pdftex.def Info: ../images/annex05/csst.png  used on input line 24.
@@ -2550,9 +2550,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use
 rs/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on manuscrit.pdf (59 pages, 21638426 bytes).
+Output written on manuscrit.pdf (59 pages, 21635643 bytes).
 PDF statistics:
- 1097 PDF objects out of 1200 (max. 8388607)
+ 1096 PDF objects out of 1200 (max. 8388607)
  179 named destinations out of 1000 (max. 500000)
  590 words of extra memory for PDF output out of 10000 (max. 10000000)
 
