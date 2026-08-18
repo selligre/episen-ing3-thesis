@@ -1,8 +1,8 @@
 # Pour les LINUX et Mac/Apple !
-RM=rm
+# RM=rm
 
 # Pour les WINDOWS !  (pauvre de vous, merci d'enlever les dieses ci-dessous et de mettre des dièses au dessus
-# RM=del
+RM=del
 
 poster: all
 
@@ -22,4 +22,3 @@ clean:
 
 allClean: clean
 	$(RM) -f *.pdf
-
