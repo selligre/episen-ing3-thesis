@@ -18,7 +18,7 @@
 \contentsline {figure}{\numberline {12}{\ignorespaces Architecture of the gameplay analytics pipeline. Synthetic telemetry is scored independently by the heuristic and LSTM layers before being combined into a single suspicion score, persisted per player, benchmarked against ground-truth profile labels, and surfaced as a ranked queue for human review.}}{24}{figure.caption.15}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Suspicion Score Distribution by Player Profile, with the classification threshold (48) overlaid. The cheater distribution straddles the threshold, while casual and skilled distributions remain well below it.}}{27}{figure.caption.16}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Detection Flag Trigger Rate by Profile.}}{28}{figure.caption.17}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Confusion Matrix for Suspicion Scoring (row-normalised percentages). The casual class is perfectly recovered, and no cheater is ever misclassified as casual; the entire classification error is concentrated at the skilled/cheater boundary.}}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Confusion Matrix for Suspicion Scoring (row-normalized percentages). The casual class is perfectly recovered, and no cheater is ever misclassified as casual; the entire classification error is concentrated at the skilled/cheater boundary.}}{29}{figure.caption.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

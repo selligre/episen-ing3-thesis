@@ -100,7 +100,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2024 Workshop on Research on offensive and defensive techniques in the context of Man At The End (MATE) attacks}
-      \field{title}{Anti-Cheat: Attacks and the Effectiveness of Client-Side Defences}
+      \field{title}{Anti-Cheat: Attacks and the Effectiveness of Client-Side defenses}
       \field{year}{2024}
       \field{pages}{30\bibrangedash 43}
       \range{pages}{14}
@@ -208,4 +208,3 @@
   \enddatalist
 \endrefsection
 \endinput
-

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  18 AUG 2026 17:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  19 AUG 2026 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2365,11 +2365,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
-Overfull \hbox (4.38902pt too wide) in paragraph at lines 33--34
-\T1/LinuxLibertineT-TLF/m/n/10.95 sumes, for each ses-sion, the round-by-round 
-se-quence of five nor-malised fea-tures (mean time-to-damage,
- []
-
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 35.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
@@ -2462,9 +2457,9 @@ Appendix A.
 ]) (Annexes/annex03.tex [41]
 Appendix B.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 21.
+(Font)              scaled to size 9.0pt on input line 20.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 21.
+(Font)              <9> on input line 20.
 [42
 
 ]) (Annexes/annex04.tex [43]
@@ -2536,7 +2531,7 @@ Package logreq Info: Writing requests to 'manuscrit.run.xml'.
 Here is how much of TeX's memory you used:
  62210 strings out of 467866
  1389226 string characters out of 5418326
- 2519320 words of memory out of 5000000
+ 2519302 words of memory out of 5000000
  89879 multiletter control sequences out of 15000+600000
  787986 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2550,7 +2545,7 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Us
 ers/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use
 rs/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on manuscrit.pdf (59 pages, 21762084 bytes).
+Output written on manuscrit.pdf (59 pages, 21762149 bytes).
 PDF statistics:
  1096 PDF objects out of 1200 (max. 8388607)
  179 named destinations out of 1000 (max. 500000)
