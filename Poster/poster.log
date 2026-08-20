@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  17 AUG 2026 17:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  19 AUG 2026 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1433,7 +1433,7 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineT-TLF 
-on input line 14.
+on input line 6.
 
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibert
 inet-tlf.fd
@@ -1441,28 +1441,28 @@ File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Li
 nuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 14.
+(Font)              scaled to size 10.0pt on input line 6.
  (poster.aux)
 \openout1 = `poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
 
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1538,8 +1538,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'poster.bbl' found.
  (poster.bbl)
-Package biblatex Info: Reference section=0 on input line 14.
-Package biblatex Info: Reference segment=0 on input line 14.
+Package biblatex Info: Reference section=0 on input line 6.
+Package biblatex Info: Reference segment=0 on input line 6.
 \c@mv@tabular=\count522
 \c@mv@boldtabular=\count523
 Package caption Info: Begin \AtBeginDocument code.
@@ -1548,15 +1548,15 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count524
-Package hyperref Info: Link coloring ON on input line 14.
+Package hyperref Info: Link coloring ON on input line 6.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 14.
+(hyperref)                removing `\\' on input line 6.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 14.
+(hyperref)                removing `\\' on input line 6.
 
 (configEPISENPoster.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
@@ -1623,12 +1623,12 @@ File: ../images/logos/EPISEN_logo-SI-blanc-POSTER.png Graphic file (type png)
 Package pdftex.def Info: ../images/logos/EPISEN_logo-SI-blanc-POSTER.png  used 
 on input line 70.
 (pdftex.def)             Requested size: 194.86255pt x 85.35826pt.
-<../images/logos/entrepriseLogo.png, id=35, 320.397pt x 315.3381pt>
-File: ../images/logos/entrepriseLogo.png Graphic file (type png)
-<use ../images/logos/entrepriseLogo.png>
-Package pdftex.def Info: ../images/logos/entrepriseLogo.png  used on input line
- 70.
-(pdftex.def)             Requested size: 66.48846pt x 65.44142pt.
+<../images/logos/Saint-Gobain-Logo.png, id=35, 501.875pt x 282.05376pt>
+File: ../images/logos/Saint-Gobain-Logo.png Graphic file (type png)
+<use ../images/logos/Saint-Gobain-Logo.png>
+Package pdftex.def Info: ../images/logos/Saint-Gobain-Logo.png  used on input l
+ine 70.
+(pdftex.def)             Requested size: 116.43967pt x 65.44142pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 70.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
@@ -1673,14 +1673,14 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 <../images/Mapreduce.png, id=37, 1400.23125pt x 477.785pt>
 File: ../images/Mapreduce.png Graphic file (type png)
 <use ../images/Mapreduce.png>
-Package pdftex.def Info: ../images/Mapreduce.png  used on input line 31.
+Package pdftex.def Info: ../images/Mapreduce.png  used on input line 17.
 (pdftex.def)             Requested size: 250.15056pt x 85.35826pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 33.
+(Font)              scaled to size 17.28pt on input line 19.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 33.
+(Font)              scaled to size 17.28pt on input line 19.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 33.
+(Font)              scaled to size 17.28pt on input line 19.
  (../ShareText/listing1.tex
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
  on input line 2.
@@ -1694,44 +1694,32 @@ LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 2.
 ) (../ShareText/maths1.tex)
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 43.
+(Font)              scaled to size 12.0pt on input line 29.
  (../ShareText/tab1.tex)
 
-LaTeX Warning: Citation 'ref1' on page 1 undefined on input line 56.
+LaTeX Warning: Citation 'ref1' on page 1 undefined on input line 42.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 56.
+(Font)              scaled to size 12.0pt on input line 42.
 
-LaTeX Warning: Citation 'ref3' on page 1 undefined on input line 57.
+LaTeX Warning: Citation 'ref3' on page 1 undefined on input line 43.
 
 
-LaTeX Warning: Citation 'ref4' on page 1 undefined on input line 58.
+LaTeX Warning: Citation 'ref4' on page 1 undefined on input line 44.
 
 <../images/reality.png, id=41, 870.25125pt x 768.8725pt>
 File: ../images/reality.png Graphic file (type png)
 <use ../images/reality.png>
-Package pdftex.def Info: ../images/reality.png  used on input line 66.
+Package pdftex.def Info: ../images/reality.png  used on input line 52.
 (pdftex.def)             Requested size: 161.02051pt x 142.26378pt.
 
 Package relsize Warning: Font size 4.82256pt is too small.
-(relsize)                Using 5.0pt instead on input line 87.
+(relsize)                Using 5.0pt instead on input line 72.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 87.
+(Font)              scaled to size 5.0pt on input line 72.
 
-LaTeX Warning: Empty bibliography on input line 92.
-
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 97.
-(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 99.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 101.
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 103.
+LaTeX Warning: Empty bibliography on input line 77.
 
 [2
 
@@ -1746,8 +1734,8 @@ vips/lm/lm-rm.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 /lm/lm-mathsy.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 /lm/lm-mathex.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 /libertine/lbtn_7grukw.enc} <../images/logos/upec-blanc-sans-baseline.png> <../
-images/logos/EPISEN_logo-SI-blanc-POSTER.png> <../images/logos/entrepriseLogo.p
-ng> <../images/Mapreduce.png> <../images/reality.png>] (poster.aux)
+images/logos/EPISEN_logo-SI-blanc-POSTER.png> <../images/logos/Saint-Gobain-Log
+o.png> <../images/Mapreduce.png> <../images/reality.png>] (poster.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1766,13 +1754,13 @@ Package logreq Info: Writing requests to 'poster.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41170 strings out of 467866
- 809855 string characters out of 5418326
- 1859839 words of memory out of 5000000
- 69305 multiletter control sequences out of 15000+600000
- 741453 words of font info for 112 fonts, out of 8000000 for 9000
+ 40678 strings out of 467866
+ 804297 string characters out of 5418326
+ 1741839 words of memory out of 5000000
+ 68832 multiletter control sequences out of 15000+600000
+ 724406 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,16n,121p,697b,2077s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,697b,1953s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/Li
 nLibertineMT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fo
@@ -1780,16 +1768,14 @@ nts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/selli/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/selli/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/selli/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/selli/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/selli/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/selli/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/selli/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/selli/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/selli/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on poster.pdf (1 page, 534604 bytes).
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/selli/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/selli/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/selli/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/selli/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
+Output written on poster.pdf (1 page, 484046 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
