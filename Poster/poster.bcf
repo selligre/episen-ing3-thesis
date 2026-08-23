@@ -2373,9 +2373,9 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">../bibliographie.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">ref1</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">ref3</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">ref4</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">Loo2025</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Dorner2024</bcf:citekey>
+    <bcf:citekey order="2" intorder="2">Collins2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

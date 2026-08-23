@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  20 AUG 2026 18:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  23 AUG 2026 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1653,7 +1653,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 63.
 )
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 17.
+ on input line 15.
 
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxliber
 tinet-tlf.fd
@@ -1661,69 +1661,118 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 17.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 25.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 25.
+(Font)              scaled to size 12.0pt on input line 15.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 25.
+(Font)              scaled to size 12.0pt on input line 15.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 20.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 20.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 20.
 <../images/chap01/fig4.png, id=38, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
-Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 28.
-(pdftex.def)             Requested size: 156.3085pt x 99.58464pt.
- (../ShareText/listing1.tex) (../ShareText/maths1.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 1.
-)
+Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 23.
+(pdftex.def)             Requested size: 207.9342pt x 132.47357pt.
+
+Underfull \hbox (badness 2460) in paragraph at lines 23--25
+\T1/LinuxLibertineT-TLF/m/n/10 Kernel-level anti-cheats and kernel-level cheats
+
+ []
+
+<../images/chap03/flag_frequency.png, id=39, 931.3194pt x 426.393pt>
+File: ../images/chap03/flag_frequency.png Graphic file (type png)
+<use ../images/chap03/flag_frequency.png>
+Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
+e 29.
+(pdftex.def)             Requested size: 207.9342pt x 95.19908pt.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 10.0pt on input line 31.
 
-(../ShareText/tab1.tex)
-LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-
-TLF on input line 48.
-
-(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibert
-inemonot-tlf.fd
-File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
-1/LinuxLibertineMonoT-TLF.
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <12> no
-t available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 48.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 48.
+LaTeX Warning: Citation 'Loo2025' on page 1 undefined on input line 31.
 
 
-LaTeX Warning: Citation 'ref1' on page 1 undefined on input line 52.
+Underfull \hbox (badness 1721) in paragraph at lines 31--32
+\T1/LinuxLibertineT-TLF/m/n/10 cept HS_RATE_EXTREME, which also fires for
+ []
 
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 52.
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 37.
 
-LaTeX Warning: Citation 'ref3' on page 1 undefined on input line 53.
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+[]\T1/LinuxLibertineT-TLF/b/n/10 Experiment\T1/LinuxLibertineT-TLF/m/n/10 : us-
+ing Windows-Kernel-
+ []
 
 
-LaTeX Warning: Citation 'ref4' on page 1 undefined on input line 54.
+Underfull \hbox (badness 4084) in paragraph at lines 39--40
+\T1/LinuxLibertineT-TLF/m/n/10 VM, a plain-text string was lo-cated and
+ []
 
-<../images/reality.png, id=40, 870.25125pt x 768.8725pt>
-File: ../images/reality.png Graphic file (type png)
-<use ../images/reality.png>
-Package pdftex.def Info: ../images/reality.png  used on input line 62.
-(pdftex.def)             Requested size: 161.02051pt x 142.26378pt.
+
+Underfull \hbox (badness 2538) in paragraph at lines 39--40
+\T1/LinuxLibertineT-TLF/m/n/10 re-con-structed from an \T1/LinuxLibertineT-TLF/
+m/it/10 un-re-lated \T1/LinuxLibertineT-TLF/m/n/10 Notepad
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 40--41
+[]\T1/LinuxLibertineT-TLF/m/n/10 Confirms that Ring 0 ac-cess is not just
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 40--41
+\T1/LinuxLibertineT-TLF/m/n/10 against any res-i-dent pro-cess ^^V browsers,
+ []
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 46.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 46.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 46.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 47.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 47.
+
+Overfull \hbox (19.67757pt too wide) detected at line 48
+[] \OT1/lmr/m/n/12 = 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 6 \OMS/lmsy/m/n/12 ^^B 
+[] \OT1/lmr/m/n/12 + 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 4 \OMS/lmsy/m/n/12 ^^B 
+\OT1/lmr/m/n/12 (100 \OMS/lmsy/m/n/12 ^^B []\OT1/lmr/m/n/12 )
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+\T1/LinuxLibertineT-TLF/m/n/12 threshold-calibrated flags (time-to-
+ []
+
+<../images/chap03/confusion_matrix.png, id=40, 486.618pt x 389.7762pt>
+File: ../images/chap03/confusion_matrix.png Graphic file (type png)
+<use ../images/chap03/confusion_matrix.png>
+Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
+ine 57.
+(pdftex.def)             Requested size: 392.2789pt x 314.22417pt.
+
+LaTeX Warning: Citation 'Dorner2024' on page 1 undefined on input line 60.
+
+
+LaTeX Warning: Citation 'Collins2024' on page 1 undefined on input line 60.
+
 
 Package relsize Warning: Font size 4.82256pt is too small.
-(relsize)                Using 5.0pt instead on input line 82.
+(relsize)                Using 5.0pt instead on input line 66.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 82.
+(Font)              scaled to size 5.0pt on input line 66.
 
-LaTeX Warning: Empty bibliography on input line 87.
+LaTeX Warning: Empty bibliography on input line 71.
+
+
+Underfull \hbox (badness 4096) in paragraph at lines 77--78
+[]\T1/LinuxLibertineT-TLF/m/n/10 Thanks to my friends for in-tro-duc-ing me to
+ []
 
 [2
 
@@ -1731,15 +1780,14 @@ LaTeX Warning: Empty bibliography on input line 87.
 i/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{C:/U
 sers/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_76gpa5.
 enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbt
-n_naooyc.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/l
-m-rm.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ma
-thit.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ma
-thsy.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ma
-thex.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertin
-e/lbtn_7grukw.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/libertine/lbtn_dhi6qf.enc} <../images/logos/upec-blanc-sans-baseline.png> <../
-images/logos/EPISEN_logo-SI-blanc-POSTER.png> <../images/logos/Saint-Gobain-Log
-o.png> <../images/chap01/fig4.png> <../images/reality.png>] (poster.aux)
+n_naooyc.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libe
+rtine/lbtn_7grukw.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/d
+vips/lm/lm-rm.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
+/lm/lm-mathit.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
+/lm/lm-mathsy.enc} <../images/logos/upec-blanc-sans-baseline.png> <../images/lo
+gos/EPISEN_logo-SI-blanc-POSTER.png> <../images/logos/Saint-Gobain-Logo.png> <.
+./images/chap01/fig4.png> <../images/chap03/flag_frequency.png> <../images/chap
+03/confusion_matrix.png>] (poster.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1758,28 +1806,23 @@ Package logreq Info: Writing requests to 'poster.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40762 strings out of 467866
- 806001 string characters out of 5418326
- 1746839 words of memory out of 5000000
- 68917 multiletter control sequences out of 15000+600000
- 728843 words of font info for 103 fonts, out of 8000000 for 9000
+ 40710 strings out of 467866
+ 803748 string characters out of 5418326
+ 1745871 words of memory out of 5000000
+ 68881 multiletter control sequences out of 15000+600000
+ 739042 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,16n,121p,697b,1953s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,697b,1879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/Li
-nLibertineMT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/selli/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/selli/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/selli/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/selli/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/selli/AppD
-ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/selli/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/selli/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-Output written on poster.pdf (1 page, 477753 bytes).
+nLibertineT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/libertine/LinLibertineTB.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/selli/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/selli/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/selli/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on poster.pdf (1 page, 481814 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
