@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  23 AUG 2026 21:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  24 AUG 2026 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1653,7 +1653,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 63.
 )
 LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF
- on input line 15.
+ on input line 17.
 
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxliber
 tinet-tlf.fd
@@ -1661,116 +1661,98 @@ File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/
 LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 15.
+(Font)              scaled to size 12.0pt on input line 17.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 15.
+(Font)              scaled to size 12.0pt on input line 17.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 20.
+(Font)              scaled to size 17.28pt on input line 22.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 20.
+(Font)              scaled to size 17.28pt on input line 22.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 20.
+(Font)              scaled to size 17.28pt on input line 22.
 <../images/chap01/fig4.png, id=38, 738.50906pt x 470.50781pt>
 File: ../images/chap01/fig4.png Graphic file (type png)
 <use ../images/chap01/fig4.png>
-Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 23.
+Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 27.
 (pdftex.def)             Requested size: 207.9342pt x 132.47357pt.
 
-Underfull \hbox (badness 2460) in paragraph at lines 23--25
-\T1/LinuxLibertineT-TLF/m/n/10 Kernel-level anti-cheats and kernel-level cheats
-
+Underfull \hbox (badness 1028) in paragraph at lines 27--29
+\T1/LinuxLibertineT-TLF/m/n/12 Kernel-level anti-cheats and kernel-level
  []
 
-<../images/chap03/flag_frequency.png, id=39, 931.3194pt x 426.393pt>
+<../images/chap01/fig5.png, id=39, 947.03813pt x 472.01344pt>
+File: ../images/chap01/fig5.png Graphic file (type png)
+<use ../images/chap01/fig5.png>
+Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 32.
+(pdftex.def)             Requested size: 207.9342pt x 103.6344pt.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 41.
+<../images/chap03/flag_frequency.png, id=41, 931.3194pt x 426.393pt>
 File: ../images/chap03/flag_frequency.png Graphic file (type png)
 <use ../images/chap03/flag_frequency.png>
 Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
-e 29.
+e 48.
 (pdftex.def)             Requested size: 207.9342pt x 95.19908pt.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 31.
-
-LaTeX Warning: Citation 'Loo2025' on page 1 undefined on input line 31.
-
-
-Underfull \hbox (badness 1721) in paragraph at lines 31--32
-\T1/LinuxLibertineT-TLF/m/n/10 cept HS_RATE_EXTREME, which also fires for
- []
-
-LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 37.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
-[]\T1/LinuxLibertineT-TLF/b/n/10 Experiment\T1/LinuxLibertineT-TLF/m/n/10 : us-
-ing Windows-Kernel-
- []
-
-
-Underfull \hbox (badness 4084) in paragraph at lines 39--40
-\T1/LinuxLibertineT-TLF/m/n/10 VM, a plain-text string was lo-cated and
- []
-
-
-Underfull \hbox (badness 2538) in paragraph at lines 39--40
-\T1/LinuxLibertineT-TLF/m/n/10 re-con-structed from an \T1/LinuxLibertineT-TLF/
-m/it/10 un-re-lated \T1/LinuxLibertineT-TLF/m/n/10 Notepad
- []
-
-
-Underfull \hbox (badness 2856) in paragraph at lines 40--41
-[]\T1/LinuxLibertineT-TLF/m/n/10 Confirms that Ring 0 ac-cess is not just
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 40--41
-\T1/LinuxLibertineT-TLF/m/n/10 against any res-i-dent pro-cess ^^V browsers,
- []
-
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 46.
+(Font)              <12> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 46.
+(Font)              <8> on input line 56.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 46.
+(Font)              <6> on input line 56.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 47.
+(Font)              scaled to size 8.0pt on input line 56.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 47.
+(Font)              scaled to size 6.0pt on input line 56.
 
-Overfull \hbox (19.67757pt too wide) detected at line 48
-[] \OT1/lmr/m/n/12 = 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 6 \OMS/lmsy/m/n/12 ^^B 
-[] \OT1/lmr/m/n/12 + 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 4 \OMS/lmsy/m/n/12 ^^B 
-\OT1/lmr/m/n/12 (100 \OMS/lmsy/m/n/12 ^^B []\OT1/lmr/m/n/12 )
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+$\OML/lmm/m/it/12 heuristic$\T1/LinuxLibertineT-TLF/m/n/12 : 8 weighted, thresh
+old-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
-\T1/LinuxLibertineT-TLF/m/n/12 threshold-calibrated flags (time-to-
- []
-
-<../images/chap03/confusion_matrix.png, id=40, 486.618pt x 389.7762pt>
+<../images/chap03/confusion_matrix.png, id=43, 486.618pt x 389.7762pt>
 File: ../images/chap03/confusion_matrix.png Graphic file (type png)
 <use ../images/chap03/confusion_matrix.png>
 Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
-ine 57.
+ine 66.
 (pdftex.def)             Requested size: 392.2789pt x 314.22417pt.
 
-LaTeX Warning: Citation 'Dorner2024' on page 1 undefined on input line 60.
-
-
-LaTeX Warning: Citation 'Collins2024' on page 1 undefined on input line 60.
-
-
 Package relsize Warning: Font size 4.82256pt is too small.
-(relsize)                Using 5.0pt instead on input line 66.
+(relsize)                Using 5.0pt instead on input line 75.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 66.
+(Font)              scaled to size 5.0pt on input line 75.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
+(Font)              scaled to size 5.0pt on input line 80.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 5.0pt on input line 80.
+LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-
+TLF on input line 80.
 
-LaTeX Warning: Empty bibliography on input line 71.
+(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibert
+inemonot-tlf.fd
+File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
+1/LinuxLibertineMonoT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <5> not
+ available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
+tead on input line 80.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 5.0pt on input line 80.
+
+Underfull \hbox (badness 3219) in paragraph at lines 81--81
+[]\T1/LinuxLibertineT-TLF/m/n/5 Y. Kuzhii and Y. Fur-gala. ^^P  THE AN-TICHEAT 
+DE-VEL-OP-MENT IN THE
+ []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 77--78
+Underfull \hbox (badness 3098) in paragraph at lines 81--81
+[]\T1/LinuxLibertineT-TLF/m/n/5 Mille Mei Zhen Loo, Gert Lu[]zkov, and Paolo Bu
+-relli. ^^P  An-tiCheatPT: A
+ []
+
+
+Underfull \hbox (badness 4096) in paragraph at lines 86--87
 []\T1/LinuxLibertineT-TLF/m/n/10 Thanks to my friends for in-tro-duc-ing me to
  []
 
@@ -1784,45 +1766,40 @@ n_naooyc.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libe
 rtine/lbtn_7grukw.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/d
 vips/lm/lm-rm.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
 /lm/lm-mathit.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/lm/lm-mathsy.enc} <../images/logos/upec-blanc-sans-baseline.png> <../images/lo
-gos/EPISEN_logo-SI-blanc-POSTER.png> <../images/logos/Saint-Gobain-Logo.png> <.
-./images/chap01/fig4.png> <../images/chap03/flag_frequency.png> <../images/chap
-03/confusion_matrix.png>] (poster.aux)
+/lm/lm-mathsy.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
+/libertine/lbtn_ncsllp.enc}{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/
+enc/dvips/libertine/lbtn_dhi6qf.enc} <../images/logos/upec-blanc-sans-baseline.
+png> <../images/logos/EPISEN_logo-SI-blanc-POSTER.png> <../images/logos/Saint-G
+obain-Logo.png> <../images/chap01/fig4.png> <../images/chap01/fig5.png> <../ima
+ges/chap03/flag_frequency.png> <../images/chap03/confusion_matrix.png>]
+(poster.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                poster
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'poster.run.xml'.
 \openout1 = `poster.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40710 strings out of 467866
- 803748 string characters out of 5418326
- 1745871 words of memory out of 5000000
- 68881 multiletter control sequences out of 15000+600000
- 739042 words of font info for 106 fonts, out of 8000000 for 9000
+ 40892 strings out of 467866
+ 808374 string characters out of 5418325
+ 1760033 words of memory out of 5000000
+ 69050 multiletter control sequences out of 15000+600000
+ 748601 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,16n,121p,697b,1879s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,16n,121p,697b,2033s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/Li
-nLibertineT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/libertine/LinLibertineTB.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/selli/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/selli/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/selli/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on poster.pdf (1 page, 481814 bytes).
+nLibertineMT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/libertine/LinLibertineT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/libertine/LinLibertineTB.pfb><C:/Users/selli/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/selli/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/selli/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/selli/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on poster.pdf (1 page, 724439 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 120 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

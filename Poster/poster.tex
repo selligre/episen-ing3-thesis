@@ -9,55 +9,64 @@
 
 % Ici le debut de vos boites !
 
+% Introduction
+
 \begin{posterbox}[name=problem, span=2, column=0, row=0]{Problem}
 	Kernel-level anti-cheats (Ring 0) are becoming the industry standard for stopping cheaters in competitive FPS games such as Counter-Strike 2, but they require granting a driver unrestricted access to the entire system, not just the game. This creates three risks:
 	\begin{itemize}
 		\item \textbf{Security}: expands the attack surface
-		\item \textbf{Privacy}: violates GDPR principles of minimization data access
+		\item \textbf{Privacy}: violates GDPR principles of data minimization
 		\item \textbf{Trust}: drives boycotts, excludes Linux users
 	\end{itemize}
 	This thesis explores an alternative: detecting cheaters through server-side behavioral analysis of gameplay telemetry, without ever touching the player's machine.
 \end{posterbox}
 
+% Chapter 1
+
 \begin{posterbox}[name=rings, span=1, column=2, row=0]{Privilege Rings}
 	\includegraphics[width=\linewidth]{../images/chap01/fig4.png}
-	\smaller Kernel-level anti-cheats and kernel-level cheats compete for the same Ring~0 authority, leaving no visibility to user-mode software.
+	Kernel-level anti-cheats and kernel-level cheats compete for the same Ring 0 authority, leaving no visibility to user-mode software.
 \end{posterbox}
+
+\begin{posterbox}[name=dma, span=1, column=2, below=rings]{The DMA Blind Spot}
+	\includegraphics[width=\linewidth]{../images/chap01/fig5.png}
+	A PCIe card reads host RAM directly, a second PC computes and injects synthetic input. No driver loads, no process is touched: the kernel-level anti-cheat has nothing to detect.
+\end{posterbox}
+
+% Chapter 2
+
+\begin{posterbox}[name=risks, column=1, below=problem]{Kernel-Level Risks}
+    • Kernel-level anti-cheat is stuck in a structural arms race it cannot win: cheat vendors patch around detections in days, while publishers need weeks to safely ship a kernel update \cite{Kuzhii2024}. Worse, it is categorically blind to DMA cheats.
+
+	• To test how far this privileged access actually reaches, Windows-Kernel-Explorer and Cheat Engine were used on an isolated VM to locate and reconstruct a password from an \emph{unrelated} Notepad process's memory. Ring 0 access is not just theoretically broad: it is critically intrusive against any parallel process, like browsers or password managers.
+\end{posterbox}
+
+% Chapter 3
 
 \begin{posterbox}[name=flags, span=1, column=0, below=problem]{Detection Flags}
 	\begin{center}
 		\includegraphics[width=\linewidth]{../images/chap03/flag_frequency.png}
 	\end{center}
-	\smaller Five of the eight flags fire in over 90\% of cheater sessions but stay silent on skilled players — except HS\_RATE\_EXTREME, which also fires for 83\% of skilled sessions, exposing it as the weakest, least discriminative signal on its own. Cross-session persistence across \emph{several} flags, not any single flag, is what separates cheaters from skilled players~\cite{Loo2025}.
+	Five of the eight flags fire in 90\% of cheater sessions but stay silent on skilled players, exposing HS\_RATE\_EXTREME as the least significant signal on its own. Cross-session persistence across \emph{several} flags is what separates cheaters from skilled players \cite{Loo2025}.
 \end{posterbox}
 
-\begin{posterbox}[name=risks, column=1, below=problem]{Kernel-Level Risks}
-	\smaller
-	\begin{itemize}
-		\item Structural arms race: cheat vendors patch around detections faster than publishers can ship kernel updates
-		\item Categorical blind spot against DMA (hardware) cheats: no software footprint on the host at all
-		\item \textbf{Experiment}: using Windows-Kernel-Explorer and Cheat Engine on an isolated VM, a plaintext string was located and reconstructed from an \emph{unrelated} Notepad process's memory
-		\item Confirms that Ring~0 access is not just theoretically broad, but trivially exercisable against any resident process — browsers, password managers included
-	\end{itemize}
-\end{posterbox}
-
-\begin{posterbox}[name=suspicion, span=1, column=2, below=rings]{Suspicion Score}
-	Each player session is scored by two independent layers combined into a single suspicion score:
-	\begin{equation*}
-		\text{score} = 0.6 \times \text{heuristic} + 0.4 \times (100 \times \text{lstm\_prob})
-	\end{equation*}
-	The heuristic layer evaluates 8 weighted, threshold-calibrated flags (time-to-damage, pre-aim, spray control, reaction time, \ldots); the LSTM layer models round-by-round behavioral persistence. A flag only counts if it recurs across a player's match history, not a single session.
+\begin{posterbox}[name=suspicion, span=1, column=2, below=dma]{Suspicion Score}
+	Two independent layers combine into one suspicion score per session:
+	\begin{center}
+		$\text{score} = 0.6 * \text{heuristic} + 0.4 * (100 * \text{lstm})$
+	\end{center}
+	$heuristic$: 8 weighted, threshold-calibrated heuristic flags (time-to-damage, pre-aim, spray control, reaction time, etc).
+	$ltsm$: a probability modeling round-by-round behavioral persistence. A flag only counts if it recurs across a player's match history, not a single session.
 \end{posterbox}
 
 \begin{posterbox}[name=results, span=2, column=0, below=flags]{Results}
-	\smaller
 	\textbf{Zero false positives}: no legitimate player is ever misclassified as a cheater.
 
 	\begin{center}
 		\includegraphics[width=0.9\linewidth]{../images/chap03/confusion_matrix.png}
 	\end{center}
 
-	Kernel-level and server-side detection fail on opposite classes of cheat (one blind to hardware-level manipulation, the other blind to a cheat used once and never again), making them complementary layers rather than substitutes~\cite{Dorner2024, Collins2024}.
+	Kernel-level and server-side detection fail on opposite classes of cheat (one blind to hardware-level manipulation, the other blind to a cheat used once and never again), making them complementary layers rather than substitutes \cite{Dorner2024, Collins2024}.
 \end{posterbox}
 
 %%% Remerciements et bibliographie
@@ -73,8 +82,8 @@
 
 \begin{posterbox}[name=acknowledgements, column=2, below=references]{Acknowledgements}
 	\smaller
-	\vspace{-0.4em}			% Save some space at the beginning
-	Thanks to my friends for introducing me to Counter-Strike all those years ago, to my teachers for their steady support, and to Hervé Perrachon, my mentor at Saint-Gobain GDII, for sharing his experience throughout this project.
+	% \vspace{-0.4em}			% Save some space at the beginning
+	Thanks to my friends for introducing me to Counter-Strike all those years ago, to my teachers for their steady support, and to Hervé Perrachon, my mentor at Saint-Gobain GDII, for sharing his experience.
 \end{posterbox}
 
 % Ici se termine la déclaration de vos boites !
