@@ -1,27 +1,26 @@
-\frametitle{Un peu de maths}
+\frametitle{Suite}
 
 \visible<1->{
-\begin{block}{La formule dans \textcolor{redUPEC}{ShareText}}
-\input{../ShareText/maths1.tex}
+\begin{block}{Un automate}
+\begin{tikzpicture}[shorten >=1pt,node distance=1.3cm,on grid,auto, every node/.style={scale=0.75}, scale=0.3]
+   \node[state,initial] (q_0)   {$q_0$};
+   \node[state] (q_1) [above right=of q_0] {$q_1$};
+   \node[state] (q_2) [below right=of q_0] {$q_2$};
+   \node[state,accepting](q_3) [below right=of q_1] {$q_3$};
+    \path[->]
+    (q_0) edge  node {1} (q_1)
+          edge  node [swap] {1} (q_2)
+    (q_1) edge  node  {1} (q_3)
+          edge [loop above] node {0} ()
+    (q_2) edge  node [swap] {0} (q_3)
+          edge [loop below] node {1} ();
+\end{tikzpicture}
 \end{block}
 }
 
 \visible<2->{
-\begin{block}{Le tableau dans \textcolor{redUPEC}{ShareText}}
-\begin{small}
-\input{../ShareText/tab1.tex}
-\end{small}
+\begin{block}{Un texte avec verbatim}
+\textVerbatimOne
 \end{block}
-}
-
-\visible<3->{
-\begin{alertblock}{Théoreme, un résultat très important !}
-\[
-1+(-1)^n=\begin{cases}
-			0, & \text{if $n$ odd}\\
-            2, & \text{otherwise}
-		 \end{cases}
-\]
-\end{alertblock}
 }
 

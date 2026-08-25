@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  22 AUG 2026 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  25 AUG 2026 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1990,13 +1990,13 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 10.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 10.
-<../images/logos/en-tete_EPISEN-SI.png, id=109, 565.51276pt x 139.11975pt>
+<../images/logos/en-tete_EPISEN-SI.png, id=133, 565.51276pt x 139.11975pt>
 File: ../images/logos/en-tete_EPISEN-SI.png Graphic file (type png)
 <use ../images/logos/en-tete_EPISEN-SI.png>
 Package pdftex.def Info: ../images/logos/en-tete_EPISEN-SI.png  used on input l
 ine 10.
 (pdftex.def)             Requested size: 231.3181pt x 56.9055pt.
-<../images/logos/entrepriseLogo.png, id=111, 320.397pt x 315.3381pt>
+<../images/logos/entrepriseLogo.png, id=135, 320.397pt x 315.3381pt>
 File: ../images/logos/entrepriseLogo.png Graphic file (type png)
 <use ../images/logos/entrepriseLogo.png>
 Package pdftex.def Info: ../images/logos/entrepriseLogo.png  used on input line
@@ -2019,50 +2019,279 @@ lli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}
  <../images/logos/en-tete_EPISEN-SI.png> <../images/logos/entrepriseLogo.png>]
 (diaporama.toc) [2
 
-] (diaporama.toc) [3
+] (introduction.tex
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 26.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
+(Font)              scaled to size 9.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
+(Font)              scaled to size 5.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
+(Font)              scaled to size 9.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
+(Font)              scaled to size 5.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
+(Font)              scaled to size 9.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
+(Font)              scaled to size 5.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
+(Font)              scaled to size 9.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
+(Font)              scaled to size 5.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
+(Font)              scaled to size 9.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
+(Font)              scaled to size 5.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 26.
+LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 26.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 26.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 26.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 5.0pt on input line 26.
+ [3
+
+] [4
+
+] [5
+
+] [6
+
+] [7
+
+] [8
+
+] [9
+
+] [10
+
+]
+<../images/Mapreduce.png, id=647, 1400.23125pt x 477.785pt>
+File: ../images/Mapreduce.png Graphic file (type png)
+<use ../images/Mapreduce.png>
+Package pdftex.def Info: ../images/Mapreduce.png  used on input line 78.
+(pdftex.def)             Requested size: 225.13123pt x 76.82234pt.
+
+Overfull \hbox (295.90865pt too wide) in paragraph at lines 78--78
+[]$[]$  
+ []
+
+[11
+
+ <../images/Mapreduce.png>]
+File: ../images/Mapreduce.png Graphic file (type png)
+<use ../images/Mapreduce.png>
+Package pdftex.def Info: ../images/Mapreduce.png  used on input line 78.
+(pdftex.def)             Requested size: 225.13123pt x 76.82234pt.
+
+Overfull \hbox (295.90865pt too wide) in paragraph at lines 78--78
+[]$[]$  
+ []
+
+[12
+
+]
+File: ../images/Mapreduce.png Graphic file (type png)
+<use ../images/Mapreduce.png>
+Package pdftex.def Info: ../images/Mapreduce.png  used on input line 78.
+(pdftex.def)             Requested size: 225.13123pt x 76.82234pt.
+
+Overfull \hbox (295.90865pt too wide) in paragraph at lines 78--78
+[]$[]$  
+ []
+
+[13
+
+]) (diaporama.toc) [14
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 37.
+(hyperref)                removing `math shift' on input line 36.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 37.
+(hyperref)                removing `math shift' on input line 36.
 
-(diaporama.toc) [4
+(part1.tex
+\openout4 = `diaporama.vrb'.
+
+ (diaporama.vrb
+(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 8.
+
+(../ShareText/listing1.tex))
+Overfull \vbox (2.35875pt too high) detected at line 36
+ []
+
+[15
+
+] (diaporama.vrb (../ShareText/listing1.tex))
+Overfull \vbox (2.35875pt too high) detected at line 36
+ []
+
+[16
+
+]
+\openout4 = `diaporama.vrb'.
+
+ (diaporama.vrb (../ShareText/maths1.tex) (../ShareText/tab1.tex
+LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 10.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 7.0pt on input line 1.
+)) [17
+
+]
+(diaporama.vrb (../ShareText/maths1.tex) (../ShareText/tab1.tex)) [18
+
+]
+(diaporama.vrb (../ShareText/maths1.tex) (../ShareText/tab1.tex)) [19
+
+])
+(diaporama.toc) [20
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 41.
+(hyperref)                removing `math shift' on input line 40.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 41.
+(hyperref)                removing `math shift' on input line 40.
 
-(diaporama.toc) [5
+(part2.tex
+\openout4 = `diaporama.vrb'.
+
+ (diaporama.vrb
+LaTeX Font Info:    Trying to load font information for TS1+LinuxBiolinumT-TLF 
+on input line 26.
+
+(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxbioli
+numt-tlf.fd
+File: TS1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/L
+inuxBiolinumT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 10.95pt on input line 26.
+)
+Overfull \vbox (11.12103pt too high) detected at line 35
+ []
+
+[21
+
+{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_af
+usau.enc}]
+\@verb\textVerbatimOne=\box126
+LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-
+TLF on input line 45.
+
+(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibert
+inemonot-tlf.fd
+File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
+1/LinuxLibertineMonoT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <10.95>
+ not available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
+tead on input line 45.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 45.
+
+Overfull \hbox (8.06993pt too wide) in paragraph at lines 45--45
+[]\T1/LinuxLibertineMonoT-TLF/regular/n/10.95 Vous avez déjà de quoi faire avec
+ tout cela ! 
+ []
+
+\openout4 = `diaporama.vrb'.
+
+(diaporama.vrb) [22
+
+{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_dh
+i6qf.enc}] (diaporama.vrb) [23
+
+]) (diaporama.toc) [24
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 45.
+(hyperref)                removing `math shift' on input line 44.
 
-(diaporama.toc) [6
+(part3.tex [25
+
+] [26
+
+]) (diaporama.toc) [27
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 48.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 48.
 
+(conclusion.tex [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+]
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 24.88pt on input line 27.
+ [36
+
+])
 \tf@nav=\write7
 \openout7 = `diaporama.nav'.
 
@@ -2072,28 +2301,42 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \tf@snm=\write9
 \openout9 = `diaporama.snm'.
 
-(diaporama.aux)
+ (diaporama.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `diaporama.out' has not changed.
-(rerunfilecheck)             Checksum: B1D910A40C3253415EEF16A025BD91D1;781.
+(rerunfilecheck)             Checksum: 1992DBD9A10C913145DE3A861255FB65;834.
  ) 
 Here is how much of TeX's memory you used:
- 50598 strings out of 467866
- 1147304 string characters out of 5418326
- 1742662 words of memory out of 5000000
- 78430 multiletter control sequences out of 15000+600000
- 697037 words of font info for 107 fonts, out of 8000000 for 9000
+ 52096 strings out of 467866
+ 1182140 string characters out of 5418326
+ 2001155 words of memory out of 5000000
+ 79782 multiletter control sequences out of 15000+600000
+ 762038 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,123p,3273b,823s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/Li
-nBiolinumT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/libertine/LinBiolinumTB.pfb>
-Output written on diaporama.pdf (6 pages, 239366 bytes).
+ 128i,19n,123p,3273b,2274s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi480\
+FdSymbolB-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/
+fdsymbol/dpi657\FdSymbolE-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/p
+k/ljfour/public/fdsymbol/dpi480\FdSymbolA-Book.pk> <C:\Users\selli\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi657\FdSymbolF-Book.pk> <C:\Users\se
+lli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi657\FdSymbolB-Book.
+pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi540
+\FdSymbolF-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public
+/fdsymbol/dpi540\FdSymbolA-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/
+pk/ljfour/public/fdsymbol/dpi657\FdSymbolA-Book.pk><C:/Users/selli/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/selli
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><
+C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBi
+olinumTI.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
+ibertine/LinLibertineMT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/selli/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmss10.pfb>
+Output written on diaporama.pdf (36 pages, 763752 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 297 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2118 PDF objects out of 2487 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 2170 words of extra memory for PDF output out of 10000 (max. 10000000)
 
