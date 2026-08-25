@@ -47,7 +47,7 @@
 	\begin{center}
 		\includegraphics[width=\linewidth]{../images/chap03/flag_frequency.png}
 	\end{center}
-	Five of the eight flags fire in 90\% of cheater sessions but stay silent on skilled players, exposing HS\_RATE\_EXTREME as the least significant signal on its own. Cross-session persistence across \emph{several} flags is what separates cheaters from skilled players \cite{Loo2025}.
+	Five flags fire in over 90\% of cheater sessions: four stay silent on skilled players, but HS\_RATE also fires on 83\% of skilled sessions, exposing it as the least significant signal on its own. Cross-session persistence across \emph{several} flags is what separates cheaters from skilled players \cite{Loo2025}.
 \end{posterbox}
 
 \begin{posterbox}[name=suspicion, span=1, column=2, below=dma]{Suspicion Score}
@@ -55,16 +55,19 @@
 	\begin{center}
 		$\text{score} = 0.6 * \text{heuristic} + 0.4 * (100 * \text{lstm})$
 	\end{center}
-	$heuristic$: 8 weighted, threshold-calibrated heuristic flags (time-to-damage, pre-aim, spray control, reaction time, etc).
-	$ltsm$: a probability modeling round-by-round behavioral persistence. A flag only counts if it recurs across a player's match history, not a single session.
+	$heuristic$: 8 threshold-calibrated flags (time-to-damage, pre-aim, reaction time, KD/ADR, clutch, consistency, etc).
+
+	$lstm$: a probability modeling round-by-round behavioral persistence. A flag only counts if it recurs across a player's match history, not a single session.
 \end{posterbox}
 
-\begin{posterbox}[name=results, span=2, column=0, below=flags]{Results}
-	\textbf{Zero false positives}: no legitimate player is ever misclassified as a cheater.
+\begin{posterbox}[name=results, span=2, column=0, below=flags]{Results (synthetic benchmark)}
+	\textbf{Zero false positives, 51\% recall:} a conservative threshold flags half of cheaters automatically, the rest rank just below it for review.
 
 	\begin{center}
 		\includegraphics[width=0.9\linewidth]{../images/chap03/confusion_matrix.png}
 	\end{center}
+
+	\textbf{Conclusion:}
 
 	Kernel-level and server-side detection fail on opposite classes of cheat (one blind to hardware-level manipulation, the other blind to a cheat used once and never again), making them complementary layers rather than substitutes \cite{Dorner2024, Collins2024}.
 \end{posterbox}

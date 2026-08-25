@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.10)  24 AUG 2026 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  25 AUG 2026 11:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1704,29 +1704,29 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 56.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
-$\OML/lmm/m/it/12 heuristic$\T1/LinuxLibertineT-TLF/m/n/12 : 8 weighted, thresh
-old-
+Underfull \hbox (badness 4479) in paragraph at lines 58--59
+$\OML/lmm/m/it/12 heuristic$\T1/LinuxLibertineT-TLF/m/n/12 : 8 threshold-calibr
+ated flags
  []
 
 <../images/chap03/confusion_matrix.png, id=43, 486.618pt x 389.7762pt>
 File: ../images/chap03/confusion_matrix.png Graphic file (type png)
 <use ../images/chap03/confusion_matrix.png>
 Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
-ine 66.
+ine 67.
 (pdftex.def)             Requested size: 392.2789pt x 314.22417pt.
 
 Package relsize Warning: Font size 4.82256pt is too small.
-(relsize)                Using 5.0pt instead on input line 75.
+(relsize)                Using 5.0pt instead on input line 78.
 
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 75.
+(Font)              scaled to size 5.0pt on input line 78.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 5.0pt on input line 80.
+(Font)              scaled to size 5.0pt on input line 83.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 5.0pt on input line 80.
+(Font)              scaled to size 5.0pt on input line 83.
 LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-
-TLF on input line 80.
+TLF on input line 83.
 
 (C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibert
 inemonot-tlf.fd
@@ -1736,23 +1736,23 @@ File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <5> not
  available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 80.
+tead on input line 83.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 5.0pt on input line 80.
+(Font)              scaled to size 5.0pt on input line 83.
 
-Underfull \hbox (badness 3219) in paragraph at lines 81--81
+Underfull \hbox (badness 3219) in paragraph at lines 84--84
 []\T1/LinuxLibertineT-TLF/m/n/5 Y. Kuzhii and Y. Fur-gala. ^^P  THE AN-TICHEAT 
 DE-VEL-OP-MENT IN THE
  []
 
 
-Underfull \hbox (badness 3098) in paragraph at lines 81--81
+Underfull \hbox (badness 3098) in paragraph at lines 84--84
 []\T1/LinuxLibertineT-TLF/m/n/5 Mille Mei Zhen Loo, Gert Lu[]zkov, and Paolo Bu
 -relli. ^^P  An-tiCheatPT: A
  []
 
 
-Underfull \hbox (badness 4096) in paragraph at lines 86--87
+Underfull \hbox (badness 4096) in paragraph at lines 89--90
 []\T1/LinuxLibertineT-TLF/m/n/10 Thanks to my friends for in-tro-duc-ing me to
  []
 
@@ -1783,8 +1783,8 @@ Package logreq Info: Writing requests to 'poster.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  40892 strings out of 467866
- 808374 string characters out of 5418325
- 1760033 words of memory out of 5000000
+ 808374 string characters out of 5418326
+ 1761033 words of memory out of 5000000
  69050 multiletter control sequences out of 15000+600000
  748601 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1797,7 +1797,7 @@ grams/MiKTeX/fonts/type1/public/libertine/LinLibertineTI.pfb><C:/Users/selli/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/selli/Ap
 pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/selli/App
 Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on poster.pdf (1 page, 724439 bytes).
+Output written on poster.pdf (1 page, 725611 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  6 named destinations out of 1000 (max. 500000)
