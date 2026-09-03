@@ -1,6 +1,5 @@
 \babel@toc {english}{}\relax 
-\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
-\beamer@sectionintoc {2}{Une première partie}{14}{0}{2}
-\beamer@sectionintoc {3}{Une seconde partie}{20}{0}{3}
-\beamer@sectionintoc {4}{Une troisième partie}{24}{0}{4}
-\beamer@sectionintoc {5}{Conclusion}{27}{0}{5}
+\beamer@sectionintoc {1}{Context and Problem}{3}{0}{1}
+\beamer@sectionintoc {2}{Structural Limits of Kernel-Level Anti-Cheat}{11}{0}{2}
+\beamer@sectionintoc {3}{Server-Side Gameplay Analytics Pipeline}{24}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{37}{0}{4}

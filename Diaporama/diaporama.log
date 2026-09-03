@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  25 AUG 2026 11:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.1) (preloaded format=pdflatex 2026.2.8)  3 SEP 2026 16:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1990,25 +1990,21 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 10.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 10.
-<../images/logos/en-tete_EPISEN-SI.png, id=133, 565.51276pt x 139.11975pt>
+<../images/logos/en-tete_EPISEN-SI.png, id=135, 565.51276pt x 139.11975pt>
 File: ../images/logos/en-tete_EPISEN-SI.png Graphic file (type png)
 <use ../images/logos/en-tete_EPISEN-SI.png>
 Package pdftex.def Info: ../images/logos/en-tete_EPISEN-SI.png  used on input l
 ine 10.
 (pdftex.def)             Requested size: 231.3181pt x 56.9055pt.
-<../images/logos/entrepriseLogo.png, id=135, 320.397pt x 315.3381pt>
-File: ../images/logos/entrepriseLogo.png Graphic file (type png)
-<use ../images/logos/entrepriseLogo.png>
-Package pdftex.def Info: ../images/logos/entrepriseLogo.png  used on input line
- 10.
-(pdftex.def)             Requested size: 57.81563pt x 56.9055pt.
+<../images/logos/Saint-Gobain-Logo.png, id=137, 501.875pt x 282.05376pt>
+File: ../images/logos/Saint-Gobain-Logo.png Graphic file (type png)
+<use ../images/logos/Saint-Gobain-Logo.png>
+Package pdftex.def Info: ../images/logos/Saint-Gobain-Logo.png  used on input l
+ine 10.
+(pdftex.def)             Requested size: 75.93658pt x 42.67912pt.
 
-Overfull \hbox (12.60532pt too wide) in paragraph at lines 10--10
+Overfull \hbox (19.56075pt too wide) in paragraph at lines 10--10
  |  [] 
- []
-
-
-Overfull \vbox (25.57971pt too high) detected at line 10
  []
 
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
@@ -2016,174 +2012,53 @@ LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 [1{C:/Users/selli/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/se
 lli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}
 
- <../images/logos/en-tete_EPISEN-SI.png> <../images/logos/entrepriseLogo.png>]
+ <../images/logos/en-tete_EPISEN-SI.png> <../images/logos/Saint-Gobain-Logo.png
+>]
 (diaporama.toc) [2
 
-] (introduction.tex
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 26.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 26.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 26.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 26.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 5.0pt on input line 26.
- [3
+] (diaporama.toc) [3
 
-] [4
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 36.
+
+(part1.tex [4
 
 ] [5
 
 ] [6
 
-] [7
+]
+<../images/chap01/fig4.png, id=435, 738.50906pt x 470.50781pt>
+File: ../images/chap01/fig4.png Graphic file (type png)
+<use ../images/chap01/fig4.png>
+Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 22.
+(pdftex.def)             Requested size: 178.63185pt x 113.81102pt.
+ [7
 
-] [8
+ <../images/chap01/fig4.png>]
+File: ../images/chap01/fig4.png Graphic file (type png)
+<use ../images/chap01/fig4.png>
+Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 22.
+(pdftex.def)             Requested size: 178.63185pt x 113.81102pt.
+ [8
 
-] [9
+]
+File: ../images/chap01/fig4.png Graphic file (type png)
+<use ../images/chap01/fig4.png>
+Package pdftex.def Info: ../images/chap01/fig4.png  used on input line 22.
+(pdftex.def)             Requested size: 178.63185pt x 113.81102pt.
+ [9
 
 ] [10
 
-]
-<../images/Mapreduce.png, id=647, 1400.23125pt x 477.785pt>
-File: ../images/Mapreduce.png Graphic file (type png)
-<use ../images/Mapreduce.png>
-Package pdftex.def Info: ../images/Mapreduce.png  used on input line 78.
-(pdftex.def)             Requested size: 225.13123pt x 76.82234pt.
-
-Overfull \hbox (295.90865pt too wide) in paragraph at lines 78--78
-[]$[]$  
- []
-
-[11
-
- <../images/Mapreduce.png>]
-File: ../images/Mapreduce.png Graphic file (type png)
-<use ../images/Mapreduce.png>
-Package pdftex.def Info: ../images/Mapreduce.png  used on input line 78.
-(pdftex.def)             Requested size: 225.13123pt x 76.82234pt.
-
-Overfull \hbox (295.90865pt too wide) in paragraph at lines 78--78
-[]$[]$  
- []
-
-[12
-
-]
-File: ../images/Mapreduce.png Graphic file (type png)
-<use ../images/Mapreduce.png>
-Package pdftex.def Info: ../images/Mapreduce.png  used on input line 78.
-(pdftex.def)             Requested size: 225.13123pt x 76.82234pt.
-
-Overfull \hbox (295.90865pt too wide) in paragraph at lines 78--78
-[]$[]$  
- []
-
-[13
-
-]) (diaporama.toc) [14
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 36.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 36.
-
-(part1.tex
-\openout4 = `diaporama.vrb'.
-
- (diaporama.vrb
-(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 8.
-
-(../ShareText/listing1.tex))
-Overfull \vbox (2.35875pt too high) detected at line 36
- []
-
-[15
-
-] (diaporama.vrb (../ShareText/listing1.tex))
-Overfull \vbox (2.35875pt too high) detected at line 36
- []
-
-[16
-
-]
-\openout4 = `diaporama.vrb'.
-
- (diaporama.vrb (../ShareText/maths1.tex) (../ShareText/tab1.tex
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolA/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolE/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolB/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolC/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolD/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1.
-LaTeX Font Info:    Font shape `U/FdSymbolF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 1.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 7.0pt on input line 1.
-)) [17
-
-]
-(diaporama.vrb (../ShareText/maths1.tex) (../ShareText/tab1.tex)) [18
-
-]
-(diaporama.vrb (../ShareText/maths1.tex) (../ShareText/tab1.tex)) [19
-
 ])
-(diaporama.toc) [20
+(diaporama.toc) [11
 
 ]
 
@@ -2194,55 +2069,65 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 40.
 
-(part2.tex
-\openout4 = `diaporama.vrb'.
+(part2.tex [12
 
- (diaporama.vrb
-LaTeX Font Info:    Trying to load font information for TS1+LinuxBiolinumT-TLF 
-on input line 26.
+] [13
 
-(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\ts1linuxbioli
-numt-tlf.fd
-File: TS1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/L
-inuxBiolinumT-TLF.
-)
-LaTeX Font Info:    Font shape `TS1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 26.
-)
-Overfull \vbox (11.12103pt too high) detected at line 35
- []
+] [14
 
-[21
+] [15
 
-{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_af
-usau.enc}]
-\@verb\textVerbatimOne=\box126
-LaTeX Font Info:    Trying to load font information for T1+LinuxLibertineMonoT-
-TLF on input line 45.
+]
+<../images/chap01/fig5.png, id=784, 947.03813pt x 472.01344pt>
+File: ../images/chap01/fig5.png Graphic file (type png)
+<use ../images/chap01/fig5.png>
+Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 23.
+(pdftex.def)             Requested size: 228.34868pt x 113.81102pt.
+ [16
 
-(C:\Users\selli\AppData\Local\Programs\MiKTeX\tex/latex/libertine\t1linuxlibert
-inemonot-tlf.fd
-File: T1LinuxLibertineMonoT-TLF.fd 2019/05/20 (autoinst) Font definitions for T
-1/LinuxLibertineMonoT-TLF.
-)
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' in size <10.95>
- not available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' tried ins
-tead on input line 45.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 45.
+ <../images/chap01/fig5.png>]
+File: ../images/chap01/fig5.png Graphic file (type png)
+<use ../images/chap01/fig5.png>
+Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 23.
+(pdftex.def)             Requested size: 228.34868pt x 113.81102pt.
+ [17
 
-Overfull \hbox (8.06993pt too wide) in paragraph at lines 45--45
-[]\T1/LinuxLibertineMonoT-TLF/regular/n/10.95 Vous avez déjà de quoi faire avec
- tout cela ! 
- []
+]
+File: ../images/chap01/fig5.png Graphic file (type png)
+<use ../images/chap01/fig5.png>
+Package pdftex.def Info: ../images/chap01/fig5.png  used on input line 23.
+(pdftex.def)             Requested size: 228.34868pt x 113.81102pt.
+ [18
 
-\openout4 = `diaporama.vrb'.
+]
+<../images/chap02/15.png, id=892, 1926.44719pt x 1083.29718pt>
+File: ../images/chap02/15.png Graphic file (type png)
+<use ../images/chap02/15.png>
+Package pdftex.def Info: ../images/chap02/15.png  used on input line 36.
+(pdftex.def)             Requested size: 202.3858pt x 113.81102pt.
 
-(diaporama.vrb) [22
+[19
 
-{C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/libertine/lbtn_dh
-i6qf.enc}] (diaporama.vrb) [23
+ <../images/chap02/15.png>]
+File: ../images/chap02/15.png Graphic file (type png)
+<use ../images/chap02/15.png>
+Package pdftex.def Info: ../images/chap02/15.png  used on input line 36.
+(pdftex.def)             Requested size: 202.3858pt x 113.81102pt.
+ [20
+
+]
+File: ../images/chap02/15.png Graphic file (type png)
+<use ../images/chap02/15.png>
+Package pdftex.def Info: ../images/chap02/15.png  used on input line 36.
+(pdftex.def)             Requested size: 202.3858pt x 113.81102pt.
+ [21
+
+]
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 53.
+ [22
+
+] [23
 
 ]) (diaporama.toc) [24
 
@@ -2259,7 +2144,107 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [26
 
-]) (diaporama.toc) [27
+] [27
+
+]
+<../images/chap03/pipeline_diagram.png, id=1240, 643.203pt x 440.847pt>
+File: ../images/chap03/pipeline_diagram.png Graphic file (type png)
+<use ../images/chap03/pipeline_diagram.png>
+Package pdftex.def Info: ../images/chap03/pipeline_diagram.png  used on input l
+ine 22.
+(pdftex.def)             Requested size: 186.80872pt x 128.0374pt.
+ [28
+
+ <../images/chap03/pipeline_diagram.png>]
+File: ../images/chap03/pipeline_diagram.png Graphic file (type png)
+<use ../images/chap03/pipeline_diagram.png>
+Package pdftex.def Info: ../images/chap03/pipeline_diagram.png  used on input l
+ine 22.
+(pdftex.def)             Requested size: 186.80872pt x 128.0374pt.
+ [29
+
+]
+File: ../images/chap03/pipeline_diagram.png Graphic file (type png)
+<use ../images/chap03/pipeline_diagram.png>
+Package pdftex.def Info: ../images/chap03/pipeline_diagram.png  used on input l
+ine 22.
+(pdftex.def)             Requested size: 186.80872pt x 128.0374pt.
+
+[30
+
+]
+<../images/chap03/flag_frequency.png, id=1348, 931.3194pt x 426.393pt>
+File: ../images/chap03/flag_frequency.png Graphic file (type png)
+<use ../images/chap03/flag_frequency.png>
+Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
+e 36.
+(pdftex.def)             Requested size: 217.51006pt x 99.58464pt.
+ [31
+
+ <../images/chap03/flag_frequency.png>]
+File: ../images/chap03/flag_frequency.png Graphic file (type png)
+<use ../images/chap03/flag_frequency.png>
+Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
+e 36.
+(pdftex.def)             Requested size: 217.51006pt x 99.58464pt.
+ [32
+
+]
+File: ../images/chap03/flag_frequency.png Graphic file (type png)
+<use ../images/chap03/flag_frequency.png>
+Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
+e 36.
+(pdftex.def)             Requested size: 217.51006pt x 99.58464pt.
+ [33
+
+]
+File: ../images/chap03/flag_frequency.png Graphic file (type png)
+<use ../images/chap03/flag_frequency.png>
+Package pdftex.def Info: ../images/chap03/flag_frequency.png  used on input lin
+e 36.
+(pdftex.def)             Requested size: 217.51006pt x 99.58464pt.
+ [34
+
+]
+<../images/chap03/score_distribution.png, id=1485, 642.2394pt x 425.9112pt>
+File: ../images/chap03/score_distribution.png Graphic file (type png)
+<use ../images/chap03/score_distribution.png>
+Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
+ line 56.
+(pdftex.def)             Requested size: 160.89264pt x 106.69783pt.
+
+Overfull \hbox (13.39482pt too wide) in paragraph at lines 56--56
+ [][] 
+ []
+
+<../images/chap03/confusion_matrix.png, id=1486, 486.618pt x 389.7762pt>
+File: ../images/chap03/confusion_matrix.png Graphic file (type png)
+<use ../images/chap03/confusion_matrix.png>
+Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
+ine 56.
+(pdftex.def)             Requested size: 133.20778pt x 106.69783pt.
+[35
+
+ <../images/chap03/score_distribution.png> <../images/chap03/confusion_matrix.p
+ng>]
+File: ../images/chap03/score_distribution.png Graphic file (type png)
+<use ../images/chap03/score_distribution.png>
+Package pdftex.def Info: ../images/chap03/score_distribution.png  used on input
+ line 56.
+(pdftex.def)             Requested size: 160.89264pt x 106.69783pt.
+
+Overfull \hbox (13.39482pt too wide) in paragraph at lines 56--56
+ [][] 
+ []
+
+File: ../images/chap03/confusion_matrix.png Graphic file (type png)
+<use ../images/chap03/confusion_matrix.png>
+Package pdftex.def Info: ../images/chap03/confusion_matrix.png  used on input l
+ine 56.
+(pdftex.def)             Requested size: 133.20778pt x 106.69783pt.
+[36
+
+]) (diaporama.toc) [37
 
 ]
 
@@ -2270,26 +2255,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 48.
 
-(conclusion.tex [28
+(conclusion.tex [38
 
-] [29
+] [39
 
-] [30
+] [40
 
-] [31
+] [41
 
-] [32
+] [42
 
-] [33
+] [43
 
-] [34
-
-] [35
+] [44
 
 ]
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 27.
- [36
+(Font)              scaled to size 24.88pt on input line 22.
+ [45
 
 ])
 \tf@nav=\write7
@@ -2307,36 +2290,24 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `diaporama.out' has not changed.
-(rerunfilecheck)             Checksum: 1992DBD9A10C913145DE3A861255FB65;834.
+(rerunfilecheck)             Checksum: 22B31B07C1F272332228A2C0D08D0C32;958.
  ) 
 Here is how much of TeX's memory you used:
- 52096 strings out of 467866
- 1182140 string characters out of 5418326
- 2001155 words of memory out of 5000000
- 79782 multiletter control sequences out of 15000+600000
- 762038 words of font info for 173 fonts, out of 8000000 for 9000
+ 50818 strings out of 467866
+ 1151962 string characters out of 5418326
+ 1751662 words of memory out of 5000000
+ 78558 multiletter control sequences out of 15000+600000
+ 707560 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,19n,123p,3273b,2274s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi480\
-FdSymbolB-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/
-fdsymbol/dpi657\FdSymbolE-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/p
-k/ljfour/public/fdsymbol/dpi480\FdSymbolA-Book.pk> <C:\Users\selli\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi657\FdSymbolF-Book.pk> <C:\Users\se
-lli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi657\FdSymbolB-Book.
-pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi540
-\FdSymbolF-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public
-/fdsymbol/dpi540\FdSymbolA-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/
-pk/ljfour/public/fdsymbol/dpi657\FdSymbolA-Book.pk><C:/Users/selli/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/selli
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb><
-C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/libertine/LinBi
-olinumTI.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts/type1/public/l
-ibertine/LinLibertineMT.pfb><C:/Users/selli/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/selli/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-Output written on diaporama.pdf (36 pages, 763752 bytes).
+ 128i,19n,123p,3273b,829s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/fdsymbol/dpi657\
+FdSymbolC-Book.pk> <C:\Users\selli\AppData\Local\MiKTeX\fonts/pk/ljfour/public/
+fdsymbol/dpi657\FdSymbolA-Book.pk><C:/Users/selli/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/libertine/LinBiolinumT.pfb><C:/Users/selli/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/libertine/LinBiolinumTB.pfb>
+Output written on diaporama.pdf (45 pages, 1885465 bytes).
 PDF statistics:
- 2118 PDF objects out of 2487 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 2170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1911 PDF objects out of 2073 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 332 words of extra memory for PDF output out of 10000 (max. 10000000)
 

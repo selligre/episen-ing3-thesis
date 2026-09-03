@@ -1,74 +1,30 @@
-% *****************************************************************************
-% **************            SLIDE
-% *****************************************************************************
-\beamerdefaultoverlayspecification{}
-\begin{frame}[fragile]                           % IL FAUT METTRE FRAGILE A CHAQUE FOIS QU'IL Y A DU CODE A METTRE :(
-\frametitle{Un exemple de code}
-
-\vspace*{-1mm}
-\begin{block}{Un petit code}                    % Hélas, \visible<1->{   NE FONCTIONNE PAS :(   (pb de compatibilité entre package ...)
-\vspace*{-2mm}
-\begin{footnotesize}
-\begin{java}
-public class {
-|	...
-|	public static void main(String arg){
-|	|	System.out.println("sdmklfjsdfj dfsdf ");
-|	|	for(int i=0;i<n;i++)
-|	|	|	if (1=1)
-|	|	|	|	Toto.add(i)
-|	}
-}
-\end{java}
-\end{footnotesize}
-\vspace*{-2mm}
-\end{block}
-
-
-\vspace*{-1mm}
-
-\visible<2->{
-\begin{block}{Commentaires provenant du dossier ShareText}
-\input{../ShareText/listing1.tex}
-\end{block}
-}
-
+% SLIDE
+\begin{frame}
+	\frametitle{Context}
+	\begin{itemize}
+		\item Competitive FPS integrity: same rules, same information, for everyone
+		\item High stakes: \$75M prize pool at EWC 2026 (Paris), professional careers, ranked progression
+		\item Cheats (aimbots, wallhacks) break this fairness
+	\end{itemize}
 \end{frame}
-\beamerdefaultoverlayspecification{<+->}
 
-
-
-% *****************************************************************************
-% **************            SLIDE
-% *****************************************************************************
-\beamerdefaultoverlayspecification{}
-\begin{frame}[fragile]                           % IL FAUT METTRE FRAGILE A CHAQUE FOIS QU'IL Y A DU CODE A METTRE :(
-\frametitle{Un peu de maths}
-
-\visible<1->{
-\begin{block}{La formule dans \textcolor{redUPEC}{ShareText}}
-\input{../ShareText/maths1.tex}
-\end{block}
-}
-
-\visible<2->{
-\begin{block}{Le tableau dans \textcolor{redUPEC}{ShareText}}
-\begin{small}
-\input{../ShareText/tab1.tex}
-\end{small}
-\end{block}
-}
-
-\visible<3->{
-\begin{alertblock}{Théoreme, un résultat très important !}
-\[
-1+(-1)^n=\begin{cases}
-			0, & \text{if $n$ odd}\\
-            2, & \text{otherwise}
-		 \end{cases}
-\]
-\end{alertblock}
-}
-
+% SLIDE
+\begin{frame}
+	\frametitle{The industry's answer, and its cost}
+	\begin{itemize}
+		\item Anti-cheat moves to Ring 0: full visibility over memory and processes
+		\item Cost: a third-party driver gets unrestricted access to the entire machine
+		\item Risks: cybersecurity, system stability, user privacy
+	\end{itemize}
+	\begin{center}
+		\includegraphics[height=4cm]{../images/chap01/fig4.png}
+	\end{center}
 \end{frame}
-\beamerdefaultoverlayspecification{<+->}
+
+% SLIDE
+\begin{frame}
+	\frametitle{Problem}
+	\begin{center}
+		How can we detect cheating effectively without compromising system security through kernel-level access?
+	\end{center}
+\end{frame}
